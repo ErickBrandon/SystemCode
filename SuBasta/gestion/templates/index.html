@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/header-menu.css' %}">
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="{% static 'js/header.js' %}"></script>
+	<script src="{% static 'js/header-menu.js' %}"></script>
+
 
 
     <title>Su-Basta</title>
@@ -16,11 +22,35 @@
 <body>
     <header class="header">
 		<div class="logo">¡Su-Basta!</div>
-		<div class="buscador">
-			<form action="">
-				<input class="lblBuscar" type="text" name="h-buscador" placeholder="Igresa tu busqueda...">
-				<input clas="btnBuscar" type="submit" value="buscar">
-			</form>
+		<div class="header-info">
+			<div class="buscador-h">
+				<form action="">
+					<div class="txt"><input type="text" placeholder="Buscar productos..."></div>
+					<div class="btn fas fa-search"><input class="" type="submit" value=""></div>
+				</form>
+			</div>
+			<div class="menu">
+				<div class="menu_bar">
+					<a href="#" class="bt-menu"><span class="icon-list2"></span>Menú</a>
+				</div>
+		 
+				<nav>
+					<ul>
+						<li><a href="#"><span class="icon-house"></span>Inicio</a></li>
+						<li><a href="#"><span class="icon-suitcase"></span>Trabajos</a></li>
+						<li class="submenu">
+							<a href="#"><span class="icon-rocket"></span>Proyectos<span class="caret icon-arrow-down6"></span></a>
+							<ul class="children">
+								<li><a href="#">SubElemento #1 <span class="icon-dot"></span></a></li>
+								<li><a href="#">SubElemento #2 <span class="icon-dot"></span></a></li>
+								<li><a href="#">SubElemento #3 <span class="icon-dot"></span></a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span class="icon-earth"></span>Servicios</a></li>
+						<li><a href="#"><span class="icon-mail"></span>Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	
