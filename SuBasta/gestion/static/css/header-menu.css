@@ -1,45 +1,46 @@
-.menu_bar {
+#header-menu{
+    margin-top:20px;
+}
+#header-menu .menu_bar {
 	display:none;
 }
  
  
-.header .header-info.menu nav {
-	background:#023859;
+#header-menu nav {
+	background:transparent;
 	z-index:1000;
 	max-width: 1000px;
-	width:95%;
-	margin:20px auto;
+    width:95%;
 }
  
-.header .header-info.menu nav ul {
+#header-menu nav ul {
 	list-style:none;
 }
  
-.header .header-info.menu nav ul li {
+#header-menu nav ul li {
 	display:inline-block;
 	position: relative;
 }
  
-.header .header-info.menu nav ul li:hover {
+#header-menu nav ul li:hover {
 	background:#E6344A;
 }
  
-.header .header-info.menu nav ul li a {
+#header-menu nav ul li a {
 	color:#fff;
 	display:block;
 	text-decoration:none;
-	padding: 20px;
 }
  
-.header .header-info.menu nav ul li a span {
+#header-menu nav ul li a span {
 	margin-right:10px;
 }
  
-.header .header-info.menu nav ul li:hover .children {
+#header-menu nav ul li:hover .children {
 	display:block;
 }
  
-.header .header-info.menu nav ul li .children {
+#header-menu nav ul li .children {
 	display: none;
 	background:#011826;
 	position: absolute;
@@ -47,17 +48,17 @@
 	z-index:1000;
 }
  
-.header .header-info.menu nav ul li .children li {
+#header-menu nav ul li .children li {
 	display:block;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,.5);
 }
  
-.header .header-info.menu nav ul li .children li a {
+#header-menu nav ul li .children li a {
 	display: block;
 }
  
-.header .header-info.menu nav ul li .children li a span {
+#header-menu nav ul li .children li a span {
 	float: right;
 	position: relative;
 	top:3px;
@@ -65,7 +66,7 @@
 	margin-left:10px;
 }
  
-.header .header-info.menu nav ul li .caret {
+#header-menu nav ul li .caret {
 	position: relative;
 	top:3px;
 	margin-left:10px;
@@ -74,7 +75,7 @@
  
 @media screen and (max-width: 800px) {
  
-	.menu_bar {
+    #header-menu .menu_bar {
 		display:block;
 		width:100%;
 		position: fixed;
@@ -82,7 +83,7 @@
 		background:#E6344A;
 	}
  
-	.menu_bar .bt-menu {
+	#header-menu .menu_bar .bt-menu {
 		display: block;
 		padding: 20px;
 		color: #fff;
@@ -92,12 +93,12 @@
 		text-decoration: none;
 	}
  
-	.menu_bar span {
+	#header-menu .menu_bar span {
 		float: right;
 		font-size: 40px;
 	}
  
-	.header .header-info.menu nav {
+    #header-menu nav {
 		width: 80%;
 		height: calc(100% - 80px);
 		position: fixed;
@@ -106,29 +107,29 @@
 		overflow: scroll;
 	}
  
-	.header .header-info.menu nav ul li {
+    #header-menu nav ul li {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 	}
  
-	.header .header-info.menu nav ul li a {
+    #header-menu nav ul li a {
 		display: block;
 	}
  
-	.header .header-info.menu nav ul li:hover .children {
+    #header-menu nav ul li:hover .children {
 		display: none;
 	}
  
-	.header .header-info.menu nav ul li .children {
+    #header-menu nav ul li .children {
 		width: 100%;
 		position: relative;
 	}
  
-	.header .header-info.menu nav ul li .children li a {
+    #header-menu nav ul li .children li a {
 		margin-left:20px;
 	}
  
-	.header .header-info.menu nav ul li .caret {
+    #header-menu nav ul li .caret {
 		float: right;
 	}
 }
