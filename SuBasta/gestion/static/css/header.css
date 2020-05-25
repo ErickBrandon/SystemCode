@@ -85,13 +85,31 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 }
 .header .sb-link{
 	float: left;
-	width: 22%;
-	margin-left: 3%;
+	width: 15%;
+	margin-left: 5%;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
 }
 .header .sb-link p{
+	width: 100%;
 	text-align: center;
-	font-size: 125%;
+	font-size: 115%;
 	margin-top: 2px;
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	color:#000;
+	
+	-moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+.header .sb-link p:hover{
+	color: #0b82e4;
+	
 }
 .header .sb{
 	width: 22%;
