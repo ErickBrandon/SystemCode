@@ -12,16 +12,19 @@
 	max-width: 1000px;
     width:95%;
 }
- 
+#movil{
+    display: none;
+}  
 #header-menu nav ul {
-	list-style:none;
+    list-style:none;
+    overflow: hidden;
 }
- 
+
 #header-menu nav ul li {
-	display:inline-block;
-	position: relative;
+    position: relative;
+    float: left;
 }
- 
+
 #header-menu nav ul li:hover {
 	background:#E6344A;
 }

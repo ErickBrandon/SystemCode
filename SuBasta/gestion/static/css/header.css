@@ -107,6 +107,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     transition: all .45s ease;
     -o-transition: all .45s ease;
 }
+
 .header .sb-link p:hover{
 	color: #0b82e4;
 	
@@ -121,6 +122,14 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 }
 .header .sb .img img{
 	width: 60%;
+}
+@media screen and (max-width: 800px){
+	.header .sb-link p{
+		display: none;
+	}
+	.header .sb{
+		display: none;
+	}
 }
 .header2 {
 	position: fixed;
