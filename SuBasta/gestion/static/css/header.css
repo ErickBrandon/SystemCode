@@ -11,6 +11,8 @@ input:focus{
 }
 .header {
 	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	max-width: 1290px;
+	margin: auto;
 	overflow:hidden; /* Eliminamos errores de float */
 	background:#ff7033;
 	height: auto;
