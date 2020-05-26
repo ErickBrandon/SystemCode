@@ -22,19 +22,23 @@
 
 #header-menu nav ul li {
     position: relative;
-    float: left;
+	float: left;
+	margin-left: 6px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
-#header-menu nav ul li:hover {
-	background:#E6344A;
-}
+
  
 #header-menu nav ul li a {
 	color:#fff;
 	display:block;
 	text-decoration:none;
 }
- 
+ #header-menu nav ul li a:hover {
+	color: #000;
+	border-bottom: 1px #fff solid;
+}
 #header-menu nav ul li a span {
 	margin-right:10px;
 }
@@ -113,9 +117,9 @@
 	}
  
     #header-menu nav ul li {
+		width: 100%;
 		display: inline;
 		border-bottom:1px solid rgba(255,255,255,.5);
-		width:100%;
 		padding-top: 5px;
 		padding-top: 10px;
 		padding-bottom: 10px;

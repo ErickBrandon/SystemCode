@@ -20,4 +20,5 @@ from gestion import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/',views.hola),
+    path('Entrada/',views.Entrada),
 ]

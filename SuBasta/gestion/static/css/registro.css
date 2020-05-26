@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+body{
+    background: #e4dfdf;
+    background-image: url("../img/fondo.png");
+    background-position: center;
+}
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Jost', sans-serif;
+
+    -moz-transition: all .30s ease;
+    -webkit-transition: all .30s ease;
+    -ms-transition: all .30s ease;
+    transition: all .30s ease;
+    -o-transition: all .30s ease;
+}
+input:focus{
+    outline: 0 none;
+}
+#header-registro{
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 112, 51);
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 300%;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
+}
+#header-registro div{
+    width: 70%;
+    margin: auto;
+}
+#contenido{
+    margin: auto;
+    width: 75%;
+    background:rgba(255, 255, 255, .4);
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 30px 15px 30px 15px;
+}
+#contenido .login{
+    width:45%;
+    float: left;
+    margin-left: 35px;
+    border:1px #000 solid;
+    border-radius: 5px;
+}
+#contenido .login h3{
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 200%;
+}
+#contenido .login h4{
+    width: 100%;
+    padding-left: 25px;
+    font-size: 140%;
+}
+#contenido .login form{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+}
+#contenido .login form div{
+    margin: auto;
+    width: 75%;
+    height: 35px;
+    margin-top: 20px;
+}
+#contenido .login form div input{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    padding: 3px 0px 3px 10px;
+    font-size: 125%;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+}
+#contenido .login form .btn{
+    width: 45%;
+}
+#contenido .login form .btn-r{
+    width: 45%;
+}
+#contenido .login form .btn input{
+    border: none;
+    background: #3f5c9a;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contenido .login form .btn input:hover{
+    background: #fff;
+    color: #3f5c9a;
+}
+#contenido .login form .btn-r input{
+    border: none;
+    background: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+#contenido .login form .btn-r input:hover{
+    background: #fff;
+    color: #4caf50;
+}

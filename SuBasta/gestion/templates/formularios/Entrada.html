@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+    <title>Entrada a Su-basta</title>
+</head>
+<body>
+    <header id="header-registro">
+        <div><strong>Su-Basta</strong></div>
+    </header>
+    <section id="contenido">
+    <div class="login">
+        <h3>Ingresa a tu cuenta</h3>
+        <form action="">
+            <div><input type="text" placeholder="E-mail o Telefono"></div>
+            <div><input type="text" placeholder="Contraseña"></div>
+            <div class="btn"><input type="submit" value="Entrar"></div>
+        </form>
+    </div>
+    <div class="login">
+        <h3>Abre tu cuenta</h3>
+        <h4>Es gratis, fácil y rápido</h4>
+        <form action="">
+            <div><input type="text" placeholder="Nombre"></div>
+            <div><input type="text" placeholder="Apellido"></div>
+            <div><input type="text" placeholder="E-mail o Telefono"></div>
+            <div><input type="text" placeholder="Contraseña nueva"></div>
+            <div class="btn-r"><input type="submit" value="Registar"></div>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

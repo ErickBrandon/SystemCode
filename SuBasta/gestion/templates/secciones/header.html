@@ -1,0 +1,39 @@
+{% load static %}
+<header class="header">
+    <div class="logo">¡Su-Basta!</div>
+    <div class="header-info">
+        <div class="buscador-h">
+            <form action="">
+                <div class="txt"><input type="text" placeholder="Buscar productos..."></div>
+                <div class="btn fas fa-search"><input class="" type="submit" value=""></div>
+            </form>
+        </div>
+        <div id="header-menu" class="menu">
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="fas fa-bars"></span></a>
+            </div>
+     
+            <nav>
+                <ul>
+                    <li id="movil"><a href="#">Crea tu cuenta</a></li>
+                    <li id="movil"><a href="#">Ingresa</a></li>
+                    <li id="movil"><a href="#">Mis subastas</a></li>
+
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Subasta tradicional</a></li>
+                    <li><a href="#">Subasta inversa</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="sb-link"> 
+        <p>Crea tu cuenta</p>
+        <p>Ingresa</p>
+        <p>Mis subastas</p>
+    </div>
+    <div class="sb">
+        <div class="img"><img src="{% static 'img/SB.png' %}" alt=""></div>
+    </div>
+</header>
