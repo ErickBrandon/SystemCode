@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 body{
-    background: #e4dfdf;
+    background: #ececec;
     background-image: url("../img/fondo.png");
     background-position: center;
 }
@@ -10,17 +10,14 @@ body{
 	margin: 0;
     font-family: 'Jost', sans-serif;
 
-    -moz-transition: all .30s ease;
-    -webkit-transition: all .30s ease;
-    -ms-transition: all .30s ease;
-    transition: all .30s ease;
-    -o-transition: all .30s ease;
+    
 }
 input:focus{
     outline: 0 none;
 }
 #header-registro{
-    width: 100%;
+    width: 82%;
+    margin: auto;
     min-width: 320px;
     height: 70px;
     background: rgb(255, 112, 51);
@@ -36,15 +33,21 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 #header-registro div{
     width: 70%;
     margin: auto;
+    text-align: center;
 }
 #contenido{
     margin: auto;
     width: 75%;
     min-width: 300px;
     background:rgba(255, 255, 255, .4);
-    margin-top: 40px;
     overflow: hidden;
     padding: 30px 15px 30px 15px;
+
+    -moz-transition: all .30s ease;
+    -webkit-transition: all .30s ease;
+    -ms-transition: all .30s ease;
+    transition: all .30s ease;
+    -o-transition: all .30s ease;
 }
 #contenido .login{
     width:45%;
@@ -53,6 +56,12 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     margin-left: 35px;
     border:1px rgb(167, 167, 167) solid;
     border-radius: 5px;
+
+    -moz-transition: all .30s ease;
+    -webkit-transition: all .30s ease;
+    -ms-transition: all .30s ease;
+    transition: all .30s ease;
+    -o-transition: all .30s ease;
 }
 @media screen and (max-width: 1000px){
     #contenido .login{

@@ -28,6 +28,19 @@
             <div><input type="text" placeholder="Apellido"></div>
             <div><input type="text" placeholder="E-mail o Telefono"></div>
             <div><input type="text" placeholder="Contraseña nueva"></div>
+            <div>
+                <select name="" id="">
+                    {% for contDia in rangoDia %}
+                        <option value="{{contDia}}">{{contDia}}</option>
+                    {% endfor %}
+                </select>
+                <select name="" id="">
+                    {% for mes in ListMes %}
+                        <option value="{{mes}}">{{mes}}</option>
+                    {% endfor %}
+                </select>
+                
+            </div>
             <div class="btn-r"><input type="submit" value="Registar"></div>
         </form>
     </div>
