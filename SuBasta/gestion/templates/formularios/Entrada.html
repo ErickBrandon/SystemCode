@@ -30,13 +30,21 @@
             <div><input type="text" placeholder="Contraseña nueva"></div>
             <div>
                 <select name="" id="">
+                    <option value="">Día</option>
                     {% for contDia in rangoDia %}
                         <option value="{{contDia}}">{{contDia}}</option>
                     {% endfor %}
                 </select>
                 <select name="" id="">
+                    <option value="">Mes</option>
                     {% for mes in ListMes %}
                         <option value="{{mes}}">{{mes}}</option>
+                    {% endfor %}
+                </select>
+                <select name="" id="">
+                    <option value="">Año</option>
+                    {% for año in ListAño %}
+                        <option value="{{año}}">{{año}}</option>
                     {% endfor %}
                 </select>
                 
