@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="{% static 'css/header.css' %}">
 	<link rel="stylesheet" href="{% static 'css/header-menu.css' %}">
-
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -14,10 +14,36 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="{% static 'js/header.js' %}"></script>
 	<script src="{% static 'js/header-menu.js' %}"></script>
+
+	<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'js/slider.js' %}" type="text/javascript" charset="utf-8">
+  
+</script>
 </head>
 <body>
 	{% include "secciones/header.html" %}
-    <section class="banner"><img src="{% static 'img/banner.png' %}" alt=""></section>
-	
+	<!--- **************************************                 -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="{% static 'img/banner.png' %}" alt="">
+				
+			</li>
+			<li>
+				<img src="{% static 'img/banner.png' %}" alt="">
+				
+			</li>
+			<li>
+				<img src="{% static 'img/banner.png' %}" alt="">
+				
+			</li>
+			<li>
+				<img src="{% static 'img/banner.png' %}" alt="">
+				
+			</li>
+		</ul>
+	</div>
+	<!--- **************************************                 -->
+
 </body>
 </html>

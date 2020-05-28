@@ -1,5 +1,5 @@
 #header-menu{
-    margin-top:20px;
+    margin-top:10px;
 }
 #header-menu .menu_bar {
 	display:none;
@@ -87,8 +87,8 @@
 		width:43px;
 		height: 42px;
 		position: fixed;
-		right: 4%;
-		top:40px;
+		right: 3%;
+		top:7px;
 	}
  
 	#header-menu .menu_bar .bt-menu {
