@@ -22,6 +22,8 @@ def Entrada(request):
         rangoDia.append(k+1)
     
     return render(request,"formularios/Entrada.html",
-    {"contDia":contDia,"rangoDia":rangoDia,
-    "ListMes":mes,
+    {"contDia":contDia,"rangoDia":rangoDia,"ListMes":mes,
     "ListAño":ListAño,})
+
+def Perfil(request):
+    return render(request,"paginas/perfil.html")

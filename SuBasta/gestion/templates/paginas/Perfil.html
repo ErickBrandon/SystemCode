@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/perfil.css'%}">
+    <link rel="stylesheet" href="{% static 'css/generales.css'%}">
+
+    <title>Mi Perfil</title>
+</head>
+<body>
+    {% include "../secciones/header.html" %}
+    <section id="contenido">
+        <section id="cont-perfil">
+            <div class="principal">
+                <div class="foto-perfil">
+                    <img src="{% static 'img/erick.png' %}" alt="">
+                    <div class="edit-foto">foto</div>
+                    <p>erick.brandon.flores@gmail.com</p>
+                    <p>2371058678</p>
+                </div>
+                <div class="info">
+                    <p><strong>Erick Brandon Flores Beristain</strong></p>
+                    <div class="edit-info">Editar información</div>
+                    <p>Mis Su-Bcoins:</p>
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,102 @@
+#cont-perfil{
+    width: 100%;
+    margin-top: 30px;
+    background: #fff;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+#cont-perfil .principal{
+width: 90%;
+margin: auto;
+overflow: hidden;
+}
+#cont-perfil .principal .foto-perfil{
+    width: 240px;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+#cont-perfil .principal .foto-perfil img{
+    width: 100%;
+    height: 270;
+    background: #000;
+    border-radius: 10px;
+}
+#cont-perfil .principal .foto-perfil .edit-foto{
+    padding-top: 8px 0px 8px 0px;
+    text-align: center;
+    background: #3f5c9a;
+    color:#fff;
+    position: relative;
+    margin-top: -20px;
+    -moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+#cont-perfil .principal .foto-perfil .edit-foto:hover{
+    background: rgb(255, 112, 51); 
+}
+
+#cont-perfil .principal .foto-perfil p{
+    width: 100%;
+    font-size: 80%;
+    color: rgb(141, 141, 141);
+    margin-top: 3px;
+}
+@media screen and (max-width: 844px){
+    #cont-perfil .principal .foto-perfil{
+        width: 190px;
+    }
+    #cont-perfil .principal .foto-perfil img{
+        height: 220px;
+    }
+}
+@media screen and (max-width: 670px){
+    #cont-perfil .principal .foto-perfil{
+        float: none;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 400px){
+    #cont-perfil .principal .foto-perfil img{
+        width: 160px;
+        height: 190px;
+        background: #000;
+        border-radius: 10px;
+    }
+}
+#cont-perfil .principal .foto-perfil .edit-foto{
+     width: 160px;
+    margin:auto;
+
+
+}
+#cont-perfil .principal .info{
+    width: 50%;
+    margin-left:10%;
+    float: left;
+    font-size: 150%;   
+}
+#cont-perfil .principal .info .edit-info{
+    width: 38%;
+    background: #4caf50;
+    font-size: 50%;
+    color:#fff;
+}
+@media screen and (max-width: 670px){
+    #cont-perfil .principal .info{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: auto;
+        font-size: 120%;
+    }
+}
+@media screen and (max-width: 400px){
+    #cont-perfil .principal .info{
+        
+        font-size: 112%;
+    }
+}
