@@ -131,22 +131,52 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     height: auto;
     overflow: hidden;
     margin-top: 15px;
+    padding: 40px 0px 40px 0px;
+
+
+    background-image: url(../img/subasta.jpg);
+    background-repeat: no-repeat;
+    background-size: 91% auto;
+    background-attachment: fixed;
 }
 #contenido .subastas .cont-sbt{
     width: 45%;
     height: 100%;
-    background: #fff;
+    border-radius: 5px;
     float: left;
-    margin-left: 5%;
+    margin-left: 3%;
+    background: rgba(0,0,0,0.7);
+
+
+}
+#contenido .subastas .cont-sbt div{
+    width: 100%;
+    color:#fff;
+    font-size: 160%;
+    text-align: center;
+}
+#contenido .subastas .cont-sbt div span{
+    font-family: 'Caveat', cursive;
+    font-size: 140%;
+    color: rgb(255, 112, 51);
+}
+#contenido .subastas .cont-sbt p{
+    width: 90%;
+    text-align: justify;
+    color: #fff;
+    font-size: 140%;
+    margin: auto;
 }
 #contenido .subastas .modalidad{
-    width: 35%;
+    width: 40%;
     float: left;
-    margin-left: 7%;
+    margin-left: 4%;
 }
-#contenido .subastas .modalidad .tradicional, .inversa{
+#contenido .subastas .modalidad div{
     width: 100%;
     margin-top: 15px;
-    background: #fff;
-
+    text-align: center;
+    background: rgba(0, 0, 0,0.6);
+    color: #fff;
+    font-size: 120%;
 }

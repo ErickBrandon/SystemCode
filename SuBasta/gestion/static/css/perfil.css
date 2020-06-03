@@ -23,12 +23,15 @@ overflow: hidden;
     border-radius: 10px;
 }
 #cont-perfil .principal .foto-perfil .edit-foto{
-    padding-top: 8px 0px 8px 0px;
+    width: 30px;
+    padding: 5px 0px  5px 0px;
+    margin: auto;
     text-align: center;
     background: #3f5c9a;
     color:#fff;
-    position: relative;
-    margin-top: -20px;
+    border-radius: 3px;
+    font-size: 120%;
+
     -moz-transition: all .45s ease;
     -webkit-transition: all .45s ease;
     -ms-transition: all .45s ease;
@@ -62,17 +65,12 @@ overflow: hidden;
 @media screen and (max-width: 400px){
     #cont-perfil .principal .foto-perfil img{
         width: 160px;
-        height: 190px;
+        height: 170px;
         background: #000;
         border-radius: 10px;
     }
 }
-#cont-perfil .principal .foto-perfil .edit-foto{
-     width: 160px;
-    margin:auto;
 
-
-}
 #cont-perfil .principal .info{
     width: 50%;
     margin-left:10%;
