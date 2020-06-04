@@ -136,8 +136,14 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 
     background-image: url(../img/subasta.jpg);
     background-repeat: no-repeat;
-    background-size: 91% auto;
+    background-size: 91% 100%;
     background-attachment: fixed;
+}
+@media screen and (max-width: 460px){
+    #contenido .subastas{
+    background-size: 100% 100%;
+
+    }
 }
 #contenido .subastas .cont-sbt{
     width: 45%;
@@ -146,6 +152,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     float: left;
     margin-left: 3%;
     background: rgba(0,0,0,0.7);
+    margin-top: 25px;
 
 
 }
@@ -172,11 +179,45 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     float: left;
     margin-left: 4%;
 }
-#contenido .subastas .modalidad div{
+#contenido .subastas .modalidad .tradicional, .inversa{
     width: 100%;
     margin-top: 15px;
     text-align: center;
     background: rgba(0, 0, 0,0.6);
-    color: #fff;
+    color: rgb(255, 112, 51);
     font-size: 120%;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+#contenido .subastas .modalidad .tradicional div, .inversa div{
+    font-size: 155%;
+}
+#contenido .subastas .modalidad div p{
+    color: #fff;
+}
+#contenido .subastas .modalidad div .btn-conocer{
+    width: 150px;
+    margin: auto;
+    font-size: 90%;
+    background: #4caf50;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+@media screen and (max-width: 860px){
+    #contenido .subastas .cont-sbt{
+       width: 80%;
+       min-width: 284px;
+       float: none;
+       margin-top: 0px;
+       margin: auto;
+    }
+    #contenido .subastas .modalidad{
+        width: 65%;
+        float: none;
+        margin-left: 0%;
+        margin: auto;
+       min-width: 284px;
+
+    }
 }
