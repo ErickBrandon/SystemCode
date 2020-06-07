@@ -20,9 +20,10 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 @media screen and (max-width: 800px){
 	.header{
 		padding-left: 3%;
-		padding-bottom: 25px;
+		padding-bottom: 10px;
 	}
 }
+
 .header .logo{
 	width: 70px;
 	height: auto;
@@ -46,6 +47,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 	font-family: 'Caveat', cursive;
 	font-size: 125%;
 }
+
 .header .header-info{
 	float: left;
 	width: 32%;
@@ -110,9 +112,10 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 }
 @media screen and (max-width: 800px){
 	.header .header-info{
-		margin-left: 1%;
+		margin-left: 3%;
 		width: 58%;
 		min-width: 20px;
+		margin-top: 20px;
 	}
 .header .header-info .buscador-h{
 	min-width: 190px;
@@ -123,6 +126,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 		margin-top: 43px;
 	}
 }
+
 .header .header-info .menu{
 	margin-top: 3px;
 }

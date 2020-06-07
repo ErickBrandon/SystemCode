@@ -2,7 +2,7 @@
     width: 100%;
     margin-top: 30px;
     background: #fff;
-    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
     margin-top: 15px;
 }
 #cont-perfil .principal{
@@ -72,16 +72,103 @@ overflow: hidden;
 }
 
 #cont-perfil .principal .info{
-    width: 50%;
+    width: 57%;
     margin-left:10%;
     float: left;
     font-size: 150%;   
 }
+#cont-perfil .principal .info p strong{
+    width: 100%;
+    font-size: 160%;
+}
+#cont-perfil .principal .info p{
+    margin-top: 15px;
+}
 #cont-perfil .principal .info .edit-info{
-    width: 38%;
+    width: 160px;
     background: #4caf50;
-    font-size: 50%;
+    font-size: 70%;
     color:#fff;
+    border-radius: 5px;
+    margin-top: 15px;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+}
+#cont-perfil .principal .info .edit-info span{
+    font-size: 120%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#cont-perfil .principal .info .edit-info:hover{
+    background: #3f5c9a;
+}
+
+#cont-perfil .principal .info .cont-subcoin{
+    width: 90%;
+    margin: auto;
+    background: rgba(228, 223, 223,0.7);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-top: 5px;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+}
+#cont-perfil .principal .info .cont-subcoin .coin-header{
+    font-size: 120%;
+    text-align: center;
+
+}
+#cont-perfil .principal .info .cont-subcoin .mis-coins{
+   text-align: center;
+}
+#cont-perfil .principal .info .cont-subcoin .mis-coins span{
+    color: rgb(255, 112, 51);
+    margin-right: 5px;
+    font-size: 130%;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins{
+    width: 100%;
+    margin: auto;
+    font-size: 70%;
+    text-align: center;
+
+    -moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins span{
+    margin-right: 5px;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins:hover{
+    color: #0b82e4
+}
+@media screen and (max-width:1150px){
+    #cont-perfil .principal .info p strong{
+        font-size: 145%;
+    }
+}
+@media screen and (max-width:1040px){
+    #cont-perfil .principal .info{
+        margin-left:5%;  
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 130%;
+    }
+}
+@media screen and (max-width:887px){
+    #cont-perfil .principal .info{
+        width: 50%;
+        margin-left:3%;  
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 125%;
+    }
 }
 @media screen and (max-width: 670px){
     #cont-perfil .principal .info{
@@ -91,10 +178,15 @@ overflow: hidden;
         margin: auto;
         font-size: 120%;
     }
+    #cont-perfil .principal .info p strong{
+        font-size: 140%;
+    }
 }
 @media screen and (max-width: 400px){
     #cont-perfil .principal .info{
-        
         font-size: 112%;
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 130%;
     }
 }

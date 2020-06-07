@@ -1,13 +1,23 @@
+
+
+
+
 #banner{
-    background: #000;
-    height: 270px;
+    height: auto;
+    margin-top: 0px;
 }
 #contenido .invitacion{
     width: 100%;
     height: auto;
     background: #fff;
+    background-attachment: fixed,						fixed;
+		background-image: url("../img/fondo.png");
+		background-position: top left,					center center;
+		background-repeat: repeat,						none;
+		background-size: auto,						cover;
+    
     padding: 7px 0px 7px 0px;
-    margin-top: 7px;
+    margin-top: 35px;
     border-radius: 4px;
     overflow: hidden;
 
@@ -15,6 +25,12 @@
 -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
 }
+
+#contenido .invitacion.is-touch {
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 #contenido  .invitacion .img-i{
     width: 18%;
@@ -29,6 +45,8 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     min-width: 260px;
     float: left;
     margin-left: 3%;
+    background: rgba(255, 255, 255,0.7);
+
 }
 #contenido .invitacion p strong{
     font-size: 200%;
@@ -134,10 +152,11 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     padding: 40px 0px 40px 0px;
 
 
-    background-image: url(../img/subasta.jpg);
-    background-repeat: no-repeat;
-    background-size: 91% 100%;
-    background-attachment: fixed;
+    background-attachment: fixed,						fixed;
+		background-image: url("../img/fondo.png");
+		background-position: top left,					center center;
+		background-repeat: repeat,						none;
+		background-size: autor;
 }
 @media screen and (max-width: 460px){
     #contenido .subastas{
@@ -151,14 +170,14 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     border-radius: 5px;
     float: left;
     margin-left: 3%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(255, 255, 255, 0.8);
     margin-top: 25px;
 
 
 }
 #contenido .subastas .cont-sbt div{
     width: 100%;
-    color:#fff;
+    color:#000;
     font-size: 160%;
     text-align: center;
 }
@@ -170,7 +189,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 #contenido .subastas .cont-sbt p{
     width: 90%;
     text-align: justify;
-    color: #fff;
+    color: #000;
     font-size: 140%;
     margin: auto;
 }
@@ -183,7 +202,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     width: 100%;
     margin-top: 15px;
     text-align: center;
-    background: rgba(0, 0, 0,0.6);
+    background: rgba(255, 255, 255, 0.8);
     color: rgb(255, 112, 51);
     font-size: 120%;
     padding-bottom: 8px;
@@ -193,7 +212,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
     font-size: 155%;
 }
 #contenido .subastas .modalidad div p{
-    color: #fff;
+    color: #000;
 }
 #contenido .subastas .modalidad div .btn-conocer{
     width: 150px;

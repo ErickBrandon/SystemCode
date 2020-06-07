@@ -88,7 +88,7 @@
 		height: 42px;
 		position: fixed;
 		right: 3%;
-		top:7px;
+		top:20px;
 	}
  
 	#header-menu .menu_bar .bt-menu {
@@ -146,4 +146,7 @@
     #header-menu nav ul li .caret {
 		float: right;
 	}
+}
+@media screen and (max-width: 500px) {
+
 }
