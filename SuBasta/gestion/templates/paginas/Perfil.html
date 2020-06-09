@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="{% static 'css/perfil.css'%}">
     <link rel="stylesheet" href="{% static 'css/generales.css'%}">
 
+    <link rel="stylesheet" href="{% static 'css/modal.css' s%}">
 
 
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    
     <title>Mi Perfil</title>
 </head>
 <body>
@@ -24,7 +27,8 @@
                 </div>
                 <div class="info">
                     <p><strong>Erick Brandon Flores Beristain</strong></p>
-                    <div class="edit-info"><span class="far fa-edit"></span>Editar información</div>
+                    <button id="btnModal" class="edit-info"><span class="far fa-edit"></span>Editar información</button>
+
                     <div class="cont-subcoin">
                         <div class="coin-header">Mis Su-Bcoins</div>
                         <div class="mis-coins"><span class="fas fa-coins"></span>100 </div>
@@ -35,11 +39,23 @@
         </section>
     </section>
     <section>
-        <button type="submit">entrada</button>
-        <form action="">
-            <input type="submit">
-        </form>
-        <input type="submit">
+	<div id="tvesModal" class="modalContainer">
+		<div class="modal-content">
+			<span class="close">×</span>
+            <h2>Mi información</h2>
+            <form action="">
+                <div><input type="text" placeholder="Nombre"></div>
+                <div><input type="text" placeholder="Apellido"></div>
+                <div><input type="text" placeholder="Teléfono"></div>
+                <div><input type="text" placeholder="Correo electronico"></div>
+                <div><input type="password" placeholder="Contraseña"></div>
+                <div class="btn-a"><input type="submit" value="Actualizar"></div>
+                
+            </form>
+		</div>
+	</div>
     </section>
 </body>
+<script src="{% static 'js/modal.js' %}"></script>
+
 </html>

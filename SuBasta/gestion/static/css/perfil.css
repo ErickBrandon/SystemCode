@@ -39,7 +39,7 @@ overflow: hidden;
     -o-transition: all .45s ease;
 }
 #cont-perfil .principal .foto-perfil .edit-foto:hover{
-    background: rgb(255, 112, 51); 
+    background: #ff7033; 
 }
 
 #cont-perfil .principal .foto-perfil p{
@@ -91,6 +91,9 @@ overflow: hidden;
     color:#fff;
     border-radius: 5px;
     margin-top: 15px;
+    border-style: none;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
 
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
@@ -126,7 +129,7 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
    text-align: center;
 }
 #cont-perfil .principal .info .cont-subcoin .mis-coins span{
-    color: rgb(255, 112, 51);
+    color: #ff7033;
     margin-right: 5px;
     font-size: 130%;
 }
