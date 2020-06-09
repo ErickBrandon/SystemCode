@@ -31,8 +31,8 @@ $(document).ready(function(){
 		$('.slider li:nth-child('+ paginationPos +')').fadeIn(); // Mostramos el Slide seleccionado
 
 		// Dandole estilos a la paginacion seleccionada
-		$('.pagination li').css({'color': '#858585'});
-		$(this).css({'color': '#CD6E2E'});
+		$('.pagination li').css({'color': '#fff'});
+		$(this).css({'color': '#ff7033'});
 
 		imgPos = paginationPos;
 
@@ -42,8 +42,8 @@ $(document).ready(function(){
 		if( imgPos >= imgItems){imgPos = 1;} 
 		else {imgPos++;}
 
-		$('.pagination li').css({'color': '#858585'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
+		$('.pagination li').css({'color': '#fff'});
+		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#ff7033'});
 
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
@@ -54,8 +54,8 @@ $(document).ready(function(){
 		if( imgPos <= 1){imgPos = imgItems;} 
 		else {imgPos--;}
 
-		$('.pagination li').css({'color': '#858585'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#CD6E2E'});
+		$('.pagination li').css({'color': '#fff'});
+		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#ff7033'});
 
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
