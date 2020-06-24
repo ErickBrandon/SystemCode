@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/perfil.css'%}">
-    <link rel="stylesheet" href="{% static 'css/generales.css'%}">
 
     <link rel="stylesheet" href="{% static 'css/modal.css' s%}">
 
 
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
     
     <title>Mi Perfil</title>
 </head>
 <body>
-    {% include "../secciones/header.html" %}
+    {% include '../secciones/header.html' %}
     <section id="contenido">
-        <section id="cont-perfil">
+        <div id="cont-perfil">
             <div class="principal">
                 <div class="foto-perfil">
                     <img src="{% static 'img/erick.png' %}" alt="">
@@ -32,12 +30,39 @@
                     <div class="cont-subcoin">
                         <div class="coin-header">Mis Su-Bcoins</div>
                         <div class="mis-coins"><span class="fas fa-coins"></span>100 </div>
-                        <div class="mas-coins"><span class="fas fa-plus-circle"></span>Conseguir más Su-Bcoins</div>
+                        <button id="mass-coins" class="mas-coins"><span class="fas fa-plus-circle"></span>Conseguir más</button>
                     </div>                    
                 </div>
             </div>
+        </div>
+
+        <section id="mis-sb">
+            <div class="header-mis-sb">Mis <span>Su-Bastas</span></div>
+            <div class="cont-sb">
+                <div class="header-cont-sb">Subasta Tradicional</div>
+                <div class="icon fas fa-gavel"></div>
+                <p>Mis subastas totales: <span>300</span></p>
+            </div>
+            <div class="cont-sb">
+                <div class="header-cont-sb">Subasta Inversa</div>
+
+                <div class="icon fas fa-gavel"></div>
+                <p>Mis subastas totales: <span>3</span></p>
+            </div>
         </section>
+        <section id="mis-sb">
+            <div class="header-mis-sb">Mis <span>Compras</span></div>
+
+            <div class="cont-sb compra">
+                <div class="header-cont-sb">Mis Compras</div>
+                <div class="icon fas fa-tag"></div>
+                <p>Compras totales: <span>300</span></p>
+            </div>
+            
+        </section>
+
     </section>
+
     <section>
 	<div id="tvesModal" class="modalContainer">
 		<div class="modal-content">
@@ -50,6 +75,18 @@
                 <div><input type="text" placeholder="Correo electronico"></div>
                 <div><input type="password" placeholder="Contraseña"></div>
                 <div class="btn-a"><input type="submit" value="Actualizar"></div>
+                
+            </form>
+		</div>
+    </div>
+
+    <div id="Modal-coins" class="modalContainer">
+		<div class="modal-content">
+			<span class="close-coins">×</span>
+            <h2>Adquiere más Su-Bcoins</h2>
+            <form action="">
+                <div><input type="text" placeholder="Nombre"></div>
+                
                 
             </form>
 		</div>

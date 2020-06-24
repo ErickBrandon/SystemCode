@@ -24,7 +24,7 @@
     border-radius:5px;
 }
 
-.modalContainer .close {
+.modalContainer .close, .close-coins {
     color: #ff7033;
     float: right;
     font-size: 28px;

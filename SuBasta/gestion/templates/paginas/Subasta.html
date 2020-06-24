@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+    
+	<link rel="stylesheet" href="{% static 'css/categorias.css' %}">
+    <link rel="stylesheet" href="{% static 'css/subasta.css' %}">
+    <title>Subasta</title>
+</head>
+<body>
+    {% include "secciones/header.html" %}
+    <section id="contenido">
+        {% include "secciones/categorias.html" %}
+        <div id="simbologia">
+            <div class="cont"><div class="icon fas fa-gavel"></div>Subasta en juego</div>
+            <div class="cont"><div class="icon far fa-clock"></div>Subasta programada</div>
+
+        </div>
+        <section id="sb-cont">
+            <div class="carta">
+                <div class="img">
+                    <img src="{% static 'img/vocho.jpg' %}" alt="">
+                </div>
+                <h3>vocho volkswagen</h3>
+                <h4>$10,000.00</h4>
+
+            </div>
+            <div class="carta">
+                <div class="img">
+                    <img src="{% static 'img/vocho.jpg' %}" alt="">
+                </div>
+                <h3>vocho volkswagen</h3>
+                <h4>$10,000.00</h4>
+
+            </div>
+            <div class="carta">
+                <div class="img">
+                    <img src="{% static 'img/vocho.jpg' %}" alt="">
+                </div>
+                <h3>vocho volkswagen</h3>
+                <h4>$10,000.00</h4>
+            </div>
+            <div class="carta">
+                <div class="img">
+                    <img src="{% static 'img/vocho.jpg' %}" alt="">
+                </div>
+                <h3>vocho volkswagen</h3>
+                <strong><h4>$10,000.00</h4></strong>
+
+            </div>
+        </section>
+    </section>
+    
+</body>
+</html>

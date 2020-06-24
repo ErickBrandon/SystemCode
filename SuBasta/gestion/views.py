@@ -27,3 +27,9 @@ def Entrada(request):
 
 def Perfil(request):
     return render(request,"paginas/perfil.html")
+
+def Subasta(request):
+    return render(request,"paginas/subasta.html")
+
+def AgregarProducto(request):
+    return render(request,"paginas/AgregarProductos.html")

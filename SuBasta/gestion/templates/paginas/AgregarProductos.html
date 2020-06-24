@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/AgregarProductos.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <div class="user">
+            <div><span class="far fa-user-circle"></span>Erick Brandon</div>
+        </div>
+        <div class="img">
+            <img src="{% static 'img/SB.png'%}" alt="">
+        </div>
+        <div class="texto">
+            <h1>Gracias por confiar en Su-Basta</h1>
+            <h1>para vender tus productos.</h1><br>
+            <h3>Preparemos todos los detalles para subastar.</h3>
+        </div>
+    </section>
+    <section id="contenido">
+       <form action="">
+           <div class="info">
+               <h2>Agrega el titulo de tu porducto.</h2>
+               <p>Se directo y simple.</p>
+               <input class="titulo" type="text" placeholder="Ej: Celular Samsung Galaxy S9">
+           </div>
+
+           <div class="info">
+                <h2>Selecciona la categoría que corresponda para tu producto</h2>
+                <div class="categorias">
+                    <div class="cat">
+
+                        <div class="icon fas fa-car"></div>
+                        <div class="btn-r"><input type="radio" name="categoria" value="Autos"></div>
+                        <h2>Autos</h2>
+
+                    </div>
+                    <div class="cat">
+
+                        <div class="icon fas fa-laptop"></div>
+                        <div class="btn-r"><input type="radio" name="categoria" value="Autos"></div>
+                        <h2>Cómputo</h2>
+                        
+                    </div>
+                    <div class="cat">
+
+                        <div class="icon fas fa-mobile-alt"></div>
+                        <div class="btn-r"><input type="radio" name="categoria" value="Autos"></div>
+                        <h2>Telefonía</h2>
+                        
+                    </div>
+                    <div class="cat">
+
+                        <div class="icon fas fa-home"></div>
+                        <div class="btn-r"><input type="radio" name="categoria" value="Autos"></div>
+                        <h2>Hogar</h2>
+                        
+                    </div>
+                    <div class="cat">
+
+                        <div class="icon fas fa-tag"></div>
+                        <div class="btn-r"><input type="radio" name="categoria" value="Autos"></div>
+                        <h2>Otros</h2>
+                        
+                    </div>
+                </div>
+           </div>
+           <div class="condi info">
+                <h2>¿En qué condición se encuentra tu producto?</h2>
+                <div class="condicion"><input class="con" type="radio" name="condicion">Nuevo</div>
+                <div class="condicion"><input class="con" type="radio" name="condicion">Usado</div>
+                <div class="condicion"><input class="con" type="radio" name="condicion">Reconstruido</div>
+           </div>
+           <div class="info">
+            <h2>¡Cuentanos más sobre tu producto!</h2>
+            <p>Información complementaria.</p><br>
+            <p>Marca.</p>
+            <input class="titulo" type="text" placeholder="">
+            <p>Modelo.</p>
+            <input class="titulo" type="text" placeholder="">
+            <p>Tamaño.</p>
+            <input class="titulo" type="text" placeholder="">
+           </div>
+
+           <div class="info">
+            <h2>Agrega un comentario</h2>
+            <textarea name="comentarios" rows="10" cols="80" placeholder="Escribe aquí..."></textarea>
+           </div>
+           <input class="btn" type="submit" value="Registrar">
+       </form>
+    </section>
+    
+</body>
+</html>
