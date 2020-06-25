@@ -1,23 +1,13 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	
-	<link rel="stylesheet" href="{% static 'css/index.css' %}">
-	<link rel="stylesheet" href="{% static 'css/slider.css' %}">
-
-
-	
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="{% static 'js/header.js' %}"></script>
-	<script src="{% static 'js/main.js' %}"></script>
-
-	
-</head>
-<body>
-	{% include "secciones/header.html" %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/slider.css' %}">
+{% endblock %}
+{% block js %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+{% block content %}
 	<div id="banner">
 		<div class="slideshow">
 			<ul class="slider">
@@ -86,5 +76,5 @@
 			</div>
 		</div>
 	</section>
-</body>
-</html>
+
+{% endblock %}

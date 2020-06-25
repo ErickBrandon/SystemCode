@@ -1,19 +1,13 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/perfil.css'%}">
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/perfil.css' %}">
+<link rel="stylesheet" href="{% static 'css/modal.css' %}">
+{% endblock %}
 
-    <link rel="stylesheet" href="{% static 'css/modal.css' s%}">
+{% block content %}
+<script src="{% static 'js/main.js' %}"></script>
 
-
-    
-    <title>Mi Perfil</title>
-</head>
-<body>
-    {% include '../secciones/header.html' %}
     <section id="contenido">
         <div id="cont-perfil">
             <div class="principal">
@@ -92,7 +86,6 @@
 		</div>
 	</div>
     </section>
-</body>
-<script src="{% static 'js/modal.js' %}"></script>
+    <script src="{% static 'js/modal.js' %}"></script>
+{% endblock %}
 
-</html>

@@ -13,7 +13,7 @@ ul,ol{
 
 .slider li, ul{
 	width: 100%;
-	max-height: 200px;
+	max-height: 400px;
 }
 
 .slider li{
@@ -22,7 +22,7 @@ ul,ol{
 
 .slider li img{
 	width: 100%;
-	max-height: 200px;
+	max-height: 400px;
 
 }
 
@@ -106,7 +106,8 @@ ul,ol{
 	}
 
 	.slider li img{
-		width: 600px;
+		width: 100%;
+		min-height: 170px;
 	}
 
 	.pagination{

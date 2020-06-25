@@ -107,17 +107,18 @@
  
     #header-menu nav {
 		width: 80%;
-		height: calc(100% - 80px);
+		height: calc(100% - 75px);
 		position: fixed;
 		right:100%;
 		margin: 0;
-		margin-top: 22px;
+		margin-top: 10px;
 		overflow: scroll;
 		background: #082e4e;
 	}
  
     #header-menu nav ul li {
-		display: inline;
+		width: 100%;
+		display: inline-block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 		padding-top: 5px;
 		padding-top: 10px;

@@ -1,16 +1,14 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
-    
-	<link rel="stylesheet" href="{% static 'css/categorias.css' %}">
-    <link rel="stylesheet" href="{% static 'css/subasta.css' %}">
-    <title>Subasta</title>
-</head>
-<body>
-    {% include "secciones/header.html" %}
+<!-- -------------------------------------- css cambiantes-->	
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/categorias.css' %}">
+<link rel="stylesheet" href="{% static 'css/subasta.css' %}">
+{% endblock %}
+<!-- -------------------------------------- css cambiantes-->	
+
+{% block content %}
+
     <section id="contenido">
         {% include "secciones/categorias.html" %}
         <div id="simbologia">
@@ -52,6 +50,4 @@
             </div>
         </section>
     </section>
-    
-</body>
-</html>
+{% endblock %}
