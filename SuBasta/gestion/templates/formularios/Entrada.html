@@ -23,36 +23,15 @@
     <div class="login">
         <h3>Abre tu cuenta</h3>
         <h4>Es gratis, fácil y rápido</h4>
-        <form action="">
-            <div><input type="text" placeholder="Nombre"></div>
-            <div><input type="text" placeholder="Apellido"></div>
-            <div><input type="text" placeholder="E-mail o Telefono"></div>
-            <div><input type="password" placeholder="Contraseña nueva"></div>
-            <div><input type="password" placeholder="Confirme contraseña"></div>
-
+        <form method="POST">
+            {% csrf_token %}
+            <div>{{form.nombre}}</div>
+            <div>{{form.apellido}}</div>
+            <div>{{form.email}}</div>
+            <div>{{form.contraseña}}</div>
             <br>
             <h4>Fecha de nacimiento</h4>
-            <div>
-                <select name="" id="">
-                    <option value="">Día</option>
-                    {% for contDia in rangoDia %}
-                        <option value="{{contDia}}">{{contDia}}</option>
-                    {% endfor %}
-                </select>
-                <select name="" id="">
-                    <option value="">Mes</option>
-                    {% for mes in ListMes %}
-                        <option value="{{mes}}">{{mes}}</option>
-                    {% endfor %}
-                </select>
-                <select name="" id="">
-                    <option value="">Año</option>
-                    {% for año in ListAño %}
-                        <option value="{{año}}">{{año}}</option>
-                    {% endfor %}
-                </select>
-                
-            </div>
+            <div>{{form.fecha}}</div>
             <div class="btn-r"><input type="submit" value="Registar"></div>
         </form>
     </div>

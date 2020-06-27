@@ -19,7 +19,7 @@ from gestion import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.hola),
+    path('',views.hola, name='Index'),
     path('Entrada/',views.Entrada),
     path('Mi-Perfil/',views.Perfil),
     path('Subasta/',views.Subasta),
