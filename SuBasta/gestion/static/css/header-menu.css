@@ -87,7 +87,7 @@
 		width:43px;
 		height: 42px;
 		position: fixed;
-		right: 3%;
+		right: 2%;
 		top:20px;
 	}
  
@@ -126,11 +126,14 @@
 		padding-left: 3px;
 		font-size: 160%;
 	}
- 
+	
     #header-menu nav ul li a {
 		display: block;
 	}
- 
+	#header-menu nav ul li a:hover {
+		color: #fff;
+		border-bottom: 0px #fff solid;
+	}
     #header-menu nav ul li:hover .children {
 		display: none;
 	}

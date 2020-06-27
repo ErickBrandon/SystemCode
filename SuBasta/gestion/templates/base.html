@@ -36,17 +36,18 @@
 	
 </head>
 <body>
-	<header class="header">
+	<header id="header">
 		<div class="logo">
-			<div><img src="{% static 'img/Logo.png' %}" alt=""></div>
+			<img src="{% static 'img/Logo.png' %}" alt="">
 		</div>
 		<div class="header-info">
 			<div class="buscador-h">
 				<form action="">
-					<div class="txt"><input type="text" placeholder="Buscar productos..."></div>
+					<div class="txt"><input type="text" placeholder="Buscar productos"></div>
 					<div class="btn fas fa-search"><input class="" type="submit" value=""></div>
 				</form>
 			</div>
+
 			<div id="header-menu" class="menu">
 				<div class="menu_bar">
 					<a href="#" class="bt-menu"><span class="fas fa-bars"></span></a>
@@ -67,9 +68,9 @@
 			</div>
 		</div>
 		<div class="sb-link"> 
-			<p>Crea tu cuenta</p>
-			<p>Ingresa</p>
-			<p>Mis subastas</p>
+			<div class="link">Crea tu cuenta</div>
+			<div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div>
+			<div class="link">Mis subastas</div>
 		</div>
 		
 	</header>
