@@ -24,4 +24,6 @@ urlpatterns = [
     path('Mi-Perfil/',views.Perfil),
     path('Subasta/',views.Subasta),
     path('AgregarProductos/',views.AgregarProducto),
+    path('Login/',views.Login),
+
 ]

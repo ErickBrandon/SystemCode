@@ -24,3 +24,6 @@ def Subasta(request):
 
 def AgregarProducto(request):
     return render(request,"paginas/AgregarProductos.html")
+
+def Login(request):
+    return render(request,"formularios/login.html")
