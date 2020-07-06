@@ -27,3 +27,6 @@ def AgregarProducto(request):
 
 def Login(request):
     return render(request,"formularios/login.html")
+
+def Producto(request):
+    return render(request,"paginas/Producto.html")

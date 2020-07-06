@@ -59,18 +59,18 @@
 						<li id="movil"><a href="#">Ingresa</a></li>
 						<li id="movil"><a href="#">Mis subastas</a></li>
 	
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Subasta tradicional</a></li>
-						<li><a href="#">Subasta inversa</a></li>
+						<li><a href="{% url 'Index' %}">Inicio</a></li>
+						<li><a href="{% url 'Subasta' %}">Subasta tradicional</a></li>
+						<li><a href="{% url 'Subasta' %}">Subasta inversa</a></li>
 	
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div class="sb-link"> 
-			<div class="link">Crea tu cuenta</div>
-			<div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div>
-			<div class="link">Mis subastas</div>
+			<a href="{% url 'Entrada' %}"><div class="link">Crea tu cuenta</div></a>
+			<a href="{% url 'Login' %}"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
+			<a href=""><div class="link">Mis subastas</div></a>
 		</div>
 		
 	</header>

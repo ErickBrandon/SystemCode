@@ -1,0 +1,55 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<link rel="stylesheet" href="{% static 'css/header-menu.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/generales.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="{% static 'js/header.js' %}"></script>
+<script src="{% static 'js/header-menu.js' %}"></script>
+	
+
+<header class="header">
+    <div class="logo">
+        <div><img src="{% static 'img/Logo.png' %}" alt=""></div>
+        <div class="n">Su-Basta</div>
+    </div>
+    <div class="header-info">
+        <div class="buscador-h">
+            <form action="">
+                <div class="txt"><input type="text" placeholder="Buscar productos..."></div>
+                <div class="btn fas fa-search"><input class="" type="submit" value=""></div>
+            </form>
+        </div>
+        <div id="header-menu" class="menu">
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="fas fa-bars"></span></a>
+            </div>
+     
+            <nav>
+                <ul>
+                    <li id="movil"><a href="#">Crea tu cuenta</a></li>
+                    <li id="movil"><a href="#">Ingresa</a></li>
+                    <li id="movil"><a href="#">Mis subastas</a></li>
+
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Subasta tradicional</a></li>
+                    <li><a href="#">Subasta inversa</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="sb-link"> 
+        <p>Crea tu cuenta</p>
+        <p>Ingresa</p>
+        <p>Mis subastas</p>
+    </div>
+    <div class="sb">
+        <div class="img"><img src="{% static 'img/SB.png' %}" alt=""></div>
+    </div>
+</header>

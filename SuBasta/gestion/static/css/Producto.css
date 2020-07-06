@@ -1,0 +1,74 @@
+#producto{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+#producto .cont{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 0px 25px 0px;
+    border-bottom: 1px #bebdbd solid;
+
+}
+#producto .cont .img{
+    width: 350px;
+    height: 290px;
+    float: left;
+}
+#producto .cont .img img{
+    width: 100%;
+    height: 100%;
+}
+#producto .cont .info{
+    width: 50%;
+    float: left;
+    margin-left: 3%;
+    border: 1px #bebdbd solid;
+    border-radius: 6px;
+}
+#producto .cont .info h1,h3{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#producto .cont .info p{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #838282;
+}
+@media screen and (max-width: 1105px){
+    #producto .cont .info{
+    width: 40%;
+    }
+}
+@media screen and (max-width: 930px){
+    #producto .cont .img{
+        float: none;
+        margin: auto;
+    }
+    #producto .cont .info{
+        float: none;
+        margin: auto;
+        width: 92%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    #producto .cont .img{
+        width: 270px;
+        height: 220px;
+    }
+}
+#producto .comentario{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+#producto .comentario p{
+    width: 94%;
+    margin: auto;
+    margin-top: 5px;
+    background: rgba(0, 0, 0 , 0.1);
+    padding: 6px 0px 6px 6px;
+}

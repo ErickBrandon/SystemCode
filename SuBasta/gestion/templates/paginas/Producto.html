@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block css%}
+<!--- Css -->
+<link rel="stylesheet" href="{% static 'css/Producto.css' %}">
+{% endblock %}
+{% block js %}
+<!--- Js -->
+
+{% endblock %}
+{% block content %}
+<!--- Contenido cambiante -->
+<section id="contenido">
+<div id="producto">
+    <div class="cont">
+        <div class="img"><img src="{% static 'img/vocho.jpg' %}" alt=""></div>
+        <div class="info">
+            <h1>vocho volkswagen 1995</h1>
+            <p>Fecha de publicación:30/06/2020</p>
+            <h3>Precio inicial: $ 7,000</h3>
+            <p>Categoria: Autos</p>
+            <p>Condición del producto: Usado</p>
+            <p>Marca: volkswagen</p>
+            <p>Modelo: vocho 1995</p>
+            <p>Tamaño: *************</p>
+        </div>
+    </div>
+    <div class="comentario">
+        <h1>Información complementaria</h1>
+        <p>******************************************</p>
+    </div>
+    
+</div>
+
+</section>
+{% endblock %}

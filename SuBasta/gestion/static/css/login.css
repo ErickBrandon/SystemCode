@@ -10,6 +10,10 @@
 body{
     background: #f9f9f9;
 }
+header{
+    height: 4px;
+    background: rgb(255, 112, 51);
+}
 #logo{
     width: 170px;
     margin: auto;

@@ -20,10 +20,11 @@ from gestion import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.hola, name='Index'),
-    path('Entrada/',views.Entrada),
-    path('Mi-Perfil/',views.Perfil),
-    path('Subasta/',views.Subasta),
-    path('AgregarProductos/',views.AgregarProducto),
-    path('Login/',views.Login),
+    path('Entrada/',views.Entrada,name='Entrada'),
+    path('Mi-Perfil/',views.Perfil,name='Mi-perfil'),
+    path('Subasta/',views.Subasta,name='Subasta'),
+    path('AgregarProductos/',views.AgregarProducto,name='AgregarProductos'),
+    path('Login/',views.Login,name='Login'),
+    path('Producto/',views.Producto,name='Producto'),
 
 ]
