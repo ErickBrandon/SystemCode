@@ -12,7 +12,7 @@ body{
 }
 header{
     height: 4px;
-    background: rgb(255, 112, 51);
+    background: #ff7033;
 }
 #logo{
     width: 170px;
