@@ -16,5 +16,5 @@ class RegistroForm(forms.ModelForm):
             'apellido': forms.TextInput(attrs={'placeholder':'Apellido'}),
             'email': forms.EmailInput(attrs={'placeholder':'Email'}),
             'contraseña': forms.PasswordInput(attrs={'placeholder':'Contraseña'}),
-            'fecha': forms.DateInput(attrs={'placeholder':'Ej. AAAA-MM-DD'}),
+            'fecha': forms.DateInput(attrs={'type':'date','placeholder':'Ej. AAAA-MM-DD'}),
         }
