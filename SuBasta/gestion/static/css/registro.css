@@ -1,137 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    outline: 0;
+}
 
 body{
-    background: #ececec;
-    background-image: url("../img/fondo.png");
-    background-position: center;
-}
-*{
-	padding: 0;
-	margin: 0;
-    font-family: 'Jost', sans-serif;
+    background: #ff7033;
+    max-width: 1370px;
 
-    
-}
-input:focus{
-    outline: 0 none;
-}
-#header-registro{
-    width: 82%;
-    margin: auto;
-    min-width: 320px;
-    height: 70px;
-    background: rgb(255, 112, 51);
-    color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 300%;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
-}
-#header-registro div{
-    width: 70%;
-    margin: auto;
-    text-align: center;
 }
 #contenido{
+    width: 90%;
     margin: auto;
-    width: 75%;
-    min-width: 300px;
-    background:rgba(255, 255, 255, .4);
-    overflow: hidden;
-    padding: 30px 15px 30px 15px;
-
-    -moz-transition: all .30s ease;
-    -webkit-transition: all .30s ease;
-    -ms-transition: all .30s ease;
-    transition: all .30s ease;
-    -o-transition: all .30s ease;
 }
 #contenido .registro{
-    width:45%;
-    min-width: 238px;
+    width: 419px;
     margin: auto;
-    border:1px rgb(167, 167, 167) solid;
-    border-radius: 5px;
-
-    -moz-transition: all .30s ease;
-    -webkit-transition: all .30s ease;
-    -ms-transition: all .30s ease;
-    transition: all .30s ease;
-    -o-transition: all .30s ease;
+    background: #fff;
+    padding: 50px 0 50px 0;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
-@media screen and (max-width: 1000px){
-    #contenido .registro{
-        width:45%;
-        margin-left: 10px;
-    }
-}
-@media screen and (max-width: 800px){
-    #contenido .registro{
-        float: none;
-        margin: auto;
-        width: 90%;
-    }
-}
-#contenido .registro h3{
-    width: 100%;
-    text-align: left;
-    padding-left: 15px;
-    font-size: 200%;
-}
-#contenido .registro h4{
-    width: 100%;
-    padding-left: 25px;
-    font-size: 140%;
-}
-#contenido .registro form{
-    width: 100%;
+#contenido .registro .principal{
+    width: 65%;
     margin: auto;
-    padding: 10px 0px 20px 0px;
+    overflow: hidden;
 }
-#contenido .registro form div{
-    margin: auto;
-    width: 75%;
-    height: 35px;
-    margin-top: 20px;
+#contenido .registro .principal .logo{
+    width: 88px;
+    float: left;
 }
-#contenido .registro form div input{
+#contenido .registro .principal .logo img{
     width: 100%;
     height: 100%;
-    border-style: none;
-    padding: 3px 0px 3px 10px;
-    font-size: 125%;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
 }
-#contenido .registro form .btn{
-    width: 45%;
+#contenido .registro .principal .nombre{
+    float: right;
+    font-size: 300%;
+    font-family: 'Caveat', cursive;
+    margin: 27px 7px 0 0;
+    color: #000;
+}
+#contenido .registro .principal .nombre span{
+    color: #ff7033;
+    font-size: 110%;
+    font-family: 'Caveat', cursive;
+
+}
+#contenido .registro p{
+    font-size: 130%;
+    text-align: center;
+}
+#contenido .registro form{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#contenido>.registro>form>div>input{
+    width: 95%;
+    font-size: 110%;
+    padding: 3px 0 6px 3px;
+    border-style: none;
+    margin-top: 15px;
+    border-radius: 0;
+    border-bottom: 1px rgba(0,0,0,0.2) solid;
+
+    -moz-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+#contenido .registro form div .txt:hover{
+    background: rgba(0,0,0,0.05);
+    border-bottom: 1px #0868b8 solid;
 }
 #contenido .registro form .btn-r{
-    width: 45%;
-}
-#contenido .registro form .btn input{
-    border: none;
-    background: #3f5c9a;
-    color: #fff;
-    cursor: pointer;
-}
-
-#contenido .registro form .btn input:hover{
-    background: #fff;
-    color: #3f5c9a;
+    width: 100px;
+    margin: auto;
 }
 #contenido .registro form .btn-r input{
+    width: 100%;
     border: none;
-    background: #4caf50;
+    background:#4caf50 ;
     color: #fff;
     cursor: pointer;
+    border-radius: 4px;
 }
 #contenido .registro form .btn-r input:hover{
-    background: #fff;
-    color: #4caf50;
+    background:#419944;
+}
+@media screen and (max-width: 470px){
+    #contenido{
+        width: 100%;
+    }
+    #contenido .registro{
+        width: 90%;
+    }
+    #contenido>.registro>.principal>.logo{
+        width: 88px;
+        float: none;
+        margin: auto;
+    }
+    #contenido .registro .principal .nombre{
+        float:none;
+        margin: auto;
+        margin-top: -15px;
+        text-align: center;
+    }
 }
