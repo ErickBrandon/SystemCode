@@ -23,6 +23,7 @@ def Subasta(request):
     return render(request,"paginas/subasta.html")
 
 def AgregarProducto(request):
+        
     return render(request,"paginas/AgregarProductos.html")
 
 def Login(request):
