@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from .forms import RegistroForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
@@ -17,6 +17,12 @@ class Entrada(CreateView):
     form_class = RegistroForm
     template_name = "formularios/Entrada.html"
     success_url = reverse_lazy('Index')
+
+    def form_valid(self,form):
+        self.object = form.save(commit=False)
+        self.object.set_password(self.object.password)
+        self.object.save()
+        return HttpResponseRedirect(self.get_success_url())
 
 def Perfil(request):
     return render(request,"paginas/perfil.html")
