@@ -15,11 +15,12 @@
     </div></a>
     <h1>Inicia sesión</h1>
     <div id="login">
-        <form action="">
+        <form method="POST">
+            {% csrf_token %}
             <div class="titulo"><strong>Email</strong></div>
-            <div class="txt"><input type="text" ></div>
+            <div class="txt"><input type="text" name="email"></div>
             <div class="titulo"><strong>Contraseña</strong></div>
-            <div class="txt"><input type="password"></div>
+            <div class="txt"><input type="password" name="password"></div>
             <div  class="btn"><input type="submit" value="Iniciar"></div>
         </form>
     </div>

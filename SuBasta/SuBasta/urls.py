@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from gestion import views
+from gestion.views import hola,Entrada
+from gestion import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.hola, name='Index'),
-    path('Entrada/',views.Entrada,name='Entrada'),
+    path('',hola.as_view(), name='Index'),
+    path('Entrada/',Entrada.as_view(),name='Entrada'),
     path('Mi-Perfil/',views.Perfil,name='Mi-perfil'),
     path('Subasta/',views.Subasta,name='Subasta'),
     path('AgregarProductos/',views.AgregarProducto,name='AgregarProductos'),
