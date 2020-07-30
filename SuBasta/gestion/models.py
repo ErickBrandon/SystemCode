@@ -59,3 +59,14 @@ class Registro(AbstractBaseUser):
     @property
     def is_staff(self):
         return self.usuario_administrador
+
+class Producto(models.Model):
+    idProducto=models.AutoField(primary_key=True)
+    nombreP=models.CharField(max_length=30)
+    categoria=models.CharField(max_length=9)
+    condicion=models.CharField(max_length=12)
+    marca=models.CharField(max_length=10)
+    modelo=models.CharField(max_length=15)
+    tamaño=models.CharField(max_length=10)
+    comentrio=models.CharField(max_length=150)
+    Usuario=models.ForeignKey(Registro,on_delete=models.CASCADE)
