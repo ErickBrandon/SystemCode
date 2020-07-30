@@ -87,13 +87,13 @@ body{
 #contenido form .info p{
     font-size: 100%;
     margin-left: 2%;
-    color: #a1a1a1;
+    color:rgba(0,0,0,0.8);
 }
 
 #contenido form .info .titulo{
     width: 70%;
     margin-left: 5%;
-    font-size: 130%;
+    font-size: 135%;
     padding-left: 5px;
     margin-top: 10px;
     min-width: 265px;
@@ -194,6 +194,7 @@ body{
     font-size: 130%;
     padding-left: 10px;
     padding-top: 10px;
+    margin-top: 10px;
 }
 #contenido .info .select{
     width: 40%;
@@ -228,7 +229,20 @@ body{
     color: #000;
     cursor: pointer;
 }
-
+#contenido .info .file{
+    width: 54%;
+    min-width: 290px;
+    margin: auto;
+    margin-top: 10px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 4px 4px 4px 4px;
+}
+#contenido .info input[type=file]{
+   width:100%;
+   margin: auto;
+   font-size: 105%;
+}
 #contenido form .btn{
     width: 40%;
     margin-top: 20px;
