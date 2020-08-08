@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect
-from .forms import RegistroForm
+from .forms import *
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from .models import Registro
+from .models import Registro,Producto
 from django.views.generic import TemplateView,CreateView
 from django.urls import reverse_lazy
 import datetime
@@ -31,7 +31,27 @@ def Subasta(request):
     return render(request,"paginas/subasta.html")
 
 def AgregarProducto(request):
-    return render(request,"paginas/AgregarProductos.html")
+    if request.POST:
+        producto = Producto()
+        producto.nombreP = request.POST.get('nombreP')
+        producto.categoria = request.POST.get('categoria')
+        producto.condicion = request.POST.get('condicion')
+        producto.marca = request.POST.get('marca')
+        producto.modelo = request.POST.get('modelo')
+        producto.tamaño = request.POST.get('tamaño')
+        producto.comentario = request.POST.get('comentarios')
+        producto.tipoSubasta = request.POST.get('tipoSubasta')
+        producto.fotoProd = request.FILES.get('imagen')
+        producto.precio = request.POST.get('precio')
+        producto.Usuario_id = request.POST.get('id')
+
+        
+        producto.save()
+        return redirect('Mi-perfil')
+        
+    
+    return render(request, 'paginas/AgregarProductos.html')
+
 
 def Login(request):
     if request.method == 'POST':
@@ -49,5 +69,5 @@ def Login(request):
     context = {}
     return render(request,"formularios/login.html", context)
 
-def Producto(request):
+def Productos(request):
     return render(request,"paginas/Producto.html")

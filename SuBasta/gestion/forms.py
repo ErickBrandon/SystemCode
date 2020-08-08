@@ -18,7 +18,3 @@ class RegistroForm(forms.ModelForm):
             'password': forms.PasswordInput(attrs={'placeholder':'Contraseña'}),
             'fecha': forms.DateInput(attrs={'type':'date','placeholder':'Ej. AAAA-MM-DD'}),
         }
-
-class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput())

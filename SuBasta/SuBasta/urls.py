@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from gestion import views
-from gestion.views import hola,Entrada
+from gestion.views import *
 from gestion import views
 
 urlpatterns = [
@@ -27,6 +29,9 @@ urlpatterns = [
     path('Subasta/',views.Subasta,name='Subasta'),
     path('AgregarProductos/',views.AgregarProducto,name='AgregarProductos'),
     path('Login/',views.Login,name='Login'),
-    path('Producto/',views.Producto,name='Producto'),
+    path('Productos/',views.Producto,name='Producto'),
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
