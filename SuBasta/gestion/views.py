@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, HttpResponseRedirect
 from .forms import *
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from .models import Registro,Producto
-from django.views.generic import TemplateView,CreateView
+from .models import *
+from django.views.generic import CreateView,ListView,TemplateView
 from django.urls import reverse_lazy
 import datetime
 # Create your views here.
@@ -27,8 +27,14 @@ class Entrada(CreateView):
 def Perfil(request):
     return render(request,"paginas/perfil.html")
 
-def Subasta(request):
-    return render(request,"paginas/subasta.html")
+class Subasta(ListView):
+    model = Producto
+    template_name = "paginas/Subasta.html"
+
+
+class Subasta_Inversa(ListView):
+    model = Producto
+    template_name = "paginas/Subasta_Inversa.html"
 
 def AgregarProducto(request):
     if request.POST:
@@ -68,6 +74,10 @@ def Login(request):
     
     context = {}
     return render(request,"formularios/login.html", context)
+
+#def logoutUsuario(request):
+#    logout(request)
+#    return HttpResponseRedirect('Index')
 
 def Productos(request):
     return render(request,"paginas/Producto.html")

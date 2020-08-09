@@ -14,11 +14,10 @@
                 <div class="foto-perfil">
                     <img src="{% static 'img/erick.png' %}" alt="">
                     <div class="edit-foto fas fa-camera"></div>
-                    <p>erick.brandon.flores@gmail.com</p>
-                    <p>2371058678</p>
+                    <p>{{user.username}}</p>
                 </div>
                 <div class="info">
-                    <p><strong>Erick Brandon Flores Beristain</strong></p>
+                    <p><strong>{{user.nombre}} {{user.apellido}}</strong></p>
                     <button id="btnModal" class="edit-info"><span class="far fa-edit"></span>Editar información</button>
 
                     <div class="cont-subcoin">

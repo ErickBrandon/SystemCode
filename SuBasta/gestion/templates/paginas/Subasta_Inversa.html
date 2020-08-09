@@ -19,7 +19,7 @@
         <section id="sb-cont">
             {% if object_list %}
                 {% for producto in object_list %}
-                    {% if producto.tipoSubasta == "Tradicional"%}
+                    {% if producto.tipoSubasta == "Inversa"%}
             <div class="carta">
                 <div class="img">
                     <img src="{{ producto.fotoProd.url }}" alt="">
@@ -31,8 +31,11 @@
                     {% endif %}
                 {% endfor %}
             {% else %}
+            <div class="carta">
                 <h3>Sin Registros</h3>
                 <h4>----------</h4>
+
+            </div> 
             {% endif %}
         </section>
     </section>

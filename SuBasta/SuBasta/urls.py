@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.decorators import login_required
 from gestion import views
 from gestion.views import *
 from gestion import views
@@ -25,11 +26,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',hola.as_view(), name='Index'),
     path('Entrada/',Entrada.as_view(),name='Entrada'),
-    path('Mi-Perfil/',views.Perfil,name='Mi-perfil'),
-    path('Subasta/',views.Subasta,name='Subasta'),
-    path('AgregarProductos/',views.AgregarProducto,name='AgregarProductos'),
+    path('Mi-Perfil/',login_required(views.Perfil),name='Mi-perfil'),
+    path('Subasta/',login_required(Subasta.as_view()),name='Subasta'),
+    path('Subasta_Inversa/',login_required(Subasta_Inversa.as_view()),name='Subasta_Inversa'),
+    path('AgregarProductos/',login_required(views.AgregarProducto),name='AgregarProductos'),
     path('Login/',views.Login,name='Login'),
-    path('Productos/',views.Producto,name='Producto'),
+    #path('logout/',login_required(logoutUsuario), name='logout'),
+    path('Productos/',login_required(views.Producto),name='Producto'),
 
 ]
 
