@@ -31,7 +31,7 @@ urlpatterns = [
     path('Subasta_Inversa/',login_required(Subasta_Inversa.as_view()),name='Subasta_Inversa'),
     path('AgregarProductos/',login_required(views.AgregarProducto),name='AgregarProductos'),
     path('Login/',views.Login,name='Login'),
-    #path('logout/',login_required(logoutUsuario), name='logout'),
+    path('logout/',login_required(logoutUsuario), name='logout'),
     path('Productos/',login_required(views.Producto),name='Producto'),
 
 ]

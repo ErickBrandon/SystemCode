@@ -75,9 +75,9 @@ def Login(request):
     context = {}
     return render(request,"formularios/login.html", context)
 
-#def logoutUsuario(request):
-#    logout(request)
-#    return HttpResponseRedirect('Index')
+def logoutUsuario(request):
+    logout(request)
+    return HttpResponseRedirect('../')
 
 def Productos(request):
     return render(request,"paginas/Producto.html")

@@ -67,8 +67,13 @@
 			</div>
 		</div>
 		<div class="sb-link"> 
+			
+			{% if user.username %}	
+			<a href="{% url 'logout' %}"><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
+			{% else %}
 			<a href="{% url 'Entrada' %}"><div class="link">Crea tu cuenta</div></a>
 			<a href="{% url 'Login' %}"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
+			{% endif %}
 			<a href=""><div class="link">Mis subastas</div></a>
 		</div>
 		
