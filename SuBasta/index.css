@@ -1,0 +1,239 @@
+#banner{
+    height: auto;
+    margin-top: 0px;
+}
+#contenido .invitacion{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    background-attachment: fixed,						fixed;
+		background-image: url("recur/img/fondo.png");
+		background-position: top left,					center center;
+		background-repeat: repeat,						none;
+		background-size: auto,						cover;
+    
+    padding: 7px 0px 7px 0px;
+    margin-top: 35px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
+}
+
+#contenido .invitacion.is-touch {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#contenido  .invitacion .img-i{
+    width: 18%;
+    min-width: 187px;
+    float: left;
+}
+#contenido  .invitacion .img-i img{
+    width: 100%;
+}
+#contenido .invitacion p{
+    width: 40%;
+    min-width: 260px;
+    float: left;
+    margin-left: 3%;
+    background: rgba(255, 255, 255,0.7);
+
+}
+#contenido .invitacion p strong{
+    font-size: 200%;
+}
+#contenido .invitacion p .s-b{
+    font-family: 'Caveat', cursive;
+    text-align: justify;
+    font-size: 150%;
+    color: #ff7033;
+}
+#contenido .invitacion p .parrafo{
+    font-size: 135%;
+}
+#contenido .invitacion .empezemos{
+    width: 25%;
+    min-width: 194px;
+    height: auto;
+    float: left;
+    background:#3f5c9a;
+    font-size: 150%;
+    color: #fff;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 8%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+
+-moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+#contenido .invitacion .empezemos span{
+    font-size: 160%;
+    margin-left: 10px;
+}
+#contenido .invitacion .empezemos:hover{
+    background: #4caf50;
+    color: #fff;
+}
+@media screen and (max-width: 1165px){
+    #contenido  .invitacion .img-i{
+        width: 26%;
+        margin-left: 3%;
+    }
+    #contenido  .invitacion p{
+        width: 63%;
+        margin-left: 2%;
+    }
+    #contenido .invitacion p strong{
+        font-size: 185%;
+    }
+    #contenido .invitacion p .parrafo{
+        font-size: 120%;
+    }
+    #contenido .invitacion .empezemos{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 870px){
+    #contenido  .invitacion p{
+        margin-left: 0%;
+    }
+    #contenido .invitacion p .parrafo{
+        font-size: 115%;
+    }
+  }
+@media screen and (max-width: 713px){
+    #contenido  .invitacion .img-i{
+        float: none;
+        margin: auto;
+        min-width: 160px;
+
+    }
+    #contenido  .invitacion p{
+        float: none;
+        margin: auto;
+        width: 95%;
+        min-width: 250px;
+        text-align: center;
+    }
+    #contenido .invitacion .empezemos{
+        float: none;
+        margin: auto;
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 450px){
+    #contenido .invitacion p strong{
+        font-size: 155%;
+    }
+}
+/* **************************************************************************** */
+#contenido .subastas{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 40px 0px 40px 0px;
+
+
+    background-attachment: fixed,						fixed;
+		background-image: url("recur/img/fondo.png");
+		background-position: top left,					center center;
+		background-repeat: repeat,						none;
+		background-size: autor;
+}
+@media screen and (max-width: 460px){
+    #contenido .subastas{
+    background-size: 100% 100%;
+
+    }
+}
+#contenido .subastas .cont-sbt{
+    width: 45%;
+    height: 100%;
+    border-radius: 5px;
+    float: left;
+    margin-left: 3%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 25px;
+
+
+}
+#contenido .subastas .cont-sbt div{
+    width: 100%;
+    color:#000;
+    font-size: 160%;
+    text-align: center;
+}
+#contenido .subastas .cont-sbt div span{
+    font-family: 'Caveat', cursive;
+    font-size: 140%;
+    color: rgb(255, 112, 51);
+}
+#contenido .subastas .cont-sbt p{
+    width: 90%;
+    text-align: justify;
+    color: #000;
+    font-size: 140%;
+    margin: auto;
+}
+#contenido .subastas .modalidad{
+    width: 40%;
+    float: left;
+    margin-left: 4%;
+}
+#contenido .subastas .modalidad .tradicional, .inversa{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 112, 51);
+    font-size: 120%;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+#contenido .subastas .modalidad .tradicional div, .inversa div{
+    font-size: 155%;
+}
+#contenido .subastas .modalidad div p{
+    color: #000;
+}
+#contenido .subastas .modalidad div .btn-conocer{
+    width: 150px;
+    margin: auto;
+    font-size: 90%;
+    background: #4caf50;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    color: #fff;
+}
+@media screen and (max-width: 860px){
+    #contenido .subastas .cont-sbt{
+       width: 80%;
+       min-width: 284px;
+       float: none;
+       margin-top: 0px;
+       margin: auto;
+    }
+    #contenido .subastas .modalidad{
+        width: 65%;
+        float: none;
+        margin-left: 0%;
+        margin: auto;
+       min-width: 284px;
+
+    }
+}
+
