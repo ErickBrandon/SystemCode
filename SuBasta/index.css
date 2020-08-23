@@ -67,14 +67,52 @@
         margin: auto;
     }
 }
-#cm-sb{
-    width: 73%;
-    min-width: 312px;
-    margin: auto;
-    background: #353535;
-    color: #fff;
+#modalidad{
+    width: 100%;
     border-radius: 5px;
-    margin-top: 10px;
-    padding: 15px 0 15px 0;
+    background: rgba(0, 0, 0,0.1);
+    padding: 12px 0 12px 0;
+    overflow: hidden;
 }
 
+#modalidad .mod{
+    width: 275px;
+    height: 340px;
+    background: #fff;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#modalidad .mod-i{
+    background: #353535;
+
+}
+#modalidad .mod header{
+    color: #fff;
+    font-size: 190%;
+    margin-left: 7px;
+}
+#modalidad .mod p{
+    color: #fff;
+    font-size: 140%;
+    text-align: right;
+    margin: 12px 8px 0 0;
+}
+#modalidad .mod p span{
+    font-family: 'Caveat', cursive;
+    font-size: 120%;
+
+}
+#modalidad .mod p span .color{
+    color:#ff6a13;
+}
+#modalidad .mod .img-mod{
+    width: 275px;
+    height: 240px;
+    float: left;
+}
+#modalidad .mod .img-mod img{
+    width: 100%;
+    height: 100%;
+}

@@ -126,7 +126,23 @@
     </div>
 </div>
     <p id="titulo-sb">Conócenos más</p>
-    
+    <div id="modalidad">
+        <div class="mod-i mod">
+            <header>¿Cómo Su-Bastar?</header>
+        <p>En <span>Su-<span class="color">Basta</span></span> contamos<br>con dos modalidades de subasta en las que <br> puedes participar como comprador o vendedor.<br>
+        <br><br>Registrate</p>
+        </div>
+        <div class="mod">
+            <div class="img-mod">
+                <img src="recur/img/tradicional.jpg" alt="">
+            </div>
+        </div>
+        <div class="mod">
+            <div class="img-mod">
+                <img src="recur/img/inversa.jpg" alt="">
+            </div>
+        </div>
+    </div>
     
 
 </section>
