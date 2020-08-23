@@ -86,7 +86,7 @@
 		display:block;
 		width:43px;
 		height: 42px;
-		position: fixed;
+		position: absolute;
 		right: 2%;
 		top:20px;
 	}
@@ -106,29 +106,29 @@
 	}
  
     #header-menu nav {
-		width: 80%;
-		height: calc(100% - 75px);
+		width: 260px;
+		height: calc(100% - 0px);
 		position: fixed;
 		right:100%;
 		margin: 0;
-		margin-top: 10px;
+		margin-top: -54px;
 		overflow: scroll;
-		background: #082e4e;
+		background: #ff6a13;
 	}
  
     #header-menu nav ul li {
 		width: 100%;
 		display: inline-block;
 		border-bottom:1px solid rgba(255,255,255,.5);
-		padding-top: 5px;
 		padding-top: 10px;
 		padding-bottom: 10px;
-		padding-left: 3px;
-		font-size: 160%;
+		margin-left: 0px;
+		font-size: 140%;
 	}
 	
     #header-menu nav ul li a {
 		display: block;
+		margin-left: 5px;
 	}
 	#header-menu nav ul li a:hover {
 		color: #fff;

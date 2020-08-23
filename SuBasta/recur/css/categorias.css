@@ -1,0 +1,59 @@
+.categorias{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 4px 0px 4px 0px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.categorias .autos{
+    width: 19%;
+    float: left;
+    margin-left: 1%;
+}
+.categorias .autos .titulo{
+    text-align: center;
+    font-size: 112%;
+}
+.categorias .autos .img{
+border-radius: 100%;
+border: 1px #e9e8e8 solid;
+padding: 12px 0px 12px 0px;
+width: 50px;
+font-size: 150%;
+    text-align: center;
+    color: #167cd0;
+}
+.categorias .autos .ir{
+    float: right;
+    margin-right: 4%;
+    color: #167cd0;
+    font-size: 85%;
+}
+@media screen and (max-width: 1080px){
+    .categorias .autos .img{
+        float: none;
+        margin: auto;
+        margin-left: 35%;
+    }
+    .categorias .autos .ir{
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 710px){
+    .categorias .autos{
+        width: 30%;
+        margin-left: 1%;
+    }
+}
+@media screen and (max-width: 410px){
+    .categorias .autos{
+        width: 45%;
+        
+    }
+}
