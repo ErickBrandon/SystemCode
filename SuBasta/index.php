@@ -3,9 +3,10 @@
 <head>
     <?php include('frac/generales.php'); ?>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
-    <link rel="stylesheet" href="{% static 'css/cargador.css'%}">
+    <link rel="stylesheet" href="recur/css/slider.css">
+    <link rel="stylesheet" href="recur/css/cargador.css">
     <link rel="stylesheet" href="recur/css/categorias.css">
+    <script src="recur/js/main.js"></script>
 
 </head>
 <body>
@@ -51,7 +52,42 @@
 			
 		</div>
 		
-	</header>
+    </header>
+    <div id="banner">
+		<div class="slideshow">
+			<ul class="slider">
+				<li>
+					<img  src="recur/img/bn1.png " alt="">
+					
+				</li>
+				<li>
+					<img  src="recur/img/bn2.png" alt="">
+					
+				</li>
+				<li>
+					<img  src="recur/img/bn3.png" alt="">
+					
+				</li>
+				<li>
+					<img  src="recur/img/bn4.png" alt="">
+					
+				</li>
+			</ul>
+	
+			<ol class="pagination">
+				
+			</ol>
+		
+			<div class="left">
+				<span class="fa fa-chevron-left"></span>
+			</div>
+	
+			<div class="right">
+				<span class="fa fa-chevron-right"></span>
+			</div>
+	
+		</div>
+	</div>
     <section id="contenido">
         <div id="qsb">
             <div class="sb">
@@ -128,18 +164,24 @@
     <p id="titulo-sb">Conócenos más</p>
     <div id="modalidad">
         <div class="mod-i mod">
-            <header>¿Cómo Su-Bastar?</header>
+            <header>¿Cómo Su-Bastar?</header><br>
         <p>En <span>Su-<span class="color">Basta</span></span> contamos<br>con dos modalidades de subasta en las que <br> puedes participar como comprador o vendedor.<br>
-        <br><br>Registrate</p>
+        <br><br></p>
         </div>
         <div class="mod">
             <div class="img-mod">
-                <img src="recur/img/tradicional.jpg" alt="">
+                <img loading="lazy" src="recur/img/tradicional.png" alt="">
+                <header class="m-s">Subasta Tradicional</header>
+                <p class="t-s">Es una venta organizada basada en el clasico juego de subasta.</p>
+                <div class=saber-m><a href="">Saber más</a></div>
             </div>
         </div>
         <div class="mod">
             <div class="img-mod">
-                <img src="recur/img/inversa.jpg" alt="">
+                <img loading="lazy" src="recur/img/inversa.png" alt="">
+                <header class="m-s">Subasta Inversa</header>
+                <p class="t-s">Los precios desminuyen con el uso de Su-Coins</p>
+                <div class=saber-m><a href="">Saber más</a></div>
             </div>
         </div>
     </div>
