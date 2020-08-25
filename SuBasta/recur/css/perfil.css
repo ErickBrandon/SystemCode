@@ -1,291 +1,133 @@
-a{
-    text-decoration: none;
-}
-#cont-perfil{
-    width: 100%;
-    background: #fff;
-    padding: 10px 0px 10px 0px;
-}
-#cont-perfil .principal{
-width: 90%;
-margin: auto;
-overflow: hidden;
-}
-#cont-perfil .principal .foto-perfil{
-    width: 240px;
-    height: auto;
-    float: left;
-    text-align: center;
-}
-#cont-perfil .principal .foto-perfil img{
-    width: 100%;
-    height: 270;
-    background: #000;
-    border-radius: 10px;
-}
-#cont-perfil .principal .foto-perfil .edit-foto{
-    width: 30px;
-    padding: 5px 0px  5px 0px;
+
+#usuario{
+    width: 80%;
+    min-width: 309px;
     margin: auto;
-    text-align: center;
-    background: #3f5c9a;
-    color:#fff;
-    border-radius: 3px;
-    font-size: 120%;
-
-    -moz-transition: all .45s ease;
-    -webkit-transition: all .45s ease;
-    -ms-transition: all .45s ease;
-    transition: all .45s ease;
-    -o-transition: all .45s ease;
-}
-#cont-perfil .principal .foto-perfil .edit-foto:hover{
-    background: #ff7033; 
-}
-
-#cont-perfil .principal .foto-perfil p{
-    width: 100%;
-    font-size: 80%;
-    color: rgb(141, 141, 141);
-    margin-top: 3px;
-}
-@media screen and (max-width: 844px){
-    #cont-perfil .principal .foto-perfil{
-        width: 190px;
-    }
-    #cont-perfil .principal .foto-perfil img{
-        height: 220px;
-    }
-}
-@media screen and (max-width: 670px){
-    #cont-perfil .principal .foto-perfil{
-        float: none;
-        margin:auto;
-    }
-}
-@media screen and (max-width: 400px){
-    #cont-perfil .principal .foto-perfil img{
-        width: 160px;
-        height: 170px;
-        background: #000;
-        border-radius: 10px;
-    }
-}
-
-#cont-perfil .principal .info{
-    width: 57%;
-    margin-left:10%;
-    float: left;
-    font-size: 150%;   
-}
-#cont-perfil .principal .info p strong{
-    width: 100%;
-    font-size: 160%;
-}
-#cont-perfil .principal .info p{
-    margin-top: 15px;
-}
-#cont-perfil .principal .info .edit-info{
-    width: 160px;
-    background: #4caf50;
-    font-size: 70%;
-    color:#fff;
+    margin-top: 90px;
+    background:rgba(0, 0,0, 0.1);
     border-radius: 5px;
-    margin-top: 15px;
-    border-style: none;
-    padding: 10px 0px 10px 0px;
-    cursor: pointer;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+    overflow: hidden;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
-#cont-perfil .principal .info .edit-info span{
-    font-size: 120%;
-    margin-left: 5px;
-    margin-right: 5px;
+#usuario .info-usuario{
+    width: 40%;
+    min-width: 292px;
+    float: left;
+    border:1px rgba(0, 0,0, 0.2) solid;
+    border-radius: 5px;
+    padding: 10px 0 0 0;
+    background: #2d3e58;
 }
-#cont-perfil .principal .info .edit-info:hover{
-    background: #0868b8;
-}
-
-#cont-perfil .principal .info .cont-subcoin{
-    width: 90%;
-    margin: auto;
-    background: rgba(228, 223, 223,0.7);
-    margin-top: 15px;
-    border-radius: 10px;
-    padding-top: 5px;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
--moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
-}
-#cont-perfil .principal .info .cont-subcoin .coin-header{
-    font-size: 120%;
-    text-align: center;
+#usuario .info-usuario .f-perfil{
+    width: 130px;
+    height: 130px;
+    margin:auto;
 
 }
-#cont-perfil .principal .info .cont-subcoin .mis-coins{
-   text-align: center;
-}
-#cont-perfil .principal .info .cont-subcoin .mis-coins span{
-    color: #ff7033;
-    margin-right: 5px;
-    font-size: 130%;
-}
-#cont-perfil .principal .info .cont-subcoin .mas-coins{
+#usuario .info-usuario .f-perfil img{
     width: 100%;
-    margin: auto;
-    font-size: 70%;
+    height: 100%;
+}
+#usuario .info-usuario .n-usuario{
     text-align: center;
+    font-size: 137%;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgba(255, 255,255, 0.7);
+}
+#usuario .info-usuario .info-envio p{
+    font-weight: bold;
+    color: rgba(255, 255,255, 0.7);
+    margin:10px 0 0 10px;
 
-    -moz-transition: all .45s ease;
-    -webkit-transition: all .45s ease;
-    -ms-transition: all .45s ease;
-    transition: all .45s ease;
-    -o-transition: all .45s ease;
 }
-#cont-perfil .principal .info .cont-subcoin .mas-coins span{
-    margin-right: 5px;
+#usuario .info-usuario .info-envio .txt-i{
+    width: 85%;
+    margin: auto;
+    border:1px rgba(255, 255,255, 0.4) solid;
+    border-radius: 5px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: rgba(255, 255,255, 0.7);
+    padding: 5px 0 5px 5px;
+    }
+#usuario .info-usuario .btn-editar{
+    width: 100%;
+    color: #fff;
+    background: #167cd0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 120%;
+    cursor: pointer;
+    border-radius: 4px;
 }
-#cont-perfil .principal .info .cont-subcoin .mas-coins:hover{
-    color: #0b82e4
+#usuario .info{
+    float: right;
+    width: 50%;
+    min-width: 295px;
+    margin-right: 4%;
 }
-#cont-perfil .principal .agregar-p{
+#usuario .info .su-coins{
+    width: 70%;
+    background: #fff;
+    margin: auto;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+}
+#usuario .info .su-coins div{
     width: 90%;
     margin: auto;
-    background: rgba(228, 223, 223,0.7);
-    margin-top: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+#usuario .info .su-coins header{
     text-align: center;
+    font-size: 150%;
+    color:#167cd0;
+    font-weight: bold;
+}
+#usuario .info .su-coins a{
     text-decoration: none;
+
 }
-@media screen and (max-width:1150px){
-    #cont-perfil .principal .info p strong{
-        font-size: 145%;
-    }
+#usuario .info .su-coins p{
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;
 }
-@media screen and (max-width:1040px){
-    #cont-perfil .principal .info{
-        margin-left:5%;  
-    }
-    #cont-perfil .principal .info p strong{
-        font-size: 130%;
-    }
+#usuario .info .su-coins .mas-coins{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background:#167cd0;
+    font-size: 120%;
 }
-@media screen and (max-width:887px){
-    #cont-perfil .principal .info{
-        width: 50%;
-        margin-left:3%;  
-    }
-    #cont-perfil .principal .info p strong{
-        font-size: 125%;
-    }
-}
-@media screen and (max-width: 670px){
-    #cont-perfil .principal .info{
+@media screen and (max-width: 942px){
+    #usuario{
         width: 100%;
-        text-align: center;
+    }
+}
+@media screen and (max-width: 757px){
+    #usuario .info{
+        margin-right: 1%;
+    }
+}
+@media screen and (max-width: 733px){
+    #usuario .info-usuario{
         float: none;
         margin: auto;
-        font-size: 120%;
     }
-    #cont-perfil .principal .info p strong{
-        font-size: 140%;
-    }
-}
-@media screen and (max-width: 400px){
-    #cont-perfil .principal .info{
-        font-size: 112%;
-    }
-    #cont-perfil .principal .info p strong{
-        font-size: 130%;
-    }
-}
-#mis-sb{
-    width: 100%;
-    overflow: hidden;
-    margin-top: 15px;
-    padding: 10px 0px 10px 0px;
-}
-#mis-sb .header-mis-sb{
-    font-size: 180%;
-    margin-left: 6%;
-    color: #fff;
-}
-#mis-sb .header-mis-sb span{
-    font-family: 'Caveat', cursive;
-    color: rgb(255, 112, 51);
-    font-size: 160%;
-
-}
-#mis-sb .cont-sb{
-    width: 30%;
-    background: #fff;
-    float: left;
-    margin-left: 13%;
-    border-radius: 5px;
-    padding: 6px 0px 6px 0px;
-    margin-top: 10px;
-    
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-}
-#mis-sb .cont-sb .header-cont-sb{
-    color: #000;
-    font-size: 140%;
-    text-align: center;
-    margin: auto;
-}
-#mis-sb .cont-sb .icon{
-    width: 50px;
-    border-radius: 100%;
-    border: 1px #e9e8e8 solid;
-    padding: 12px 0px 12px 0px;
-    font-size: 150%;
-    text-align: center;
-    color: #0b82e4;
-    margin-left: 41%;
-}
-#mis-sb .cont-sb p{
-    width: 100%;
-    font-size: 130%;
-    text-align: center;
-}
-#mis-sb .cont-sb p span{
-    width: auto;
-    background: #e9e8e8;
-    border-radius: 5px;
-    padding: 0px 2px 0px 2px;
-}
-#mis-sb .compra{
-    margin-left: 30%;
-    width: 40%;
-}
-@media screen and (max-width: 970px){
-    #mis-sb .cont-sb{
-        width: 40%;
-        margin-left: 7%;
-    }
-}
-@media screen and (max-width: 720px){
-    #mis-sb .cont-sb{
-        width: 45%;
-        margin-left: 3%;
-    }
-    
-}
-@media screen and (max-width: 510px){
-    #mis-sb header{
-        text-align: center;
-    }
-    #mis-sb .cont-sb{
-        width: 70%;
+    #usuario .info{
         float: none;
-        margin:auto;
-        margin-top: 12px;
+        margin: auto;
     }
-    
+    #usuario .info .su-coins{
+        width: 100%;
+    }
 }
