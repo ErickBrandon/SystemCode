@@ -1,0 +1,291 @@
+a{
+    text-decoration: none;
+}
+#cont-perfil{
+    width: 100%;
+    background: #fff;
+    padding: 10px 0px 10px 0px;
+}
+#cont-perfil .principal{
+width: 90%;
+margin: auto;
+overflow: hidden;
+}
+#cont-perfil .principal .foto-perfil{
+    width: 240px;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+#cont-perfil .principal .foto-perfil img{
+    width: 100%;
+    height: 270;
+    background: #000;
+    border-radius: 10px;
+}
+#cont-perfil .principal .foto-perfil .edit-foto{
+    width: 30px;
+    padding: 5px 0px  5px 0px;
+    margin: auto;
+    text-align: center;
+    background: #3f5c9a;
+    color:#fff;
+    border-radius: 3px;
+    font-size: 120%;
+
+    -moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+#cont-perfil .principal .foto-perfil .edit-foto:hover{
+    background: #ff7033; 
+}
+
+#cont-perfil .principal .foto-perfil p{
+    width: 100%;
+    font-size: 80%;
+    color: rgb(141, 141, 141);
+    margin-top: 3px;
+}
+@media screen and (max-width: 844px){
+    #cont-perfil .principal .foto-perfil{
+        width: 190px;
+    }
+    #cont-perfil .principal .foto-perfil img{
+        height: 220px;
+    }
+}
+@media screen and (max-width: 670px){
+    #cont-perfil .principal .foto-perfil{
+        float: none;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 400px){
+    #cont-perfil .principal .foto-perfil img{
+        width: 160px;
+        height: 170px;
+        background: #000;
+        border-radius: 10px;
+    }
+}
+
+#cont-perfil .principal .info{
+    width: 57%;
+    margin-left:10%;
+    float: left;
+    font-size: 150%;   
+}
+#cont-perfil .principal .info p strong{
+    width: 100%;
+    font-size: 160%;
+}
+#cont-perfil .principal .info p{
+    margin-top: 15px;
+}
+#cont-perfil .principal .info .edit-info{
+    width: 160px;
+    background: #4caf50;
+    font-size: 70%;
+    color:#fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    border-style: none;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+}
+#cont-perfil .principal .info .edit-info span{
+    font-size: 120%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#cont-perfil .principal .info .edit-info:hover{
+    background: #0868b8;
+}
+
+#cont-perfil .principal .info .cont-subcoin{
+    width: 90%;
+    margin: auto;
+    background: rgba(228, 223, 223,0.7);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-top: 5px;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.325);
+}
+#cont-perfil .principal .info .cont-subcoin .coin-header{
+    font-size: 120%;
+    text-align: center;
+
+}
+#cont-perfil .principal .info .cont-subcoin .mis-coins{
+   text-align: center;
+}
+#cont-perfil .principal .info .cont-subcoin .mis-coins span{
+    color: #ff7033;
+    margin-right: 5px;
+    font-size: 130%;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins{
+    width: 100%;
+    margin: auto;
+    font-size: 70%;
+    text-align: center;
+
+    -moz-transition: all .45s ease;
+    -webkit-transition: all .45s ease;
+    -ms-transition: all .45s ease;
+    transition: all .45s ease;
+    -o-transition: all .45s ease;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins span{
+    margin-right: 5px;
+}
+#cont-perfil .principal .info .cont-subcoin .mas-coins:hover{
+    color: #0b82e4
+}
+#cont-perfil .principal .agregar-p{
+    width: 90%;
+    margin: auto;
+    background: rgba(228, 223, 223,0.7);
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+@media screen and (max-width:1150px){
+    #cont-perfil .principal .info p strong{
+        font-size: 145%;
+    }
+}
+@media screen and (max-width:1040px){
+    #cont-perfil .principal .info{
+        margin-left:5%;  
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 130%;
+    }
+}
+@media screen and (max-width:887px){
+    #cont-perfil .principal .info{
+        width: 50%;
+        margin-left:3%;  
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 125%;
+    }
+}
+@media screen and (max-width: 670px){
+    #cont-perfil .principal .info{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: auto;
+        font-size: 120%;
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 140%;
+    }
+}
+@media screen and (max-width: 400px){
+    #cont-perfil .principal .info{
+        font-size: 112%;
+    }
+    #cont-perfil .principal .info p strong{
+        font-size: 130%;
+    }
+}
+#mis-sb{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 10px 0px 10px 0px;
+}
+#mis-sb .header-mis-sb{
+    font-size: 180%;
+    margin-left: 6%;
+    color: #fff;
+}
+#mis-sb .header-mis-sb span{
+    font-family: 'Caveat', cursive;
+    color: rgb(255, 112, 51);
+    font-size: 160%;
+
+}
+#mis-sb .cont-sb{
+    width: 30%;
+    background: #fff;
+    float: left;
+    margin-left: 13%;
+    border-radius: 5px;
+    padding: 6px 0px 6px 0px;
+    margin-top: 10px;
+    
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
+}
+#mis-sb .cont-sb .header-cont-sb{
+    color: #000;
+    font-size: 140%;
+    text-align: center;
+    margin: auto;
+}
+#mis-sb .cont-sb .icon{
+    width: 50px;
+    border-radius: 100%;
+    border: 1px #e9e8e8 solid;
+    padding: 12px 0px 12px 0px;
+    font-size: 150%;
+    text-align: center;
+    color: #0b82e4;
+    margin-left: 41%;
+}
+#mis-sb .cont-sb p{
+    width: 100%;
+    font-size: 130%;
+    text-align: center;
+}
+#mis-sb .cont-sb p span{
+    width: auto;
+    background: #e9e8e8;
+    border-radius: 5px;
+    padding: 0px 2px 0px 2px;
+}
+#mis-sb .compra{
+    margin-left: 30%;
+    width: 40%;
+}
+@media screen and (max-width: 970px){
+    #mis-sb .cont-sb{
+        width: 40%;
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 720px){
+    #mis-sb .cont-sb{
+        width: 45%;
+        margin-left: 3%;
+    }
+    
+}
+@media screen and (max-width: 510px){
+    #mis-sb header{
+        text-align: center;
+    }
+    #mis-sb .cont-sb{
+        width: 70%;
+        float: none;
+        margin:auto;
+        margin-top: 12px;
+    }
+    
+}

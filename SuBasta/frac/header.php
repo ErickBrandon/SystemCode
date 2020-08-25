@@ -1,6 +1,6 @@
 <header id="header">
 		<div class="logo">
-			<img loading="lazy" src="recur/img/logo.png" alt="">
+			<img loading="lazy" src="../recur/img/logo.png" alt="">
 		</div>
 		<div class="header-info">
 			<div class="buscador-h">
@@ -17,8 +17,8 @@
 		 
 				<nav>
 					<ul>
-						<li id="movil"><a href="form/usuario_nuevo.html">Crea tu cuenta</a></li>
-						<li id="movil"><a href="form/login.html">Ingresa</a></li>
+						<li id="movil"><a href="../form/usuario_nuevo.html">Crea tu cuenta</a></li>
+						<li id="movil"><a href="../form/login.html">Ingresa</a></li>
 						<li id="movil"><a href="#">Mis subastas</a></li>
 	
 						<li><a href="">Inicio</a></li>
@@ -34,8 +34,8 @@
 			<a href=""><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
 			<a href=""><div class="link"><span class=""></span>Mi perfil</div></a>
 			<a href=""><div class="link">Mis subastas</div></a>
-			<a href="form/usuario_nuevo.html"><div class="link">Crea tu cuenta</div></a>
-			<a href="form/login.html"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
+			<a href="../form/usuario_nuevo.html"><div class="link">Crea tu cuenta</div></a>
+			<a href="../form/login.html"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
 			
 		</div>
 		

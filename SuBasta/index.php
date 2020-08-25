@@ -96,7 +96,7 @@
                 y adquisición de articulos, combinando la clásica modalidad de subasta 
                 y la nueva tendencia de comercio libre oline.</p>
             </div>
-            <div class="img-e"><img src="recur/img/empezar.jpg" alt=""></div>
+            <div class="img-e"><img src="recur/img/empezar.png" alt=""></div>
         </div>
         <p id="titulo-sb">Categorías</p>
         <div class="categorias">
