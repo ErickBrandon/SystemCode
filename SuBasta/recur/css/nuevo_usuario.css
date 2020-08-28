@@ -33,6 +33,7 @@ body{
 }
 #contenido .registro .principal .logo{
     width: 88px;
+    height: 108px;
     float: left;
 }
 #contenido .registro .principal .logo img{
