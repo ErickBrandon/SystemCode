@@ -26,12 +26,11 @@
         </div>
     </section>
     <section id="contenido">
-       <form action="" method="POST" enctype="multipart/form-data">
+       <form action="../funciones/agregar_producto.php" method="POST" enctype="multipart/form-data">
            <div class="info">
                <h2>Agrega el titulo de tu porducto.</h2>
                <p>Se directo y simple.</p>
                <input  class="titulo" type="text" placeholder="Ej: Celular Samsung Galaxy S9" name="nombreP">
-               <input id="user-i" type="text" value="{{user.id}}" name="id">
            </div>
 
            <div class="info">
@@ -110,7 +109,7 @@
            <div class="info">
             <h2>Agrega una foto de tu porducto</h2>
             <p>La imagen que desees agregar será la principal del producto.</p>
-            <div class="file"><input class="img" type="file" accept="image/png, image/jpeg, image/jpg" name="imagen"></div>
+            <div class="file"><input class="img" type="file" accept="image/png, image/jpeg, image/jpg" name="upload[]" multiple></div>
            </div>
            <div class="info">
             <h2>¿Cúal es el precio del producto?</h2>
