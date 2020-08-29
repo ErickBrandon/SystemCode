@@ -31,7 +31,7 @@
 		</div>
 		<div class="sb-link"> 
 			
-			<a href=""><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
+			<a href="../funciones/cerrarSesion.php"><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
 			<a href=""><div class="link"><span class=""></span>Mi perfil</div></a>
 			<a href=""><div class="link">Mis subastas</div></a>
 			<a href="../form/usuario_nuevo.html"><div class="link">Crea tu cuenta</div></a>

@@ -1,9 +1,0 @@
-<?php
-    include("conexionMysql.php");
-    $nombre=$_POST['nombre'];
-    $apellido=$_POST['apellido'];
-    $correo=$_POST['correo'];
-    $password=$_POST['password'];
-    $password_c=$_POST['password_c'];
-    $date=$_POST['nacimiento'];
-?>

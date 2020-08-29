@@ -10,19 +10,7 @@
 <body>
 <?php 
 if (isset($_POST['registrar'])) {
-
-    include('../prog/agregar_usuario.php');
-    if ($password == $password_c) {
-        $query="INSERT INTO us(nombre_u, apellido_u, correo, contraseña, fecha_n) VALUES('$nombre','$apellido','$correo','$password','$date')";
-        mysqli_query($conexion,$query);
-     }else{
-         echo "<script> alert('Las contraseñas no coinciden');
-         document.getElementById('nombre').value =".$nombre.";
-         function actualizar(){location.reload(true);}
-         document.getElementById('nombre').value =".$nombre.";
-         
-         </script>";        
-     }
+    include('../funciones/agregar_usuario.php');
 }
 ?>
     <section id="contenido">
