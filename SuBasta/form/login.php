@@ -1,3 +1,8 @@
+<?php 
+if (isset($_POST['iniciar'])) {
+    include('../funciones/f_login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,18 +19,18 @@
     </div></a>
     <h1>Inicia sesión</h1>
     <div id="login">
-        <form method="POST">
+        
+        <form method="POST"  action="login.php">
             <div class="titulo"><strong>Email</strong></div>
-            <div class="txt"><input type="text" name="email"></div>
+            <div class="txt"><input required type="text" name="correo"></div>
             <div class="titulo"><strong>Contraseña</strong></div>
-            <div class="txt"><input type="password" name="password"></div>
-            <div  class="btn"><input type="submit" value="Iniciar"></div>
+            <div class="txt"><input required type="password" name="password"></div>
+            <div  class="btn"><input type="submit" name="iniciar"></div>
         </form>
     </div>
     <div id="login" class="nuevo">
         ¿No tienes cuenta en <span>Su-Basta</span>?<br>
-        <a href="usuario_nuevo.html">Crea una cuenta nueva</a>
+        <a href="usuario_nuevo.php">Crea una cuenta nueva</a>
     </div>
-    
 </body>
 </html>

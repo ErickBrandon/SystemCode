@@ -1,7 +1,5 @@
 <?php //inicia o continua con la sesion, convierte la variable global $_SESSION en variable normal, manda a traer conexion de la bd
-    session_start();
-    $usuario=$_SESSION['usuario'];
-    include('../funciones/conexionMysql.php');
+    include('../funciones/session.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +21,7 @@
                 <div class="f-perfil">
                 <img src="../recur/img/erick.png" alt="">
                 </div>
-                <p class="n-usuario"><?php echo $mostrar['nombre_u'] ;?></p>
+                <p class="n-usuario"><?php echo $mostrar['nombre_u']." ".$mostrar['apellido_u'];?></p>
                 <div class="info-envio">
                     <p>Correo</p>
                     <p class="txt-i"><?php echo $mostrar['correo'];?></p>

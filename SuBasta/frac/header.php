@@ -17,8 +17,10 @@
 		 
 				<nav>
 					<ul>
-						<li id="movil"><a href="../form/usuario_nuevo.html">Crea tu cuenta</a></li>
-						<li id="movil"><a href="../form/login.html">Ingresa</a></li>
+						<li id="movil"><a href="../form/usuario_nuevo.php">Crea tu cuenta</a></li>
+						<li id="movil"><a href="../form/login.php">Ingresa</a></li>
+						<li id="movil"><a href="../funciones/cerrarSesion.php">Cerrar Sesión</a></li>
+
 						<li id="movil"><a href="#">Mis subastas</a></li>
 	
 						<li><a href="">Inicio</a></li>
@@ -34,8 +36,8 @@
 			<a href="../funciones/cerrarSesion.php"><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
 			<a href=""><div class="link"><span class=""></span>Mi perfil</div></a>
 			<a href=""><div class="link">Mis subastas</div></a>
-			<a href="../form/usuario_nuevo.html"><div class="link">Crea tu cuenta</div></a>
-			<a href="../form/login.html"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
+			<a href="../form/usuario_nuevo.php"><div class="link">Crea tu cuenta</div></a>
+			<a href="../form/login.php"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
 			
 		</div>
 		
