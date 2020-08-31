@@ -1,7 +1,11 @@
-<?php 
-if (isset($_POST['iniciar'])) {
+<?php
+session_start();
+if (isset($_SESSION["usuario"])) {
+    header('Location:../pag/perfil.php');
+}elseif (isset($_POST['iniciar'])) {
     include('../funciones/f_login.php');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
