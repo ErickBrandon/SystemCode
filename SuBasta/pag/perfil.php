@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include('../frac/generales2.php'); ?>
+    <?php include('../frac/generales.php'); ?>
     <link rel="stylesheet" href="../recur/css/perfil.css">
     <link rel="stylesheet" href="../recur/css/modal.css">
     <title>Document</title>

@@ -1,93 +1,9 @@
-#header-menu{
-    margin-top:10px;
-}
-#header-menu .menu_bar {
-	display:none;
-}
- 
- 
-#header-menu nav {
-	background:transparent;
-	z-index:1000;
-	max-width: 1000px;
-    width:95%;
-}
-#movil{
-    display: none;
-}  
-#header-menu nav ul {
-    list-style:none;
-    overflow: hidden;
-}
-
-#header-menu nav ul li {
-    position: relative;
-	float: left;
-	margin-left: 6px;
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
-
- 
-#header-menu nav ul li a {
-	color:#fff;
-	display:block;
-	text-decoration:none;
-}
- #header-menu nav ul li a:hover {
-	color: #000;
-	border-bottom: 1px #fff solid;
-}
-#header-menu nav ul li a span {
-	margin-right:10px;
-}
- 
-#header-menu nav ul li:hover .children {
-	display:block;
-}
- 
-#header-menu nav ul li .children {
-	display: none;
-	background:#011826;
-	position: absolute;
-	width: 150%;
-	z-index:1000;
-}
- 
-#header-menu nav ul li .children li {
-	display:block;
-	overflow: hidden;
-	border-bottom: 1px solid rgba(255,255,255,.5);
-}
- 
-#header-menu nav ul li .children li a {
-	display: block;
-}
- 
-#header-menu nav ul li .children li a span {
-	float: right;
-	position: relative;
-	top:3px;
-	margin-right:0;
-	margin-left:10px;
-}
- 
-#header-menu nav ul li .caret {
-	position: relative;
-	top:3px;
-	margin-left:10px;
-	margin-right:0px;
-}
- 
-@media screen and (max-width: 800px) {
- 
     #header-menu .menu_bar {
 		display:block;
 		width:43px;
 		height: 42px;
 		position: absolute;
-		right: 2%;
+		right: 1%;
 		top:20px;
 	}
  
@@ -107,19 +23,31 @@
  
     #header-menu nav {
 		width: 260px;
-		height: calc(100% - 0px);
+		height: 100%;
 		position: fixed;
 		right:100%;
 		margin: 0;
-		margin-top: -54px;
+		margin-top: -8px;
 		overflow: scroll;
 		background: #ff6a13;
+		z-index: 9;
 	}
- 
+	#header-menu nav .saludo{
+		margin-left: 10px;
+		color: #5a5a5a;
+		font-weight: bold;
+		font-size: 128%;
+		margin-top: 40px;
+	}
+	#header-menu nav .saludo span{
+		font-size: 175%;
+	}
+	#header-menu nav ul{
+		margin-top: 50px;
+	}
     #header-menu nav ul li {
 		width: 100%;
 		display: inline-block;
-		border-bottom:1px solid rgba(255,255,255,.5);
 		padding-top: 10px;
 		padding-bottom: 10px;
 		margin-left: 0px;
@@ -150,7 +78,3 @@
     #header-menu nav ul li .caret {
 		float: right;
 	}
-}
-@media screen and (max-width: 500px) {
-
-}

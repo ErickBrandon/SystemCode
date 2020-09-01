@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <!-- Css ----------------------------------------- -->
-<link rel="stylesheet" href="recur/css/header.css">
-<link rel="stylesheet" href="recur/css/header-menu.css">
-<link rel="stylesheet" href="recur/css/generales.css">
+<link rel="stylesheet" href="../recur/css/header.css">
+<link rel="stylesheet" href="../recur/css/header-menu.css">
+<link rel="stylesheet" href="../recur/css/generales.css">
 
 <!-- Js ----------------------------------------- -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="recur/js/header-menu.js"></script>
+<script src="../recur/js/header-menu.js"></script>

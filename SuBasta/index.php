@@ -1,7 +1,14 @@
+<?php 
+session_start();
+if(isset($_SESSION['usuario'])){
+    $usuario=$_SESSION['usuario'];
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Link----------------------------------------- -->
+<!-- Link----------------------------------------- -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 <!-- Meta----------------------------------------- -->
@@ -12,62 +19,72 @@
 <link rel="stylesheet" href="recur/css/header.css">
 <link rel="stylesheet" href="recur/css/header-menu.css">
 <link rel="stylesheet" href="recur/css/generales.css">
-
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="recur/css/slider.css">
+<link rel="stylesheet" href="recur/css/cargador.css">
+<link rel="stylesheet" href="recur/css/categorias.css">
 <!-- Js ----------------------------------------- -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="recur/js/header-menu.js"></script>
-
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="recur/css/slider.css">
-    <link rel="stylesheet" href="recur/css/cargador.css">
-    <link rel="stylesheet" href="recur/css/categorias.css">
-    <script src="recur/js/main.js"></script>
+<script src="recur/js/main.js"></script>
 
 </head>
 <body>
 <header id="header">
-		<div class="logo">
-			<img loading="lazy" src="recur/img/logo.png" alt="">
-		</div>
-		<div class="header-info">
+    <div class="logo">
+		<img loading="lazy" src="recur/img/logo.png" alt="">
+    </div>
+    <div class="header-info">
 			<div class="buscador-h">
 				<form action="">
 					<div class="txt"><input type="text" placeholder="Buscar productos"></div>
 					<div class="btn fas fa-search"><input class="" type="submit" value=""></div>
 				</form>
-			</div>
+            </div>
+			<div class="h-subastas">
+				<a href=""><div class="segundo">Subasta tradicional</div></a>
+				<a href=""><div class="segundo">Subasta inversa</div></a>
+				<?php 
+					if(!isset($usuario)){
+						echo"<a href='form/usuario_nuevo.php'><div class='primero'>Crea tu cuenta</div></a>";
+						echo"<a href='form/login.php'><div class='primero'>Ingresar</div></a>";
+					}
+				?>
 
-			<div id="header-menu" class="menu">
-				<div class="menu_bar">
-					<a href="#" class="bt-menu"><span class="fas fa-bars"></span></a>
+				
+
+			</div>
+    </div>
+    <div id="header-menu" class="menu">
+			<div class="menu_bar">
+				<?php
+				if(isset($usuario)){
+					echo "<a href='#' class='bt-menu'><span class='far fa-user-circle'></span></a>";
+				}else{
+					echo "<a href='#' class='bt-menu'><span class='fas fa-bars'></span></a>";
+				}?>
+			</div>		 
+			<nav>
+                <div class="saludo">
+                    <span>¡Hola!</span><br><br>
+					Gracias por usar la plataforma
 				</div>
-		 
-				<nav>
-					<ul>
-						<li id="movil"><a href="form/usuario_nuevo.php">Crea tu cuenta</a></li>
-						<li id="movil"><a href="form/login.php">Ingresa</a></li>
-						<li id="movil"><a href="#">Mis subastas</a></li>
-	
-						<li><a href="index.php">Inicio</a></li>
+				<ul>
 						<li><a href="">Subasta tradicional</a></li>
 						<li><a href="">Subasta inversa</a></li>
-	
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="sb-link"> 
-			
-			<a href="/funciones/cerrarSesion.php"><div class="link"><span class="fas fa-sign-in-alt"></span>Cerrar Sesión</div></a>
-			<li id="movil"><a href="form/usuario_nuevo.php">Crea tu cuenta</a></li>
-			<a href="pag/perfil.php"><div class="link"><span class=""></span>Mi perfil</div></a>
-			<a href=""><div class="link">Mis subastas</div></a>
-			<a href="form/usuario_nuevo.php"><div class="link">Crea tu cuenta</div></a>
-			<a href="form/login.php"><div class="link"><span class="fas fa-sign-in-alt"></span>Ingresa</div></a>
-			
-		</div>
-		
-    </header>
+					<?php
+						if(isset($usuario)){
+							echo "<li id='movil'><a href='pag/perfil.php'>Mis perfil</a></li>";
+							echo "<li id='movil'><a href='#'>Mis subastas</a></li>";
+							echo "<li id='movil'><a href='funciones/cerrarSesion.php'>Cerrar sesión</a></li>";
+						}else{
+							echo "<li id='movil'><a href='form/usuario_nuevo.php'>Crea tu cuenta</a></li>";
+							echo "<li id='movil'><a href='form/login.php'>Ingresa</a></li>";
+						}?>
+				</ul>
+			</nav>
+	</div>
+</header>
     <div id="banner">
 		<div class="slideshow">
 			<ul class="slider">

@@ -3,23 +3,6 @@
 	overflow: hidden;
 	padding: 7px 0px 2px 0px;
 }
-.header2 {
-	width: 100%;
-	overflow: hidden;
-	position: fixed;
-	max-width: 1370px;
-	z-index: 7;
-	
-}
-
-@media screen and (max-width: 950px) {
- 
-	.header2 {
-		height:auto;
-	}
- 
-}
-
 #header .logo{
 	width: 70px;
 	margin-left: 7%;
@@ -127,21 +110,32 @@
 	position: relative;
 	top: -15px;
 }
-#header .sb-link{
-	width: 25%;
-	float: left;
+#header .header-info .h-subastas{
+	width: 100%;
+	min-width: 532px;
+	margin-top:8px;
 	overflow: hidden;
 }
-#header .sb-link .link{
-	float: left;
-	margin-left: 20px;
+#header .header-info .h-subastas a{
+	text-decoration: none;
 	color: #fff;
 }
-@media screen and (max-width: 800px){
-	#header .sb-link .link{
+#header .header-info .h-subastas a div{
+	width: 123px;
+	float: left;
+	margin-left:10px;
+	text-align: center;
+}
+@media screen and (max-width: 780px){
+	#header .header-info .h-subastas{
+		min-width: 0px;
+	}
+	#header .header-info .h-subastas a .primero{
 		display: none;
 	}
 }
-#header .sb-link .link span{
-	margin-right: 5px;
+@media screen and (max-width: 458px){
+	#header .header-info .h-subastas a .segundo{
+		display: none;
+	}
 }

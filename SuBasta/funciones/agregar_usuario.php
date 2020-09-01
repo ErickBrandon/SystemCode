@@ -19,4 +19,6 @@ if ($password == $password_c) {
           function actualizar(){location.reload(true);}         
          </script>";        
      }
+mysqli_close($conexion);
+
 ?>
