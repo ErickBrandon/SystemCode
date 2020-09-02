@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include("../funciones/conexionMysql.php");
+?>
 <html lang="en">
 <head>
     <?php include('../frac/generales2.php'); ?>
@@ -14,15 +17,66 @@
 <section id="contenido">
 <?php include('../frac/categorias.html');?>
     <section id="sb-cont">
+<?php 
+$sub = $_GET["sub"];
             
-            <div class="carta">
+    if ($sub == "Tradicional") {
+        $consultaTra = "SELECT * FROM producto WHERE TipoSubasta='$sub'";
+        $Res = mysqli_query($conexion, $consultaTra);
+        while($mostrar=mysqli_fetch_array($Res)){
+            $idPro = $mostrar['IdProducto'];
+        ?>
+<div class="carta">
                 <div class="img">
-                    <img src="{{ producto.fotoProd.url }}" alt="">
+                    <?php 
+            $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
+            $resultFoto=mysqli_query($conexion, $sqlFoto);
+            if ($mostrarFoto = mysqli_fetch_array($resultFoto)) {
+        ?>
+                    <img src="../funciones/<?php echo $mostrarFoto['Foto'] ?>" alt="">
+            <?php 
+            } 
+            ?>
                 </div>
-                <h3>{{producto.nombreP}}</h3>
-                <h4>${{producto.precio}}</h4>
+                <h3><?php echo $mostrar['NombreP']?></h3>
+                <h4><?php echo $mostrar['Precio']?></h4>
 
-            </div>
+</div>
+<?php }
+}
+    ?>
+
+
+
+<?php
+            
+    if ($sub == "Inversa") {
+        $consultaInv = "SELECT * FROM producto WHERE TipoSubasta='$sub'";
+        $ResInv = mysqli_query($conexion, $consultaInv);
+        while($mostrarInv=mysqli_fetch_array($ResInv)){
+        $idPro = $mostrarInv['IdProducto'];
+        ?>
+<div class="carta">
+                <div class="img">
+                    <?php 
+            $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
+            $resultFoto=mysqli_query($conexion, $sqlFoto);
+            if ($mostrarFoto = mysqli_fetch_array($resultFoto)) {
+        ?>
+                    <img src="../funciones/<?php echo $mostrarFoto['Foto'] ?>" alt="">
+            <?php 
+            } 
+            ?>
+                </div>
+                <h3><?php echo $mostrarInv['NombreP']?></h3>
+                <h4><?php echo $mostrarInv['Precio']?></h4>
+
+</div>
+<?php }
+}
+    ?>
+            
+
         </section>
 </section>
 </body>

@@ -10,8 +10,8 @@
 				</form>
             </div>
 			<div class="h-subastas">
-				<a href=""><div class="segundo">Subasta tradicional</div></a>
-				<a href=""><div class="segundo">Subasta inversa</div></a>
+				<a href="../pag/subasta.php?sub=Tradicional"><div class="segundo">Subasta tradicional</div></a>
+				<a href="../pag/subasta.php?sub=Inversa"><div class="segundo">Subasta inversa</div></a>
 				<?php 
 					if(!isset($usuario)){
 						echo"<a href='../form/usuario_nuevo.php'><div class='primero'>Crea tu cuenta</div></a>";
@@ -45,8 +45,8 @@
 				</div>
 				<ul>
 						<li><a href="../index.php">Inicio</a></li>
-						<li><a href="">Subasta tradicional</a></li>
-						<li><a href="">Subasta inversa</a></li>
+						<li><a href="../pag/subasta.php?sub=subastaTradicional">Subasta tradicional</a></li>
+						<li><a href="../pag/subasta.php?sub=subastaInversa">Subasta inversa</a></li>
 					<?php
 						if(isset($usuario)){
 							echo "<li id='movil'><a href='../pag/perfil.php'>Mis perfil</a></li>";
