@@ -1,0 +1,70 @@
+#contenido header{
+    font-size: 210% ;
+    color:rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin: 20px 0 0 10px;
+}
+#correo{
+    width: 95%;
+    margin: auto;
+    font-weight: bold;
+}
+#correo .correo-u{
+    margin-top: 15px;
+    font-size: 130%;
+}
+#formularios{
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+#formularios .botones{
+    width: 100%;
+}
+#formularios .botones button{
+    width: 250px;
+    margin:8px 0 0 10px;
+    padding: 3px;
+    border-style: none;
+    font-size: 120%;
+    background: #2d3e58;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+#cnt-f{
+    width: 98%;
+    margin: auto;
+    background: #fff;
+    padding-bottom: 10px;
+}
+#cnt-f form{
+    width: 100%;
+    overflow: hidden;
+}
+#cnt-f form div{
+    width: 240px;
+    margin:10px 0 0 2%;
+    float: left;
+}
+#cnt-f form div label{
+    width: 100%;
+    font-size: 125%;
+    color:rgba(0, 0, 0, 0.6);
+
+}
+#cnt-f form div input{
+    width: 90%;
+    margin-left: 5px;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 5px;
+    padding: 5px 0 5px 5px;
+    font-size: 120%;
+}
+#cnt-f form div button{
+    width: 100%;
+    font-size: 110%;
+}
