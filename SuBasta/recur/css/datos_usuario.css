@@ -47,7 +47,7 @@
 }
 #cnt-f form div{
     width: 240px;
-    margin:10px 0 0 2%;
+    margin:10px 0 0 1.5%;
     float: left;
 }
 #cnt-f form div label{
@@ -67,4 +67,14 @@
 #cnt-f form div button{
     width: 100%;
     font-size: 110%;
+    cursor: pointer;
+}
+#cnt-f form div button:disabled{
+    cursor: initial;
+}
+#cnt-f form div input:disabled{
+    background: rgba(0, 0, 0, 0.3);
+}
+#cnt-f form .cp{
+    width:116px;
 }

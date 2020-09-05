@@ -11,15 +11,45 @@ $(document).ready(function(){
     });
 })
 
-function activar(){
+function activar1(){
     document.getElementById('lbl1').disabled=false;
+    document.getElementById('lbl1').focus();
     document.getElementById('lbl2').disabled=false;
     document.getElementById('lbl3').disabled=false;
 
+    document.getElementById('cancelar').disabled=false;
+    document.getElementById('editar').disabled=true;
+    document.getElementById('actualizar').disabled=false;   
 }
-function desactivar(){
+function desactivar1(){
     document.getElementById('lbl1').disabled=true;
     document.getElementById('lbl2').disabled=true;
     document.getElementById('lbl3').disabled=true;
+    
+    document.getElementById('editar').disabled=false;
+    document.getElementById('cancelar').disabled=true;
+    document.getElementById('actualizar').disabled=true;
+}
+function activar2(){
+    document.getElementById('lbl1').disabled=false;
+    document.getElementById('lbl1').focus();
+    document.getElementById('lbl2').disabled=false;
+    document.getElementById('lbl3').disabled=false;
+    document.getElementById('lbl4').disabled=false;
+    document.getElementById('lbl5').disabled=false;
 
+    document.getElementById('cancelar').disabled=false;
+    document.getElementById('editar').disabled=true;
+    document.getElementById('actualizar').disabled=false;   
+}
+function desactivar2(){
+    document.getElementById('lbl1').disabled=true;
+    document.getElementById('lbl2').disabled=true;
+    document.getElementById('lbl3').disabled=true;
+    document.getElementById('lbl4').disabled=true;
+    document.getElementById('lbl5').disabled=true;
+    
+    document.getElementById('editar').disabled=false;
+    document.getElementById('cancelar').disabled=true;
+    document.getElementById('actualizar').disabled=true;
 }
