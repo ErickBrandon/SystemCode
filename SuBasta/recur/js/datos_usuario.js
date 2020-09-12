@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('#inf-u').click(function(){
         $("#cnt-f").load("../form/info-usuario.html");
+        
     });
     $('#inf-e').click(function(){
         $("#cnt-f").load("../form/info-envio.html");
@@ -9,7 +10,7 @@ $(document).ready(function(){
         $("#cnt-f").load("../form/pas-u.html");
         
     });
-})
+});
 
 function activar1(){
     document.getElementById('lbl1').disabled=false;

@@ -10,6 +10,7 @@
 				</form>
             </div>
 			<div class="h-subastas">
+			 	<a href="../pag/subasta.php?sub=Tradicional"><div class="segundo">Tienda</div></a>
 				<a href="../pag/subasta.php?sub=Tradicional"><div class="segundo">Subasta tradicional</div></a>
 				<a href="../pag/subasta.php?sub=Inversa"><div class="segundo">Subasta inversa</div></a>
 				<?php 
@@ -25,6 +26,7 @@
     </div>
     <div id="header-menu" class="menu">
 			<div class="menu_bar">
+				<a href='#' class='bt-menu'><span class='far fa-user-circle'>|||</span></a>
 				<?php
 				if(isset($usuario)){
 					echo "<a href='#' class='bt-menu'><span class='far fa-user-circle'></span></a>";
@@ -45,6 +47,7 @@
 				</div>
 				<ul>
 						<li><a href="../index.php">Inicio</a></li>
+						<li><a href="../pag/subasta.php?sub=subastaTradicional">Tienda</a></li>
 						<li><a href="../pag/subasta.php?sub=subastaTradicional">Subasta tradicional</a></li>
 						<li><a href="../pag/subasta.php?sub=subastaInversa">Subasta inversa</a></li>
 					<?php

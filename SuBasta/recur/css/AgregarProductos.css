@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
-	font-family: 'Jost', sans-serif;
+    font-family: 'Comfortaa', cursive;
     user-select: none;
     outline: 0 none;
 
@@ -10,11 +11,12 @@
 #user-i{
     display: none;
 }
+
 input:focus{
     outline: 0 none;
 }
 body{
-    background: #ace1ff;
+    background: #ebebeb;
     padding-bottom: 30px;
     max-width: 1370px;
     margin: auto;
@@ -24,10 +26,6 @@ body{
     margin:auto;
     width: 100%;
     background: #ff7033;
-
-
-    
-
 }
 #header .user{
     width: 90%;
@@ -73,187 +71,105 @@ body{
 #contenido form{
     width: 100%;
 }
-#contenido form .info{
+#contenido form .etapas{
     background: #fff;
-    margin-top: 20px;
-    padding: 10px 0px 10px 0px;
-    border-radius: 10px;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48); 
-}
-#contenido form .info h2{
-    font-size: 120%;
-    margin-left: 2%;
-}
-#contenido form .info p{
-    font-size: 100%;
-    margin-left: 2%;
-    color:rgba(0,0,0,0.8);
-}
-
-#contenido form .info .titulo{
-    width: 70%;
-    margin-left: 5%;
-    font-size: 135%;
-    padding-left: 5px;
-    margin-top: 10px;
-    min-width: 265px;
-
-    border-style: none;
-    border-left: 2px #0868b8 solid;
-}
-#contenido form .info .titulo:hover{
-    background: rgba(0,0,0,0.1);
-}
-#contenido .info .categorias{
-    width: 100%;
-    overflow: hidden;
-    padding: 10px 0px 10px 0px;
-}
-#contenido .info .categorias .cat{
-    width:100px;
-    border-radius: 15px;
-    margin-top: 5px;
-    float: left;
-    margin-left: 4%;
-    padding-top: 4px;
-
-    -moz-transition: all .45s ease;
-    -webkit-transition: all .45s ease;
-    -ms-transition: all .45s ease;
-    transition: all .45s ease;
-    -o-transition: all .45s ease;
-}
-#contenido .info .categorias .cat:hover{
+    padding: 20px 0 20px 0; 
     border-radius: 5px;
-    background: rgba(0,0,0,0.2);
-}
-@media screen and (max-width: 1265px){
-    #contenido .info .categorias .cat{
-        margin-left:7%;
-    }
-}
-@media screen and (max-width: 1130px){
-    #contenido .info .categorias .cat{
-        margin-left:10%;
-    }
-}
-@media screen and (max-width: 885px){
-    #contenido .info .categorias .cat{
-        margin-left:15%;
-    }
-}
-@media screen and (max-width: 685px){
-    #contenido .info .categorias .cat{
-        margin-left:12%;
-    }
-}
-#contenido .info .categorias .cat .icon{
-    font-size: 35px;
-    margin-left: 32%;
-    color: #0868b8;
-}
-#contenido .info .categorias .cat .btn-r{
-    width: 20px;
-    height: 20px;
-    margin: auto;
-    
-        
-}
-#contenido .info .categorias .cat .btn-r input{
-    width: 100%;
-    height: 100%;
-}
-#contenido .info .categorias .cat h2{
-    text-align: center;
-    margin-top: 8px;
-}
-#contenido .condi{
-    width: 60%;
-    min-width: 260px;
-    margin: auto;
-
-}
-#contenido .info .condicion{
-    margin-left: 2%;
-    font-size: 120%;
-    margin-top: 10px;
-}
-#contenido .info .condicion:hover{
-    border-left: 1px #0868b8 solid;
-    background: rgba(0,0,0,0.1);
-}
-#contenido .info .condicion .con{
-    margin-right: 5px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-#contenido .info textarea{
-    background: rgba(0,0,0,0.1);
-    width: 80%;
-    margin-left: 3%;
-    font-size: 130%;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin-top: 10px;
-}
-#contenido .info .select{
-    width: 40%;
-    margin: auto;
-    background:#0971c7;
-
+    margin-top: 20px;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-
-    -moz-transition: all .45s ease;
-    -webkit-transition: all .45s ease;
-    -ms-transition: all .45s ease;
-    transition: all .45s ease;
-    -o-transition: all .45s ease;
 }
-#contenido .info .select:hover{
-    background:#0868b8;
-    border-radius: 5px;
 
+#contenido form .etapas label{
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: 10px;
 }
-#contenido .info .select select{
-    width: 100%;
-    font-size: 140%;
+#contenido form .etapas p{
+    margin: 10px 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-size: 90%;
+}
+#contenido form .etapas input{
+    width: 70%;
+    margin: 15px 0 0 5%;
+    font-size: 125%;
+    padding: 5px 0 5px 5px;
+    
+    min-width: 265px;
+    border-style: none;
+    border-left: 2px #0868b8 solid;
+    background: rgba(0,0,0,0.1);
+}
+#contenido form .etapas .select{
+    width: 40%;
+    margin: auto;
+    margin-top: 15px;
+    background: #0971c7;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+#contenido form .etapas .select select{
+    width: 95%;
+    font-size: 120%;
     border-style: none;
     background: transparent;
     color: #fff;
     padding: 3px 0 3px 4px;
     cursor: pointer;
 }
-#contenido .info .select select option{
+#contenido form .etapas div select option{
     color: #000;
     cursor: pointer;
 }
-#contenido .info .file{
-    width: 54%;
-    min-width: 290px;
-    margin: auto;
+#contenido form .etapas textarea{
+    width: 80%;
+    min-height: 200px;
+    margin:25px 0 0 3%;
+    padding: 15px 10px 15px 10px;
+}
+#cont-categoria button{
     margin-top: 10px;
-    background: rgba(0,0,0,0.1);
-    border-radius: 5px;
-    padding: 4px 4px 4px 4px;
 }
-#contenido .info input[type=file]{
-   width:100%;
-   margin: auto;
-   font-size: 105%;
-}
-#contenido form .btn{
-    width: 40%;
-    margin-top: 20px;
-    margin-left: 30%;
+#cont-categoria button{
+    width: 100px;
+    height: 100px;
+    margin-left: 7%;
     border-style: none;
-    border-radius: 7px;
+    background:#fff;
+    color:#0971c7;
     cursor: pointer;
-    font-size: 120%;
-    background: #3f5c9a;
+    padding:15px 0 15px 0;
+
+    -moz-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+#cont-categoria button:hover{
+    background: #0971c7;
     color: #fff;
+}
+#cont-categoria .seleccionado{
+    background: #0971c7;
+    color: #fff;
+}
+#cont-categoria button i{
+    font-size: 250%;
+}
+#cont-categoria button li{
+    width: 100%;
+    list-style: none;
+    font-size: 120%;
+    margin-top: 15px;
+}
+#btn-radio{
+    display: none;
+}
+#btn-AGP{
+    cursor: pointer;
 }
