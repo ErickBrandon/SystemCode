@@ -2,22 +2,22 @@ $(document).ready(function(){
     $('#ryc').click(function(){
         $("#s-categoria").load("../form/frac-productos/ropa-calzado.html");
         document.getElementById('ryc').classList.add('seleccionado');
-        document.getElementById('tel').classList.remove('seleccionado');
+        document.getElementById('ayb').classList.remove('seleccionado');
         document.getElementById('tec').classList.remove('seleccionado');
         document.getElementById('otro').classList.remove('seleccionado');
     });
-    $('#tel').click(function(){
-        $("#s-categoria").load("../form/frac-productos/ropa-calzado.html");
-        document.getElementById('tel').classList.add('seleccionado');
+    $('#ayb').click(function(){
+        $("#s-categoria").load("../form/frac-productos/accesorios-belleza.html");
+        document.getElementById('ayb').classList.add('seleccionado');
         document.getElementById('ryc').classList.remove('seleccionado');
         document.getElementById('tec').classList.remove('seleccionado');
         document.getElementById('otro').classList.remove('seleccionado');
     });
     $('#tec').click(function(){
-        $("#s-categoria").load("../form/frac-productos/ropa-calzado.html");
+        $("#s-categoria").load("../form/frac-productos/tecnologia.html");
         document.getElementById('tec').classList.add('seleccionado');
         document.getElementById('ryc').classList.remove('seleccionado');
-        document.getElementById('tel').classList.remove('seleccionado');
+        document.getElementById('ayb').classList.remove('seleccionado');
         document.getElementById('otro').classList.remove('seleccionado');
 
     });
@@ -25,7 +25,7 @@ $(document).ready(function(){
         $("#s-categoria").load("../form/frac-productos/ropa-calzado.html");
         document.getElementById('otro').classList.add('seleccionado');
         document.getElementById('ryc').classList.remove('seleccionado');
-        document.getElementById('tel').classList.remove('seleccionado');
+        document.getElementById('ayb').classList.remove('seleccionado');
         document.getElementById('tec').classList.remove('seleccionado');
 
     });

@@ -37,11 +37,8 @@ if (isset($_POST['registrar'])) {
             <div><input id="password" type="password" placeholder="Contraseña" name="password" required=""></div>
             <div><input id="password_c" type="password" placeholder="Confirmar contraseña" name="password_c" required=""></div>
 
-            <br>
-            <h4>Fecha de nacimiento</h4>
-            <div><input type="date" name="nacimiento"></div>
             <div class="btn-r"><input type="submit" name="registrar"></div><br>
-        <a href="login.html">Ingresa a Su-Basta</a>
+        <a href="login.php">Ingresa a Su-Basta</a>
 
         </form>
     </div>

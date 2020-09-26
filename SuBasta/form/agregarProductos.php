@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../recur/css/AgregarProductos.css">
@@ -23,13 +22,14 @@
         <div class="texto">
             <h1>Gracias por confiar en Su-Basta</h1>
             <h1>para vender tus productos.</h1><br>
-            <h3>Preparemos todos los detalles para subastar.</h3>
+            <h3>Preparemos todos los detalles para vender.</h3>
         </div>
     </section>
     <section id="contenido">
        <form action="">
             <div class="etapas">
                 <label for="">Agrega el titulo de tu porducto.</label>
+                <p>Es el nombre principal que se mostrará de tu producto.</p>
                 <p>Se directo y simple.</p>
                 <input type="text"  placeholder="Ej: Celular Samsung Galaxy S9">
             </div>
@@ -40,7 +40,7 @@
                         <option value="">Nuevo</option>
                         <option value="">Segunda mano</option>
                     </select>
-                </div> <br><br>
+                </div> <br><br><br><br>
                 <label for="">¿Cómo quieres vender tu producto?</label>
                 <p>Es la modalidad en el que tu producto participará para ser vendido.</p>
                 <div class="select"> 
@@ -63,7 +63,7 @@
                         <i class="fas fa-tshirt"></i>
                         <li>Ropa y calzado</li>
                     </button>
-                    <button id="tel" class="" type="button">
+                    <button id="ayb" class="" type="button">
                         <i class="fas fa-child"></i>
                         <li>Accesorios y belleza</li>
                     </button>
