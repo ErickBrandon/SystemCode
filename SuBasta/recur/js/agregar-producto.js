@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     });
     $('#otro').click(function(){
-        $("#s-categoria").load("../form/frac-productos/ropa-calzado.html");
+        $("#s-categoria").load("../form/frac-productos/otro.html");
         document.getElementById('otro').classList.add('seleccionado');
         document.getElementById('ryc').classList.remove('seleccionado');
         document.getElementById('ayb').classList.remove('seleccionado');

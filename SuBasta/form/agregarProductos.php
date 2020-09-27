@@ -57,6 +57,12 @@
                 <input type="text"  placeholder="Ej: 4">
             </div>
             <div class="etapas">
+                <label for="">Ingresa la marca de tu producto</label>
+                <p>En caso de no tener una marca para tu producto ingresalo como "Genérico"</p>
+                <p>En Su-Basta no estamos a favor de la pirateria por favor verificar la marca de tu producto.</p>
+                <input type="text"  placeholder="Ej: Samsumg">
+            </div>
+            <div class="etapas">
                 <label for="">Selecciona la categoría del producto</label>
                 <div id="cont-categoria">
                     <button id="ryc" class="" type="button">
