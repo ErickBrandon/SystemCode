@@ -31,7 +31,7 @@
                 <label for="">Agrega el titulo de tu porducto.</label>
                 <p>Es el nombre principal que se mostrará de tu producto.</p>
                 <p>Se directo y simple.</p>
-                <input type="text"  placeholder="Ej: Celular Samsung Galaxy S9">
+                <input  class="i-txt" type="text"  placeholder="Ej: Celular Samsung Galaxy S9">
             </div>
             <div class="etapas">
                 <label for="">¿En que condición se encuentra tu producto?</label>
@@ -54,24 +54,28 @@
             <div class="etapas">
                 <label for="">Cantidad de piezas disponibles del produco</label>
                 <p>Número de piezas del producto que se tiene para vender</p>
-                <input type="text"  placeholder="Ej: 4">
+                <input class="i-txt" type="text"  placeholder="Ej: 4">
             </div>
             <div class="etapas">
                 <label for="">Ingresa la marca de tu producto</label>
                 <p>En caso de no tener una marca para tu producto ingresalo como "Genérico"</p>
                 <p>En Su-Basta no estamos a favor de la pirateria por favor verificar la marca de tu producto.</p>
-                <input type="text"  placeholder="Ej: Samsumg">
+                <input class="i-txt" type="text"  placeholder="Ej: Samsumg">
+            </div>
+            <div class="etapas">
+                <label for="">Ingresa el precio de tu producto</label>
+                <input class="i-txt" type="text"  placeholder="Ej: $100">
             </div>
             <div class="etapas">
                 <label for="">Selecciona la categoría del producto</label>
                 <div id="cont-categoria">
                     <button id="ryc" class="" type="button">
                         <i class="fas fa-tshirt"></i>
-                        <li>Ropa y calzado</li>
+                        <li>Ropa y Calzado</li>
                     </button>
                     <button id="ayb" class="" type="button">
                         <i class="fas fa-child"></i>
-                        <li>Accesorios y belleza</li>
+                        <li>Accesorios y Belleza</li>
                     </button>
                     <button id="tec" class="" type="button">
                         <i class="fas fa-mobile"></i>

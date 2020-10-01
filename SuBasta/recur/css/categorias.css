@@ -10,13 +10,13 @@
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
 .categorias .autos{
-    width: 19%;
+    width: 24%;
     float: left;
-    margin-left: 1%;
+    margin: 10px 0 0 1%;
 }
 .categorias .autos .titulo{
     text-align: center;
-    font-size: 112%;
+    font-size: 102%;
 }
 .categorias .autos .img{
 border-radius: 100%;
@@ -24,14 +24,17 @@ border: 1px #e9e8e8 solid;
 padding: 12px 0px 12px 0px;
 width: 50px;
 font-size: 150%;
-    text-align: center;
-    color: #167cd0;
+text-align: center;
+color: #167cd0;
 }
 .categorias .autos .ir{
     float: right;
-    margin-right: 4%;
-    color: #167cd0;
-    font-size: 85%;
+    margin-right: 20%;
+    color: #0f5894;
+    font-size: 90%;
+}
+.categorias .autos .ir div{
+    margin-top: 10px;
 }
 @media screen and (max-width: 1080px){
     .categorias .autos .img{
@@ -51,9 +54,22 @@ font-size: 150%;
         margin-left: 1%;
     }
 }
+@media screen and (max-width: 530px){
+    .categorias .autos{
+        width: 32%;
+        margin-left: 1%;
+    }
+}
+@media screen and (max-width: 510px){
+    .categorias .autos{
+        width: 36%;
+        margin-left: 8%;
+    }
+}
 @media screen and (max-width: 410px){
     .categorias .autos{
         width: 45%;
+        margin-left: 2%;
         
     }
 }

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 #ruta{
-    width: 85%;
-    margin: auto;
-    font-size: 90%;
-    color: #000;
-    margin-top: 25px;
+    width: 100%;
+    color: #fff;
     font-family: 'Comfortaa', cursive;
-
+    background: #2d3e58;
+    padding: 25px 0 60px 0;
+}
+#ruta .linea{
+    width: 97%;
+    font-size: 85%;
+    margin: auto;
 }
 #ruta  span{
     margin: 0 7px 0 7px;
@@ -14,14 +17,21 @@
     color: #167cd0;
 
 }
+#ruta .nombre{
+    margin: 20px 0 0 20px;
+    font-size: 180%;
+}
 #cont-producto{
     width: 85%;
     margin: auto;
-    margin-top: 25px;
+    margin-top: -50px;
     border-radius: 5px;
-    border:1px rgba(0, 0, 0, 0.2) solid;
+    border:1px transparent solid;
     background: #fff;
     padding-bottom: 30px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
 #cont-producto .producto-p{
     width: 85%;
@@ -55,17 +65,12 @@
     color: rgba(0, 0, 0, 0.7);
 
 }
-#cont-producto .producto-p .info-p .nombre{
-    font-size: 140%;
-    margin-bottom: 15px;
-    color: rgba(0, 0, 0, 0.8);
-}
 #cont-producto .producto-p .info-p .precio{
     font-size: 150%;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 10px;
 }
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 1050px){
     #cont-producto .producto-p .img-p{
         width: 280px;
         height: 250px;
@@ -74,7 +79,7 @@
         width:280px;
     }
 }
-@media screen and (max-width: 884px){
+@media screen and (max-width: 895px){
     #cont-producto .producto-p .img-p{
         width: 340px;
         height: 310px;
@@ -112,7 +117,7 @@
 #cont-producto .tradcional header .color{
     color: #ff6a13;
 }
-#cont-producto .tradcional p{
+#cont-producto .tradcional .mejor-precio{
     text-align: center;
     font-size: 200%;
     font-weight: bolder;
@@ -153,11 +158,22 @@
 #cont-producto .tradcional form button:hover{
     background:#f36513;
 }
-#cont-producto .tradcional .descripcion{
-    width: 70%;
-    margin: 30px 0 0 4%;
-    font-size: 125%;
-    text-align: justify;
+#cont-producto .tradcional .descripcion .t-caracteristicas{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 200%;
     color: rgba(0, 0, 0, 0.6);
     font-weight: bolder;
+    border-top:1px rgba(0, 0, 0, 0.2) solid;
+    padding: 10px 0 0 8px;
+}
+#cont-producto .tradcional .descripcion .mas-caract{
+    width: 70%;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 128%;
 }

@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#inf-u').click(function(){
-        $("#cnt-f").load("../form/info-usuario.html");
+        $("#cnt-f").load("../pag/ropa-calzado.html");
         
     });
     $('#inf-e').click(function(){
