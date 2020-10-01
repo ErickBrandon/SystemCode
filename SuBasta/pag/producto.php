@@ -13,10 +13,11 @@
     Modalidad-subasta<span>></span>Categoria<span>></span>Marca<span>></span>Producto
   </div>
   <div id="cont-producto">
-        <div class=producto-p>
-            <div class="img-p"><img src="../recur/img/Vocho.jpg" alt=""></div>
+      <div class=producto-p>
+        <div class="img-p"><img src="../recur/img/Vocho.jpg" alt=""></div>
             <div class="info-p">
               <ul>
+<<<<<<< Updated upstream
                 <li class="nombre">Smart TV Samsung Series 7 UN50TU7000FXZX LED 4K 50"</li>
                 <li>Precio inicial:</li>
                 <li class="precio">$ 10,000</li>
@@ -25,8 +26,29 @@
                 <li>Modelo:</li>
                 <li>Condición:</li>
                 <li>Tamaño:</li>
+=======
+                <li class="p-i">Precio inicial:</li>
+                <li class="precio">$ 10,000.00</li>
+                <li class="info-c">Categoría:</li>
+                <li class="info-c">Marca:</li>
+                <li class="info-c">Modelo:</li>
+                <li class="info-c">Condición:</li>
+                <li class="info-c">Tamaño:</li>
+>>>>>>> Stashed changes
               </ul>
+              <div class="tradicional">
+                <header>Mejor oferta <span class="fas fa-gavel"></span></header>
+                <p class="mejor-precio">$ 10,100.00</p>
+                <form action="">
+                  <span>$</span><input type="text" ><button type="submit">Mejorar Oferta</button>
+                </form>
+              </div>
+              <div class=info-pagos>
+                <p>Realiza tus compras a través de</p>
+                <i class="fab fa-cc-paypal"></i>
+              </div>
             </div>
+<<<<<<< Updated upstream
         </div>
         <div class="tradcional">
           <header>Mejor oferta en <span>Su-</span><span class="color">Basta</span></header>
@@ -43,6 +65,9 @@ Mayor rendimiento
 Su memoria RAM de 4 GB te permitirá ejecutar varias aplicaciones al mismo tiempo, jugar y navegar con gran rapidez y sin inconvenientes.
           </div>
         </div>
+=======
+      </div>
+>>>>>>> Stashed changes
   </div>
 </section>
 </body>

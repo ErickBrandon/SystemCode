@@ -2,11 +2,15 @@
 #ruta{
     width: 85%;
     margin: auto;
+<<<<<<< Updated upstream
     font-size: 90%;
     color: #000;
     margin-top: 25px;
     font-family: 'Comfortaa', cursive;
 
+=======
+    text-align: right;
+>>>>>>> Stashed changes
 }
 #ruta  span{
     margin: 0 7px 0 7px;
@@ -24,37 +28,62 @@
     padding-bottom: 30px;
 }
 #cont-producto .producto-p{
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 40px;
     overflow: hidden;
     border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
     padding-bottom: 20px;
 }
+
 #cont-producto .producto-p .img-p{
-        width: 330px;
-        height: 300px;
+        width:450px;
+        height:450px;
         float: left;
+        margin-left: 14%;
+        margin-top: 30px;
 }
 #cont-producto .producto-p .img-p img{
     width: 100%;
     height: 100%;
     border-radius: 7px;
 }
+@media screen and (max-width: 1159px){
+    #cont-producto .producto-p .img-p{
+        width:410px;
+        height:410px;
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 1075px){
+    #cont-producto .producto-p .img-p{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 955px){
+    #cont-producto .producto-p .img-p{
+        width:300px;
+        height:300px;
+        margin-left: 1%;
+    }
+}
+
 #cont-producto .producto-p .info-p{
     width:330px;
     float: right;
     border: 1px rgba(0, 0, 0, 0.2) solid;
     border-radius: 7px;
+    padding: 20px 0 10px 0;
+    overflow: hidden;
 }
 #cont-producto .producto-p .info-p ul{
     list-style: none;
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
-    margin:20px 0 0 10px;
     color: rgba(0, 0, 0, 0.7);
 
 }
+<<<<<<< Updated upstream
 #cont-producto .producto-p .info-p .nombre{
     font-size: 140%;
     margin-bottom: 15px;
@@ -97,62 +126,101 @@
         width: 245px;
         height: 215px;
     }
+=======
+.p-i, .precio{
+    margin-left: 10px;
 }
-#cont-producto .tradicional{
-    width: 100%;
+#cont-producto .producto-p .info-p ul .p-i{
+    font-size: 180%;
+}
+#cont-producto .producto-p .info-p ul .precio{
+    font-size: 210%;
+    color:#4e54c8;
+    margin-bottom: 10px;
+}
+#cont-producto .producto-p .info-p ul .info-c{
+    width: 90%;
     margin: auto;
+    background:#f3f5f9;
+    margin-top: 7px;
+    padding: 7px 4px 7px 4px;
+    border-radius: 5px;
+>>>>>>> Stashed changes
 }
-#cont-producto .tradcional header{
+#cont-producto .producto-p .info-p .tradicional{
+    width: 100%;
+    margin-top: 20px;
+    border-top:  1px rgba(0, 0, 0, 0.2) solid;
+    border-bottom:  1px rgba(0, 0, 0, 0.2) solid;
+    padding: 7px 0 7px 0;
+}
+.tradicional  header,p{
     text-align: center;
-    font-size: 160%;
 }
-#cont-producto .tradcional header span{
-    font-family: 'Caveat', cursive;
+.tradicional  header span{
+    color: rgba(0, 0, 0, 0.4);
 }
-#cont-producto .tradcional header .color{
-    color: #ff6a13;
+.tradicional  header{
+    font-size: 130%;
 }
+<<<<<<< Updated upstream
 #cont-producto .tradcional p{
     text-align: center;
     font-size: 200%;
     font-weight: bolder;
+=======
+.tradicional p{
+    font-size: 160%;
+    font-weight: bold;
+    color: red;
 }
-#cont-producto .tradcional form{
-    width: 200px;
-    margin: auto;
-    border-radius: 8px;
-    background: #fff;
-    padding: 5px 0 5px 0;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+.tradicional form span, input,button{
+    font-size: 125%;
+    margin-left: 2px;
 }
-#cont-producto .tradcional form span{
-    font-size: 130%;
-    margin-left:4px;
+.tradicional form input{
+    width: 45%;
+    padding: 4px 0 4px 0;
+    background: #f3f5f9;
+    border:1px rgba(0, 0, 0, 0.2) solid;   
 }
-#cont-producto .tradcional form span input{
-    width:170px;
-    height:33px;
-    font-size:120%;
+.tradicional form button{
+    padding: 5px 3px 5px 3px;
+    background: #00a650;
     border-style: none;
-    margin-left: 4px;
-    background: rgba(0, 0, 0, 0.1);
-}
-#cont-producto .tradcional form button{
-    width: 125px;
-    height:43px;
-    color:#fff;
-    background:#ff6a13;
-    border-style: none;
-    font-size: 120%;
-    text-align: center;
-    margin:8px 0 0 20%;
+    color: #fff;
     cursor: pointer;
+>>>>>>> Stashed changes
 }
-#cont-producto .tradcional form button:hover{
-    background:#f36513;
+.tradicional form button:hover{
+    background: #008f45;
+
 }
+.info-pagos p{
+    padding: 3px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+.info-pagos i{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: #0f5894;
+}
+@media screen and (max-width: 810px){
+    #cont-producto .producto-p .img-p{
+        float: none;
+        margin: auto;
+    }
+    #cont-producto .producto-p .info-p{
+        width: 80%;
+        min-width: 270px;
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+<<<<<<< Updated upstream
 #cont-producto .tradcional .descripcion{
     width: 70%;
     margin: 30px 0 0 4%;
@@ -161,3 +229,12 @@
     color: rgba(0, 0, 0, 0.6);
     font-weight: bolder;
 }
+=======
+@media screen and (max-width: 368px){
+        #cont-producto .producto-p .img-p{
+            width:265px;
+            height:265px;
+        }
+}
+
+>>>>>>> Stashed changes
