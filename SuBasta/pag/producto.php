@@ -18,8 +18,8 @@
             <div class="img-p"><img src="../recur/img/Vocho.jpg" alt=""></div>
             <div class="info-p">
               <ul>
-                <li>Precio inicial:</li>
-                <li class="precio">$ 10,000</li>
+                <li class="p-i">Precio inicial:</li>
+                <li class="precio">$ 10,000.00</li>
                 <li>Categoría:</li>
                 <li>Marca:</li>
                 <li>Modelo:</li>

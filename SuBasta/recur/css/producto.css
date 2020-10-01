@@ -12,7 +12,7 @@
     margin: auto;
 }
 #ruta  span{
-    margin: 0 7px 0 7px;
+    margin: 0 7px 0 0px;
     font-size: 120%;
     color: #167cd0;
 
@@ -22,7 +22,7 @@
     font-size: 180%;
 }
 #cont-producto{
-    width: 85%;
+    width: 100%;
     margin: auto;
     margin-top: -50px;
     border-radius: 5px;
@@ -63,11 +63,13 @@
     font-weight: bolder;
     margin:20px 0 0 10px;
     color: rgba(0, 0, 0, 0.7);
-
+}
+#cont-producto .producto-p .info-p .p-i{
+    font-size: 180%;
 }
 #cont-producto .producto-p .info-p .precio{
-    font-size: 150%;
-    color: rgba(0, 0, 0, 1);
+    font-size: 210%;
+    color:#4e54c8;
     margin-bottom: 10px;
 }
 @media screen and (max-width: 1050px){
