@@ -1,116 +1,27 @@
-#simbologia{
-    width: 17%;
-    min-width: 190px;
-    margin: auto;
-    background: #fff;
-    margin-top: 15px;
-    border-left: 4px #0868b8 solid;
-    padding: 5px 0px 5px 0px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.48);
-    
-}
-#simbologia .cont{
-    width: 100%;
-}
-#simbologia .cont .icon{
-    color: #4caf50;
-    margin-right: 15px;
-    margin-left: 10px;
-    text-align: left;
-}
 #sb-cont{
-    width: 100%;
-    min-width: 1079px;
-    margin: auto;
-    padding: 10px 0px 10px 0px;
+    width: 948px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 0px 15px 0px;
     margin-top: 15px;
     border-radius: 5px;
     overflow: hidden;
 }
-@media screen and (max-width: 1225px){
+@media screen and (max-width: 1053px){
     #sb-cont{
-        margin-left: -6%;
+        width: 100%;
     }
 }
-@media screen and (max-width: 1150px){
-    #sb-cont{
-        margin-left: -10%;
-    }
-}
-@media screen and (max-width: 1110px){
-    #sb-cont{
-        margin-left: -11%;
-    }
-}
-@media screen and (max-width: 1100px){
-    #sb-cont{
-        margin-left: 0%;
-        min-width: 880px;
-    }
-}
-@media screen and (max-width: 1000px){
-    #sb-cont{
-        margin-left: 0%;
-        min-width: 800px;
-    }
-}
-@media screen and (max-width: 910px){
-    #sb-cont{
-        margin-left: -8%;
-    }
-}
-@media screen and (max-width: 860px){
-    #sb-cont{
-        margin-left: 0%;
-        min-width: 674px;
-    }
-}
-@media screen and (max-width: 770px){
-    #sb-cont{
-        margin-left: -8%;
-    }
-}
-@media screen and (max-width: 770px){
-    #sb-cont{
-        margin-left: 0%;
-        min-width: 0px;
-        min-width: 500px;
 
-    }
-}
-@media screen and (max-width: 570px){
-    #sb-cont{
-        margin-left: -9%;
-    }
-}
-@media screen and (max-width: 530px){
-    #sb-cont{
-        margin-left: 0%;
-        min-width: 0px;
-    }
-}
 #sb-cont .carta{
-    width: 22%;
-    max-width: 241px;
-    min-width: 241px;
+    width: 240px;
+    height: 365px;
     float: left;
     margin-left: 2%;
     background: #fff;
     padding: 0px 0px 15px 0px;
     border-radius: 5px;
-    border: 1px #e9e8e8 solid;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
     margin-top: 10px;
-    
-    -moz-transition: all .1s ease;
-    -webkit-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    transition: all .1s ease;
-    -o-transition: all .1s ease;
-    
 }
 #sb-cont .carta .img{
     width: 100%;
@@ -127,42 +38,52 @@
 #sb-cont .carta h4{
     color:#c70404;
 }
-@media screen and (max-width: 860px){
+@media screen and (max-width: 880px){
     #sb-cont .carta{
-        min-width: 150px;
+        margin-left: 4%;
+    }
+}
+@media screen and (max-width: 615px){
+    #sb-cont .carta{
+        width: 200px;
+        height: 325px;
+        margin-left: 5%;
+
     }
     #sb-cont .carta .img{
-        height: 150px;
+        height: 200px;
     }
 }
 @media screen and (max-width: 530px){
     #sb-cont .carta{
-        margin-left: 9%;
+        width: 180px;
+        height: 305px;
+        margin-left: 3%;
+
     }
-    
+    #sb-cont .carta .img{
+        height: 180px;
+    }
 }
-@media screen and (max-width: 490px){
+@media screen and (max-width: 530px){
     #sb-cont .carta{
-        margin-left: 6%;
+        width: 155px;
+        height: 280px;
+        margin-left: 3%;
+
     }
-    
+    #sb-cont .carta .img{
+        height: 155px;
+    }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 353px){
     #sb-cont .carta{
-        margin-left: 9%;
+        width: 250px;
+        height: 375px;
+        float: none;
+        margin: auto;
     }
-    
-}
-@media screen and (max-width: 410px){
-    #sb-cont .carta{
-        margin-left: 5%;
+    #sb-cont .carta .img{
+        height: 250px;
     }
-    
-}
-@media screen and (max-width: 370px){
-    #sb-cont .carta{
-        min-width: 130px;
-        margin-left: 5%;
-    }
-    
 }

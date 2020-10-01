@@ -26,7 +26,6 @@
     </div>
     <div id="header-menu" class="menu">
 			<div class="menu_bar">
-				<a href='#' class='bt-menu'><span class='far fa-user-circle'>|||</span></a>
 				<?php
 				if(isset($usuario)){
 					echo "<a href='#' class='bt-menu'><span class='far fa-user-circle'></span></a>";
