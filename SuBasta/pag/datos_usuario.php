@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include('../frac/generales.php');?>
-
-    <link rel="stylesheet" href="../recur/css/generales.css">
     <link rel="stylesheet" href="../recur/css/datos_usuario.css">
     <script src="../recur/js/datos_usuario.js"></script>
     <title>Document</title>
@@ -19,13 +16,6 @@
             <button id="inf-c">Contraseña</button>
         </div>
         <div id="cnt-f">
-            <div id="inicio">
-                hola <br>
-                se esta iniciando <br>
-                ésta página <br>
-                de usuario
-            </div>
-
         </div>
     </div>
 </section>

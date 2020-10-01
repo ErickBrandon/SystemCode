@@ -42,9 +42,9 @@ if(isset($_SESSION['usuario'])){
 				</form>
             </div>
 			<div class="h-subastas">
-				<a href="pag/subasta.php?sub=Tienda"><div class="segundo">Tienda</div></a>
-				<a href="pag/subasta.php?sub=Tradicional"><div class="segundo">Subasta tradicional</div></a>
-				<a href="pag/subasta.php?sub=Inversa"><div class="segundo">Subasta inversa</div></a>
+				<a href="pag/subasta.php"><div class="segundo">Tienda</div></a>
+				<a href="pag/subasta.php"><div class="segundo">Subasta tradicional</div></a>
+				<a href="pag/subasta.php"><div class="segundo">Subasta inversa</div></a>
 				<?php 
 					if(!isset($usuario)){
 						echo"<a href='form/usuario_nuevo.php'><div class='primero'>Crea tu cuenta</div></a>";
@@ -132,41 +132,65 @@ if(isset($_SESSION['usuario'])){
             <div class="img-e"><img src="recur/img/empezar.png" alt=""></div>
         </div>
         <p id="titulo-sb">Categorías</p>
-<div class="categorias">
+        <div class="categorias">
     <div class="autos">
-        <div class="titulo">Ropa y Calzado</div>
-        <div class="img fas fa-tshirt"></div>
+        <div class="titulo">Autos</div>
+        <div class="img fas fa-car"></div>
         <div class="ir">
-            <div>Tienda</div>
-            <div>Subasta tradicional</div>
-            <div>Subasta inversa</div>
+            <div>
+                Subasta tradicional
+            </div>
+            <div>
+                Subasta inversa
+            </div>
         </div>
     </div>
     <div class="autos">
-        <div class="titulo">Accesorios y Belleza</div>
-        <div class="img fas fa-child"></div>
+        <div class="titulo">Cómputo</div>
+        <div class="img fas fa-laptop"></div>
         <div class="ir">
-            <div>Tienda</div>
-            <div> Subasta tradicional</div>
-            <div>Subasta inversa</div>
+            <div>
+                Subasta tradicional
+            </div>
+            <div>
+                Subasta inversa
+            </div>
         </div>
     </div>
     <div class="autos">
         <div class="titulo">Telefonía</div>
-        <div class="img fas fa-mobile"></div>
+        <div class="img fas fa-mobile-alt"></div>
         <div class="ir">
-            <div>Tienda</div>
-            <div>Subasta tradicional</div>
-            <div> Subasta inversa</div>
+            <div>
+                Subasta tradicional
+            </div>
+            <div>
+                Subasta inversa
+            </div>
         </div>
     </div>
     <div class="autos">
-        <div class="titulo">Otro</div>
+        <div class="titulo">Hogar</div>
+        <div class="img fas fa-home"></div>
+        <div class="ir">
+            <div>
+                Subasta tradicional
+            </div>
+            <div>
+                Subasta inversa
+            </div>
+        </div>
+    </div>
+    <div class="autos">
+        <div class="titulo">Otros</div>
         <div class="img fas fa-tag"></div>
         <div class="ir">
-            <div>Tienda</div>
-            <div>Subasta tradicional</div>
-            <div>Subasta inversa</div>
+            <div>
+                Subasta tradicional
+            </div>
+            <div>
+                Subasta inversa
+            </div>
         </div>
     </div>
 </div>
@@ -194,6 +218,8 @@ if(isset($_SESSION['usuario'])){
             </div>
         </div>
     </div>
+    
+
 </section>
 </body>
 </html>

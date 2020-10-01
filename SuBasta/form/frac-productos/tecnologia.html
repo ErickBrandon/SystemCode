@@ -2,31 +2,31 @@
 <div class="etapas">
     <label for="">Selecciona el tipo de dispositivo</label>
     <div class="select">
-        <select name="" id="genero">
+        <select name="genero" id="genero">
             <option value="null">-Seleccionar-</option>
-            <option value="Mujer">Móvil</option>
-            <option value="Hombre">Tablet</option>
-            <option value="Niña">Accesorio</option>
+            <option value="Móvil">Móvil</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Accesorio">Accesorio</option>
         </select>
     </div>
 </div>
 <div class="etapas">
     <label for="">Ingresa el modelo que le corresponde</label>
-    <input class="i-txt" type="text"  placeholder="MOTO G Segunda generación">
+    <input name="modelo" type="text"  placeholder="MOTO G Segunda generación">
 </div>
 <div class="etapas">
     <label for="">Ingresa el tamaño</label>
     <p>Puedes expresar el tamaño con en centrimetros o pulgadas</p>
-    <input class="i-txt" type="text"  placeholder="20cm">
+    <input name="tamaño" type="text"  placeholder="20cm">
 </div>
 <div class="etapas">
     <label for="">Agrege una imagen de su producto.</label>
     <p>Se recomienda que la imagen del producto tenga un fondo blanco</p>
     <p>para destacar los detalles del producto.</p>
-    <input class="i-txt" type="file"  placeholder="Ej: 4, 5.5" accept="image/png, image/jpeg">
+    <input name="upload[]" type="file"  placeholder="Ej: 4, 5.5" accept="image/png, image/jpeg">
 </div>
 <div class="etapas">
     <label for="">Agrega más detalles de tu producto.</label>
-    <textarea name="" id="" ></textarea>
-    <input id="btn-AGP" type="submit" value="Guardar">
+    <textarea name="detalles" id="" ></textarea>
+    <input id="btn-AGP" type="submit" value="Agregar producto">
 </div>

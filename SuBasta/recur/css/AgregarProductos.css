@@ -16,15 +16,16 @@ input:focus{
     outline: 0 none;
 }
 body{
-    background: #ff7033;
+    background: #ebebeb;
     padding-bottom: 30px;
     max-width: 1370px;
     margin: auto;
 }
 #header{
-    padding: 20px 0px 30px 0px;
+    padding: 20px 0px 90px 0px;
     margin:auto;
     width: 100%;
+    background: #ff7033;
 }
 #header .user{
     width: 90%;
@@ -64,6 +65,7 @@ body{
     width: 65%;
     margin: auto;
     position: sticky;
+    margin-top: -80px;
     min-width: 305px;
 }
 #contenido form{
@@ -71,62 +73,57 @@ body{
 }
 #contenido form .etapas{
     background: #fff;
-    padding: 25px 10px 40px 10px; 
+    padding: 40px 10px 40px 10px; 
     border-radius: 5px;
     margin-top: 50px;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-    border-left: 5px #0c78d1 solid;
-
-
 }
 
 #contenido form .etapas label{
-    font-size: 130%;
+    font-size: 135%;
     font-weight: bold;
-    padding: 0 0 5px 3px;
-    line-height: 35px;
 }
 #contenido form .etapas p{
-    margin: 20px 0 0 10px;
-    color: rgba(0, 0, 0, 0.55);
+    margin: 10px 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
     font-size: 90%;
-    line-height: 20px;
 }
-#contenido form .etapas .i-txt{
+#contenido form .etapas input{
     width: 70%;
-    margin: 15px 0 0 5%;
+    margin: 15px 0 0 2%;
     font-size: 117%;
-    padding: 13px 0 13px 5px;
+    padding: 10px 0 10px 5px;
+    
     min-width: 265px;
-    background: rgba(0,0,0,0.04);
-    border-radius: 5px;
-    border: 1px rgba(0,0,0,0.2) solid;
-}
-#contenido form .etapas .i-txt:hover{
-    background: #fff;
-    border: 1px rgba(0,0,0,0.4) solid;
-
-
+    border-style: none;
+    border-left: 2px #0868b8 solid;
+    background: rgba(0,0,0,0.1);
 }
 #contenido form .etapas .select{
     width: 40%;
     min-width:200px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 25px;
+    background: #0971c7;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
 #contenido form .etapas .select select{
-    width: 100%;
-    font-size: 120%;
+    width: 95%;
+    font-size: 125%;
     border-style: none;
-    background:  #0971c7;
+    background: transparent;
     color: #fff;
-    padding: 7px 0 7px 4px;
+    padding: 5px 0 5px 0px;
     cursor: pointer;
-    border-radius: 5px;
-
+}
+#contenido form .etapas div select option{
+    color: #000;
+    cursor: pointer;
 }
 #contenido form .etapas textarea{
     width: 80%;
@@ -134,23 +131,24 @@ body{
     margin:25px 0 0 3%;
     padding: 15px 10px 15px 10px;
 }
-
 #cont-categoria button{
-    width: 120px;
-    height: 120px;
-    margin: 10px 0 0 7%;
+    margin-top: 10px;
+}
+#cont-categoria button{
+    width: 100px;
+    height: 100px;
+    margin-left: 7%;
     border-style: none;
-    background:rgba(0,0,0,0.05);
+    background:#fff;
     color:#0971c7;
     cursor: pointer;
     padding:15px 0 15px 0;
-    border-radius: 5px;
 
-    -moz-transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    transition: all .4s ease;
-    -o-transition: all .4s ease;
+    -moz-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+    -o-transition: all .2s ease;
 }
 #cont-categoria button:hover{
     background: #0971c7;
@@ -166,20 +164,12 @@ body{
 #cont-categoria button li{
     width: 100%;
     list-style: none;
-    font-size: 100%;
+    font-size: 120%;
     margin-top: 15px;
-    line-height: 25px;
 }
 #btn-radio{
     display: none;
 }
 #btn-AGP{
     cursor: pointer;
-    width: 180px;
-    font-size: 120%;
-    padding: 5px 0 5px 0;
-    border-style: none;
-    color: #fff;
-    background: #0971c7;
-    margin: 15px 0 0 36%;
 }

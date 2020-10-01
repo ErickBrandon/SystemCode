@@ -28,9 +28,9 @@
 		right:100%;
 		margin: 0;
 		margin-top: -8px;
-		background: #2d3e58;
+		overflow: scroll;
+		background: #ff6a13;
 		z-index: 9;
-		border-right:1px #fff solid;
 	}
 	#header-menu nav .saludo{
 		margin-left: 10px;
@@ -48,26 +48,41 @@
     #header-menu nav ul li {
 		width: 100%;
 		display: inline-block;
-		font-size: 130%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: 0px;
+		font-size: 140%;
 	}
 	
     #header-menu nav ul li a {
 		display: block;
+		margin-left: 5px;
 		text-decoration: none;
 		color: #fff;
-		text-align: left;
-		padding:10px 0 10px 8px;
-		background:rgba(255, 255, 255, 0.1);
-
-	-moz-transition: all .6s ease;
-    -webkit-transition: all .6s ease;
-    -ms-transition: all .6s ease;
-    transition: all .6s ease;
-    -o-transition: all .6s ease;
+		text-align: center;
+		-moz-transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+    -o-transition: all .9s ease;
 	}
 	#header-menu nav ul li a:hover {
-		background:rgba(255, 255, 255, 0.4);
-		padding-left: 12px;
-		
+		color: #fff;
+		border-bottom: 1px #fff solid;
 	}
-    
+    #header-menu nav ul li:hover .children {
+		display: none;
+	}
+ 
+    #header-menu nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+    #header-menu nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+    #header-menu nav ul li .caret {
+		float: right;
+	}
