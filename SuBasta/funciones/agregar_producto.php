@@ -4,19 +4,20 @@ include("conexionMysql.php");
 session_start();
 $correo=$_SESSION["usuario"];
 
-$nombre=$_POST['nombreP'];
-$id=$_POST['id'];
-$categoria=$_POST['categoria'];
+$nombre=$_POST['nombre'];
 $condicion=$_POST['condicion'];
+$venta=$_POST['venta'];
+$cant=$_POST['cant'];
 $marca=$_POST['marca'];
-$modelo=$_POST['modelo'];
-$tamaño=$_POST['tamaño'];
-$comentarios=$_POST['comentarios'];
-$precio=$_POST['precio'];
-$tipo=$_POST['tipoSubasta'];
+$categoria=$_POST['categoria'];
+$detalles=$_POST['detalles'];	
+$genero=$_POST['genero'];
+
+
+
 $clave = 0;
 
-while($clave <= 10) {
+while($clave <= 100) {
 
 	$consultaClave = "SELECT Clave FROM claves WHERE Clave = '$clave'";
 	$resCoCla = mysqli_query($conexion, $consultaClave);
@@ -44,18 +45,54 @@ $consulta="SELECT id_usuario FROM us WHERE correo='$correo'";
 		}
 
 
-    $query="INSERT INTO producto(NombreP,Categoria, Condicion, Marca,Modelo,Tamaño,Comentario,TipoSubasta,Precio, clave,UsuarioId) VALUES('$nombre','$categoria','$condicion','$marca','$modelo','$tamaño','$comentarios','$tipo','$precio', '$clave','$idU')";
+    $query="INSERT INTO producto(nombreP,condicion,venta,cantidad,marca,clave,comentario,UsuarioId) VALUES('$nombre','$condicion','$venta','$cant','$marca','$clave','$detalles','$idU')";
     mysqli_query($conexion,$query);
 
 
 
-foreach ($_FILES['upload']['name'] as $key => $name){
+if($categoria=="Accesorios"){
 
-		
-		$consultapro="SELECT IdProducto FROM producto WHERE clave='$clave'";
+   $queryBel="INSERT INTO belleza(Genero,ClaveP) VALUES('$genero','$clave')";
+    mysqli_query($conexion,$queryBel);
+    header("Location:../pag/producto.php");
+
+}
+
+if($categoria=="Tecnología"){
+	$genero=$_POST['genero'];
+	$modelo=$_POST['modelo'];
+	$tamaño=$_POST['tamaño'];
+
+   $queryTec="INSERT INTO tecnologia(Tipo,Modelo,Tamaño,ClaveP) VALUES('$genero','$modelo','$tamaño','$clave')";
+    mysqli_query($conexion,$queryTec);
+    header("Location:../pag/producto.php");
+}
+
+if($categoria=="Ropa y Calzado"){
+	$tipo=$_POST['tipo'];
+	$talla=$_POST['talla'];
+
+   $queryCal="INSERT INTO ropa(Genero,Tipo,Talla,ClaveP) VALUES('$genero','$tipo','$talla','$clave')";
+    mysqli_query($conexion,$queryCal);
+    header("Location:../pag/producto.php");
+}
+
+if($categoria=="Otro"){
+	$modelo=$_POST['modelo'];
+	$categorias=$_POST['categorias'];
+	$tamaño=$_POST['tamaño'];
+
+   $queryOtr="INSERT INTO otro(Modelo,Categoria,Tamaño,ClaveP) VALUES('$modelo','$categorias','$tamaño','$clave')";
+    mysqli_query($conexion,$queryOtr);
+    header("Location:../pag/producto.php");
+}
+
+foreach ($_FILES['upload']['name'] as $key => $name){
+	
+		$consultapro="SELECT Id FROM producto WHERE clave='$clave'";
 		$resultado=mysqli_query($conexion,$consultapro);
 		if ($row = mysqli_fetch_array($resultado)) {
-			$resId = $row["IdProducto"];
+			$resId = $row["Id"];
 		}
  
 		$newFilename = time() . "_" . $name;
@@ -65,7 +102,9 @@ foreach ($_FILES['upload']['name'] as $key => $name){
 	$queryFoto="INSERT INTO fotos(Foto,IdProducto) VALUES ('$ruta', '$resId')";
 
 	mysqli_query($conexion, $queryFoto);
-	header("Location:../pag/perfil.php");
+	mysqli_close($conexion);
 
 }
+
+
 ?>

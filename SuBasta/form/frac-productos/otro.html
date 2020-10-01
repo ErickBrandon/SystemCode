@@ -1,13 +1,13 @@
 <input id="btn-radio" type="radio" name="categoria" value="Otro" checked>
 <div class="etapas">
     <label for="">Ingresa el modelo que le corresponde</label>
-    <input type="text"  placeholder="MOTO G Segunda generación">
+    <input name="modelo" type="text"  placeholder="MOTO G Segunda generación">
 </div>
 <div class="etapas">
     <label for="">Ingresa la categoría en la que crees que podría corresponder tu producto</label>
     <p>Si no contamos con la categoría puedes escribirla segun tú creas que pueda ser</p>
     <p>como: Hogar, Decoración, Automóviles, Arte, Colección, Jugetería, etc.</p>
-    <input type="text"  placeholder="Ej: Hogar">
+    <input name="categorias" type="text"  placeholder="Ej: Hogar">
 </div>
 <div class="etapas">
     <label for="">Ingresa la categoría en la que crees que podría corresponder tu producto</label>
@@ -18,16 +18,16 @@
 <div class="etapas">
     <label for="">Ingresa el tamaño</label>
     <p>Puedes expresar el tamaño con en centrimetros o pulgadas</p>
-    <input type="text"  placeholder="20cm">
+    <input name="tamaño" type="text"  placeholder="20cm">
 </div>
 <div class="etapas">
     <label for="">Agrege una imagen de su producto.</label>
     <p>Se recomienda que la imagen del producto tenga un fondo blanco</p>
     <p>para destacar los detalles del producto.</p>
-    <input type="file"  placeholder="Ej: 4, 5.5" accept="image/png, image/jpeg">
+    <input name="upload[]" type="file"  placeholder="Ej: 4, 5.5" accept="image/png, image/jpeg">
 </div>
 <div class="etapas">
     <label for="">Agrega más detalles de tu producto.</label>
-    <textarea name="" id="" ></textarea>
+    <textarea name="detalles" id="" ></textarea>
     <input id="btn-AGP" type="submit" value="Agregar producto">
 </div>

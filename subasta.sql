@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-08-2020 a las 01:56:31
+-- Tiempo de generación: 01-10-2020 a las 04:22:15
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -24,6 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `belleza`
+--
+
+CREATE TABLE `belleza` (
+  `Id` int(11) NOT NULL,
+  `Genero` varchar(7) NOT NULL,
+  `ClaveP` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `belleza`
+--
+
+INSERT INTO `belleza` (`Id`, `Genero`, `ClaveP`) VALUES
+(1, 'null', 21);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `claves`
 --
 
@@ -39,7 +58,38 @@ CREATE TABLE `claves` (
 INSERT INTO `claves` (`id`, `Clave`) VALUES
 (1, 0),
 (2, 1),
-(3, 2);
+(3, 2),
+(4, 3),
+(5, 4),
+(6, 5),
+(7, 6),
+(8, 7),
+(9, 8),
+(10, 9),
+(11, 10),
+(12, 11),
+(13, 12),
+(14, 13),
+(15, 14),
+(16, 15),
+(17, 16),
+(18, 17),
+(19, 18),
+(20, 19),
+(21, 20),
+(22, 21),
+(23, 22),
+(24, 23),
+(25, 24),
+(26, 25),
+(27, 26),
+(28, 27),
+(29, 28),
+(30, 29),
+(31, 30),
+(32, 31),
+(33, 32),
+(34, 33);
 
 -- --------------------------------------------------------
 
@@ -58,8 +108,57 @@ CREATE TABLE `fotos` (
 --
 
 INSERT INTO `fotos` (`IdFoto`, `Foto`, `IdProducto`) VALUES
-(1, 'productos/1598744853_meme (2).jpg', 4),
-(2, 'productos/1598744853_meme.jpg', 4);
+(1, 'productos/1601512180_meme.jpg', 0),
+(2, 'productos/1601512450_Galaxy-J4-830x728.jpg', 0),
+(3, 'productos/1601512520_Galaxy-J4-830x728.jpg', 0),
+(4, 'productos/1601512752_Galaxy-J4-830x728.jpg', 0),
+(5, 'productos/1601512831_meme.jpg', 0),
+(6, 'productos/1601512988_Galaxy-J4-830x728.jpg', 0),
+(7, 'productos/1601513045_Galaxy-J4-830x728.jpg', 0),
+(8, 'productos/1601513176_meme.jpg', 0),
+(9, 'productos/1601513713_Galaxy-J4-830x728.jpg', 0),
+(10, 'productos/1601513785_Galaxy-J4-830x728.jpg', 0),
+(11, 'productos/1601514056_Galaxy-J4-830x728.jpg', 0),
+(12, 'productos/1601514326_Galaxy-J4-830x728.jpg', 0),
+(13, 'productos/1601514581_Galaxy-J4-830x728.jpg', 0),
+(14, 'productos/1601514695_Galaxy-J4-830x728.jpg', 0),
+(15, 'productos/1601514824_Galaxy-J4-830x728.jpg', 0),
+(16, 'productos/1601515114_Galaxy-J4-830x728.jpg', 0),
+(17, 'productos/1601515448_Galaxy-J4-830x728.jpg', 0),
+(18, 'productos/1601515520_Galaxy-J4-830x728.jpg', 0),
+(19, 'productos/1601515619_Galaxy-J4-830x728.jpg', 0),
+(20, 'productos/1601515721_Galaxy-J4-830x728.jpg', 0),
+(21, 'productos/1601515860_Galaxy-J4-830x728.jpg', 0),
+(22, 'productos/1601516001_Galaxy-J4-830x728.jpg', 0),
+(23, 'productos/1601516109_Galaxy-J4-830x728.jpg', 0),
+(24, 'productos/1601516555_meme.jpg', 21),
+(25, 'productos/1601517330_Galaxy-J4-830x728.jpg', 27),
+(26, 'productos/1601517436_Galaxy-J4-830x728.jpg', 28),
+(27, 'productos/1601517726_Galaxy-J4-830x728.jpg', 29),
+(28, 'productos/1601517838_Galaxy-J4-830x728.jpg', 30),
+(29, 'productos/1601518035_Cthulhu-hplvcrtf.jpg', 31);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `otro`
+--
+
+CREATE TABLE `otro` (
+  `Id` int(11) NOT NULL,
+  `Modelo` varchar(75) NOT NULL,
+  `Categoria` varchar(25) NOT NULL,
+  `Tamaño` varchar(35) NOT NULL,
+  `ClaveP` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `otro`
+--
+
+INSERT INTO `otro` (`Id`, `Modelo`, `Categoria`, `Tamaño`, `ClaveP`) VALUES
+(1, 'afasfaf', 'perreo', '20 cm', 32),
+(2, '1111', 'sdafsa', '20 cm', 33);
 
 -- --------------------------------------------------------
 
@@ -68,29 +167,64 @@ INSERT INTO `fotos` (`IdFoto`, `Foto`, `IdProducto`) VALUES
 --
 
 CREATE TABLE `producto` (
-  `IdProducto` int(11) NOT NULL,
-  `NombreP` varchar(50) NOT NULL,
-  `Categoria` varchar(9) NOT NULL,
-  `Condicion` varchar(12) NOT NULL,
-  `Marca` varchar(10) NOT NULL,
-  `Modelo` varchar(15) NOT NULL,
-  `Tamaño` varchar(10) NOT NULL,
-  `Comentario` varchar(150) NOT NULL,
-  `TipoSubasta` varchar(20) NOT NULL,
-  `Precio` double NOT NULL,
+  `Id` int(11) NOT NULL,
+  `nombreP` varchar(50) NOT NULL,
+  `condicion` varchar(25) NOT NULL,
+  `venta` varchar(25) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `marca` varchar(50) NOT NULL,
   `clave` int(11) NOT NULL,
+  `comentario` varchar(280) NOT NULL,
   `UsuarioId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Volcado de datos para la tabla `producto`
+-- Estructura de tabla para la tabla `ropa`
 --
 
-INSERT INTO `producto` (`IdProducto`, `NombreP`, `Categoria`, `Condicion`, `Marca`, `Modelo`, `Tamaño`, `Comentario`, `TipoSubasta`, `Precio`, `clave`, `UsuarioId`) VALUES
-(1, 'Laptop', 'Cómputo', 'Usado', 'HP', 'pavellon-500', 'Grande', 'Esta en buen estado, con algunos detallitos', 'Inversa', 3950.99, 0, 3),
-(2, 'Laptop', 'Cómputo', 'Usado', 'HP', 'pavellon-500', 'Grande', 'kaksldhaiwhcmadka', 'Tradicional', 3950.99, 0, 3),
-(3, 'Laptop', 'Cómputo', 'Nuevo', 'HP', 'pavellon-500', 'mediano', 'papapapdopuluies', 'Tradicional', 200, 1, 3),
-(4, 'Laptop', 'Cómputo', 'Usado', 'HP', 'pavellon-500', 'Grande', 'Buen precio', 'Inversa', 3950.99, 2, 3);
+CREATE TABLE `ropa` (
+  `Id` int(11) NOT NULL,
+  `Genero` varchar(7) NOT NULL,
+  `Tipo` varchar(10) NOT NULL,
+  `Talla` varchar(15) NOT NULL,
+  `ClaveP` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `ropa`
+--
+
+INSERT INTO `ropa` (`Id`, `Genero`, `Tipo`, `Talla`, `ClaveP`) VALUES
+(1, '', '', '2.5,0.55', 24),
+(2, '', '', '2.5,0.55', 25),
+(3, '', '', '2.5,0.55', 26),
+(4, '', '', '2.5,0.55', 27),
+(5, '', '', '25', 28),
+(6, 'Mujer', 'Formal', '35', 29);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tecnologia`
+--
+
+CREATE TABLE `tecnologia` (
+  `Id` int(11) NOT NULL,
+  `Tipo` varchar(10) NOT NULL,
+  `Modelo` varchar(100) NOT NULL,
+  `Tamaño` varchar(20) NOT NULL,
+  `ClaveP` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `tecnologia`
+--
+
+INSERT INTO `tecnologia` (`Id`, `Tipo`, `Modelo`, `Tamaño`, `ClaveP`) VALUES
+(11, 'Tablet', 'ñdfkdfmñak', '', 22),
+(12, 'null', 'omega plus ssjgod', '15cm', 23);
 
 -- --------------------------------------------------------
 
@@ -134,11 +268,19 @@ INSERT INTO `us` (`id_usuario`, `nombre_u`, `apellido_u`, `correo`, `contraseña
 (20, 'wewewe', 'ewewew', 'wewewew', '7', '0000-00-00'),
 (21, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00'),
 (22, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00'),
-(23, 'Erick Brandon', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00');
+(23, 'Erick Brandon', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00'),
+(24, 'CRISTHIAN', 'Carreto Cebada', 'cristhiancarretoc@gmail.com', 'perreoenllamas', '1999-05-27'),
+(25, 'Cristhian', 'Carreto Cebada', 'cristhiancarretoc@gmail.com', '123456789', '0000-00-00');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `belleza`
+--
+ALTER TABLE `belleza`
+  ADD PRIMARY KEY (`Id`);
 
 --
 -- Indices de la tabla `claves`
@@ -153,10 +295,29 @@ ALTER TABLE `fotos`
   ADD PRIMARY KEY (`IdFoto`);
 
 --
+-- Indices de la tabla `otro`
+--
+ALTER TABLE `otro`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD PRIMARY KEY (`IdProducto`);
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `UsuarioId` (`UsuarioId`) USING BTREE;
+
+--
+-- Indices de la tabla `ropa`
+--
+ALTER TABLE `ropa`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indices de la tabla `tecnologia`
+--
+ALTER TABLE `tecnologia`
+  ADD PRIMARY KEY (`Id`);
 
 --
 -- Indices de la tabla `us`
@@ -169,28 +330,62 @@ ALTER TABLE `us`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `belleza`
+--
+ALTER TABLE `belleza`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `claves`
 --
 ALTER TABLE `claves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `fotos`
 --
 ALTER TABLE `fotos`
-  MODIFY `IdFoto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `IdFoto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT de la tabla `otro`
+--
+ALTER TABLE `otro`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `IdProducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `ropa`
+--
+ALTER TABLE `ropa`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de la tabla `tecnologia`
+--
+ALTER TABLE `tecnologia`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `us`
 --
 ALTER TABLE `us`
-  MODIFY `id_usuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_usuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `producto`
+--
+ALTER TABLE `producto`
+  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`UsuarioId`) REFERENCES `us` (`id_usuario`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
