@@ -11,7 +11,10 @@
         width: 100%;
     }
 }
-
+#sb-cont a{
+    text-decoration: none;
+    color: #000;
+}
 #sb-cont .carta{
     width: 240px;
     height: 365px;

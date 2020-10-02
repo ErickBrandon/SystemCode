@@ -26,7 +26,7 @@ $sub = $_GET["sub"];
         while($mostrar=mysqli_fetch_array($Res)){
             $idPro = $mostrar['IdProducto'];
         ?>
-<div class="carta">
+<a href=""><div class="carta">
                 <div class="img">
                     <?php 
             $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
@@ -39,9 +39,9 @@ $sub = $_GET["sub"];
             ?>
                 </div>
                 <h3><?php echo $mostrar['NombreP']?></h3>
-                <h4><?php echo $mostrar['Precio']?></h4>
+                <h4>$ <?php echo $mostrar['Precio']?></h4>
 
-</div>
+</div></a>
 <?php }
 }
     ?>
@@ -56,7 +56,7 @@ $sub = $_GET["sub"];
         while($mostrarInv=mysqli_fetch_array($ResInv)){
         $idPro = $mostrarInv['IdProducto'];
         ?>
-<div class="carta">
+<a href=""><div class="carta">
                 <div class="img">
                     <?php 
             $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
@@ -69,9 +69,9 @@ $sub = $_GET["sub"];
             ?>
                 </div>
                 <h3><?php echo $mostrarInv['NombreP']?></h3>
-                <h4><?php echo $mostrarInv['Precio']?></h4>
+                <h4>$ <?php echo $mostrarInv['Precio']?></h4>
 
-</div>
+</div></a>
 <?php }
 }
     ?>

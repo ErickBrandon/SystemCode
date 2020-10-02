@@ -108,7 +108,8 @@
     padding: 7px 4px 7px 4px;
     border-radius: 5px;
 }
-#cont-producto .producto-p .info-p .tradicional{
+/* ------- SUBASTA TRADICIONAL --------- */
+.tradicional{
     width: 100%;
     margin-top: 20px;
     border-top:  1px rgba(0, 0, 0, 0.2) solid;
@@ -150,16 +151,64 @@
     background: #008f45;
 
 }
+/* ------- SUBASTA TRADICIONAL --------- */
+/* ------- SUBASTA INVERSA --------- */
+.dnp,.cah{
+    width: 80%;
+    font-size: 95%;
+    margin:10px 0 0 10%;
+    border-style: none;
+    padding: 7px 0 7px 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dnp:hover,.cah:hover{
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.6);
+}
+.dnp{
+    background: #00a650;
+}
+.cah{
+    background: #167cd0;
+}
+/* ------- SUBASTA INVERSA --------- */
+/* ------- TIENDA --------- */
+.disponibles{
+    color:#00a650;
+    font-size: 104%;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.sdo{
+    width: 110px;
+    margin: auto;
+    margin-top: 10px;
+}
+.sdo span{
+    font-weight: bold;
+}
+.sdo select{
+    background: #f3f5f9;
+    font-size: 104%;
+    border-style: none;
+    padding: 2px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+}
+/* ------- TIENDA--------- */
+
 .info-pagos p{
     padding: 3px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
 }
-.info-pagos i{
-    text-align: center;
-    width: 100%;
-    font-size: 50px;
-    color: #0f5894;
+.info-pagos img{
+    width: 130px;
+    margin-left: 30%;
 }
 @media screen and (max-width: 810px){
     #cont-producto .producto-p .img-p{
