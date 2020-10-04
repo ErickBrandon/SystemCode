@@ -4,10 +4,9 @@ include("../funciones/conexionMysql.php");
 ?>
 <html lang="en">
 <head>
-    <?php include('../frac/generales2.php'); ?>
+    <?php include('../frac/generales.php'); ?>
     <link rel="stylesheet" href="../recur/css/subasta.css">
 
-    <link rel="stylesheet" href="../recur/css/header.css">
     <link rel="stylesheet" href="../recur/css/categorias.css">
 
     <title>Document</title>
