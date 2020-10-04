@@ -1,27 +1,31 @@
 <div id="correo">
     <p>La información de envio es fundamental para hacer alguna compra en la plataforma</p>
 </div>
-<form id="info-usuario" action="">
+<form id="info-usuario" action="../funciones/actInfEnv.php" method="POST">
+    <?php
+        include('../funciones/session.php');
+        include('../funciones/consu_usuario.php');
+     ?>
     <div>
         <label for="">Calle y número</label>
-        <input id="lbl1" type="text" value="" disabled="">
+        <input id="lbl1" type="text" name="calle" value="<?php echo $mostrar['calle'] ?>" disabled="">
     </div>
     <div>
         <label for="">Colonia</label>
-        <input id="lbl2" type="text" value="" disabled="">
+        <input id="lbl2" type="text" name="colonia" value="<?php echo $mostrar['colonia'] ?>" disabled="">
     </div>
     
     <div class="cp">
         <label for="">Código Postal</label>
-        <input id="lbl3"  type="text" value="" disabled="">
+        <input id="lbl3"  type="text" name="codigoPos" value="<?php echo $mostrar['codigoPos'] ?>" disabled="">
     </div>
     <div>
         <label for="">Ciudad</label>
-        <input id="lbl4" type="text" value="" disabled="">
+        <input id="lbl4" type="text" name="ciudad" value="<?php echo $mostrar['ciudad'] ?>" disabled="">
     </div>
     <div>
         <label for="">Estado</label>
-        <input id="lbl5" type="text" value="" disabled="">
+        <input id="lbl5" type="text" name="estado" value="<?php echo $mostrar['estado'] ?>" disabled="">
     </div>
     <div>
         <button id="editar" onclick=activar2() type="button"><span class="fas fa-cog"></span> Editar</button>

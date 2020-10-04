@@ -24,18 +24,18 @@
                 <h3>Correo:</h3>
                 <div class="contacto"><?php echo $mostrar['correo'];?></div>
                 <h3>Teléfono:</h3>
-                <div class="contacto">2371058678</div>
+                <div class="contacto"><?php echo $mostrar['telefono'];?></div>
             </div>
             <div class="info-c">
                 <p>Información de envio</p>
-                <div class="direccion">Calle: Baja california norte</div>
+                <div class="direccion">Calle: <?php echo $mostrar['calle'];?></div>
                 <div class="cont-direccion">
                     <div class="direccion">Número exterior: 10000</div>
-                    <div class="direccion CP">Código postal: 75680</div>
+                    <div class="direccion CP">Código postal: <?php echo $mostrar['codigoPos'];?></div>
                 </div>
-                <div class="direccion">Colonia: Centro</div>
-                <div class="direccion">Ciudad: Tlacotepec de Benito Júarez</div>
-                <div class="direccion">Estado: Puebla</div>
+                <div class="direccion">Colonia: <?php echo $mostrar['colonia'];?></div>
+                <div class="direccion">Ciudad: <?php echo $mostrar['ciudad'];?></div>
+                <div class="direccion">Estado: <?php echo $mostrar['estado'];?></div>
                 <a href="datos_usuario.php"><div class="btn-ei">Editar información</div></a>
             </div>
         </div>

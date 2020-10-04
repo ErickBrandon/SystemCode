@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $('#inf-u').click(function(){
-        $("#cnt-f").load("../form/info-usuario.html");
+        $("#cnt-f").load("../form/info-usuario.php");
         
     });
     $('#inf-e').click(function(){
-        $("#cnt-f").load("../form/info-envio.html");
+        $("#cnt-f").load("../form/info-envio.php");
     });
     $('#inf-c').click(function(){
-        $("#cnt-f").load("../form/pas-u.html");
+        $("#cnt-f").load("../form/pas-u.php");
         
     });
 });
