@@ -35,7 +35,7 @@
               </div>
               <div class=info-pagos>
                 <p>Realiza tus compras a través de</p>
-                <i class="fab fa-cc-paypal"></i>
+                <img src="../recur/img/paypal.png" alt="">
               </div>
             </div>
       </div>

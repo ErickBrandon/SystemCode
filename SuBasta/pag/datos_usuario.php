@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../recur/css/datos_usuario.css">
+    <?php include('../frac/generales.php'); ?>
     <script src="../recur/js/datos_usuario.js"></script>
     <title>Document</title>
 </head>

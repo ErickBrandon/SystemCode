@@ -1,133 +1,113 @@
-
 #usuario{
-    width: 80%;
+    width:800px;
     min-width: 309px;
     margin: auto;
-    margin-top: 90px;
-    background:rgba(0, 0,0, 0.1);
+    margin-top: 50px;
+    background:#fff;
     border-radius: 5px;
     overflow: hidden;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
 }
-#usuario .info-usuario{
-    width: 40%;
-    min-width: 292px;
+.info-usuario{
+    width: 306px;
     float: left;
     border:1px rgba(0, 0,0, 0.2) solid;
     border-radius: 5px;
-    padding: 30px 0 0 0;
-    background: #2d3e58;
+    padding: 30px 0 30px 0;
+    background: rgb(45, 62, 88);
 }
-#usuario .info-usuario .f-perfil{
+.info-usuario .f-perfil{
     width: 130px;
     height: 130px;
     margin:auto;
-
 }
 #usuario .info-usuario .f-perfil img{
     width: 100%;
     height: 100%;
 }
-#usuario .info-usuario .n-usuario{
-    text-align: center;
-    font-size: 137%;
-    font-weight: bold;
-    margin-top: 10px;
-    color: rgba(255, 255,255, 0.7);
+.info-usuario p{
+margin-top:20px;
+font-weight: bold;
+text-align: center;
+font-size: 135%;
+padding:0 4px 0 4px;
+color: rgba(255, 255,255, 0.7);
 }
-#usuario .info-usuario .info-envio p{
-    font-weight: bold;
-    color: rgba(255, 255,255, 0.7);
-    margin:10px 0 0 10px;
-
-}
-#usuario .info-usuario .info-envio .txt-i{
+.info-usuario .contacto{
     width: 85%;
     margin: auto;
-    border:1px rgba(255, 255,255, 0.4) solid;
-    border-radius: 5px;
-    margin-top: 8px;
-    font-weight: bold;
-    color: rgba(255, 255,255, 0.7);
-    padding: 5px 0 5px 5px;
-    }
-#usuario .info-usuario .btn-editar{
-    width: 100%;
-    color: #fff;
-    background: #167cd0;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 120%;
-    cursor: pointer;
-    border-radius: 4px;
-}
-#usuario .info{
-    float: right;
-    width: 50%;
-    min-width: 295px;
-    margin-right: 4%;
-}
-#usuario .info .su-coins{
-    width: 70%;
     background: #fff;
-    margin: auto;
     margin-top: 10px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
     border-radius: 5px;
+    padding: 7px 4px 7px 5px;
+    font-weight: bold;
 
 }
-#usuario .info .su-coins div{
-    width: 90%;
-    margin: auto;
-    margin-top: 3px;
-    border-radius: 5px;
-}
-#usuario .info .su-coins header{
-    text-align: center;
-    font-size: 150%;
-    color:#167cd0;
-    font-weight: bold;
-}
-#usuario .info .su-coins a{
-    text-decoration: none;
-
-}
-#usuario .info .su-coins p{
-    text-align: center;
-    font-size: 180%;
-    font-weight: bold;
-}
-#usuario .info .su-coins .mas-coins{
-    width: 100%;
+h3{
+    margin:15px 0 0 15px;
     color: #fff;
-    text-align: center;
-    background:#167cd0;
+}
+.info-c{
+    width:420px;
+    float: left;
+    margin: 20px 0 0 40px;
+}
+.info-c p{
+    font-size: 160%;
+}
+.info-c .cont-direccion{
+    overflow: hidden;
+}
+
+.info-c .cont-direccion div{
+    float: left;
+}
+.CP{
+    margin-left:10px;
+}
+.direccion{
+    border-radius:5px;
+    padding: 6px 4px 6px 6px;
+    background: #f3f5f9;
+    margin-top: 10px;
     font-size: 120%;
 }
-@media screen and (max-width: 942px){
+@media screen and (max-width: 865px){
     #usuario{
+        width: 95%;
+        padding-bottom: 15px;
+    }
+   .info-usuario{
+       width: 100%;
+   }
+   .info-c{
+       width: 90%;
+       margin: auto;
+       margin-top: 20px;
+       margin-left: 15px;
+   }
+}
+@media screen and (max-width: 570px){
+    .info-c .cont-direccion div{
         width: 100%;
     }
-}
-@media screen and (max-width: 757px){
-    #usuario .info{
-        margin-right: 1%;
+    .CP{
+        margin-left: 0;
     }
 }
-@media screen and (max-width: 733px){
-    #usuario .info-usuario{
-        float: none;
-        margin: auto;
-    }
-    #usuario .info{
-        float: none;
-        margin: auto;
-    }
-    #usuario .info .su-coins{
-        width: 100%;
-    }
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn-ei{
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    background: #167cd0;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 0 7px 0;
 }

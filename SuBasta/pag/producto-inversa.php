@@ -33,8 +33,8 @@
                 <button class="cah">Comprar ahora</button>
               </div>
               <div class=info-pagos>
-                <p></p>
-                <i class="fab fa-cc-paypal"></i>
+                <p>Participa en la subasta mediante</p>
+                <img src="../recur/img/paypal.png" alt="">
               </div>
             </div>
       </div>

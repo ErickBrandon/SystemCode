@@ -33,6 +33,9 @@ font-size: 150%;
     color: #167cd0;
     font-size: 85%;
 }
+.ir div{
+    margin-top: 7px;
+}
 @media screen and (max-width: 1080px){
     .categorias .autos .img{
         float: none;
