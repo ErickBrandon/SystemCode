@@ -1,3 +1,4 @@
+<?php include('../funciones/session.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,6 @@
 <body>
     <section id="header">
         <div class="user">
-            <?php include('../funciones/session.php');?>
             <?php include('../funciones/consu_usuario.php');?>
             <div><span class="far fa-user-circle"></span> <?php echo $mostrar['nombre_u']." ".$mostrar['apellido_u'];?></div>
         </div>
