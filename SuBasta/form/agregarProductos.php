@@ -14,7 +14,9 @@
 <body>
     <section id="header">
         <div class="user">
-            <div><span class="far fa-user-circle"></span>{{user.nombre}} {{user.apellido}}</div>
+            <?php include('../funciones/session.php');?>
+            <?php include('../funciones/consu_usuario.php');?>
+            <div><span class="far fa-user-circle"></span> <?php echo $mostrar['nombre_u']." ".$mostrar['apellido_u'];?></div>
         </div>
         <div class="img">
             <img src="../recur/img/SB.png" alt="">
