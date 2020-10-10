@@ -1,13 +1,13 @@
 function n_u() {
     var nombre, apellido, correo, password, password_c, expresion;
-    var bandera=0, bandera2=0;
+    var bandera=0, bandera2=0, bandera3=0;
     nombre= document.getElementById("nombre").value;
     apellido= document.getElementById("apellido").value;
     correo= document.getElementById("correo").value;
     password= document.getElementById("password").value;
     password_c= document.getElementById("password_c").value;
 
-    expresion= /\w+@\w+\.+[a-z]/;
+    letras=/^[a-zA-Z ]+$/;
 
     if(nombre ==="" || apellido==="" || correo==="" || password==="" || password_c==="") {
         alert("Todos los campos solicitados son obligatorios");
@@ -17,6 +17,9 @@ function n_u() {
         return false;
     }else if(apellido.length>30){
         alert("El apellido es muy largo");
+        return false;
+    }else if(!letras.test(nombre)){
+        alert("En los campos de 'Nombre' y 'Apellidos' permite ingresar solo letras");
         return false;
     }else if(correo.length>30){
         alert("El correo es muy largo");
@@ -39,9 +42,20 @@ function n_u() {
             bandera2=i;
         }
     }
+    for(i=bandera; i<correo.length;i++){
+        if(correo.charAt(i)==="=" || correo.charAt(i)==="'"){
+            bandera3=1;
+        }
+    }
+    if (bandera > 0){
+        alert("No se pueden ingresar otros caracteres que");
+        return false;
+    }
     if (bandera===0 || bandera2===0 || bandera2>=tamaño) {
-        alert("El correo electronico no es validoo");
+        alert("El correo electronico no es valido");
         return false;
     }
     
 }
+
+
