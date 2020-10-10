@@ -14,6 +14,7 @@ if (isset($_SESSION["usuario"])) {
     <meta>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
     <link rel="stylesheet" href="../recur/css/login.css">
+    <script src="../recur/js/login.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -24,11 +25,13 @@ if (isset($_SESSION["usuario"])) {
     <h1>Inicia sesión</h1>
     <div id="login">
         
-        <form method="POST"  action="login.php">
+        <form method="POST"  action="login.php" onsubmit="return login();">
             <div class="titulo"><strong>Email</strong></div>
-            <div class="txt"><input required type="text" name="correo"></div>
+            <div class="txt"><input id="usuario" type="text" name="correo"></div>
+
             <div class="titulo"><strong>Contraseña</strong></div>
-            <div class="txt"><input required type="password" name="password"></div>
+            <div class="txt"><input id="password"type="password" name="password"></div>
+
             <div  class="btn"><input type="submit" name="iniciar"></div>
         </form>
     </div>

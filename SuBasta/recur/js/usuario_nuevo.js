@@ -1,5 +1,5 @@
 function n_u() {
-    var nombre, apellido, correo, password, password_c, expresion;
+    var nombre, apellido, correo, password, password_c;
     var bandera=0, bandera2=0, bandera3=0;
     nombre= document.getElementById("nombre").value;
     apellido= document.getElementById("apellido").value;
@@ -43,12 +43,12 @@ function n_u() {
         }
     }
     for(i=bandera; i<correo.length;i++){
-        if(correo.charAt(i)==="=" || correo.charAt(i)==="'"){
+        if(correo.charAt(i)==="=" ){
             bandera3=1;
         }
     }
-    if (bandera > 0){
-        alert("No se pueden ingresar otros caracteres que");
+    if (bandera3> 0){
+        alert("No se pueden '=', ''''");
         return false;
     }
     if (bandera===0 || bandera2===0 || bandera2>=tamaño) {
