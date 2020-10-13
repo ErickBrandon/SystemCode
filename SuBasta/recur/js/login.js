@@ -1,6 +1,6 @@
 function login() {
     var usuario, pass;
-    var Cp=0,arroba=0,punto=0;
+    var arroba=0,punto=0;
     usuario=document.getElementById("usuario").value;
     pass=document.getElementById("password").value;
 
@@ -10,7 +10,6 @@ function login() {
     }else{
         for(i=0; i<usuario.length; i++){
             if(usuario.charAt(i)=="=" || usuario.charAt(i)=="'"){
-                Cp=1;
                 alert("El Usuario el es incorrecto");
                 return false;
             }else{
@@ -27,6 +26,12 @@ function login() {
         if(arroba==0 || punto==0 || punto>=(usuario.length-2)){
             alert("Ingresa el formato correcto de un correo electrónico");
             return false;
+        }
+        for(i=0; i<pass.length; i++){
+            if (pass.charAt(i)=="=" || pass.charAt(i)=="'"){
+                alert("La contraseña es incorrecta");
+                return false;
+            }
         }     
     }
 }
