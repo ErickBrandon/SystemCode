@@ -31,8 +31,11 @@ if (isset($_POST['registrar'])) {
             Es gratis, fácil y rapido.
         </p>
         <form name="f-1" method="POST" action="usuario_nuevo.php" onsubmit="return n_u();">
-            <div><input id="nombre" type="text" placeholder="Nombre" name="nombre" required=""></div>
-            <div><input id="apellido" type="text" placeholder="Apellidos" name="apellido" required=""></div>
+            <div><input id="nombre" type="text" placeholder="Nombre" name="nombre" required="^[a-zA-Z ]+$" ></div>
+            <div><input id="apellido" type="text" placeholder="Apellidos" name="apellido" required="" pattern="^[a-zA-Z ]+$"></div>
+            <br><div id="aviso">Ingresa un correo electrónico valido y pesonal<br>
+            porque representará tu cuenta en Su-Basta y <br>
+            será nuestra principal vía de comunicación contigo</div>
             <div><input id="correo" type="email" placeholder="Correo electronico" name="correo" required=""></div>
             <div><input id="password" type="password" placeholder="Contraseña" name="password" required=""></div>
             <div><input id="password_c" type="password" placeholder="Confirmar contraseña" name="password_c" required=""></div>

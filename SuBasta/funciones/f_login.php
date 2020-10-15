@@ -1,7 +1,10 @@
 <?php
 include('conexionMysql.php');
-$correo=$_POST['correo'];
-$password=$_POST['password'];
+$filtro=str_replace("=","subasta",$_POST['correo']);
+$correo=mysqli_real_escape_string($conexion,$filtro);
+
+$filtro=str_replace("=","e7.t4dd",$_POST['password']);
+$password=mysqli_real_escape_string($conexion,$filtro);
 
 $query="SELECT * FROM us WHERE correo='$correo' AND contraseña='$password'";
 $validacion=mysqli_query($conexion,$query);

@@ -58,7 +58,7 @@
 		text-align: left;
 		padding:10px 0 10px 8px;
 		background:rgba(255, 255, 255, 0.1);
-
+		margin-top: 5px;
 	-moz-transition: all .6s ease;
     -webkit-transition: all .6s ease;
     -ms-transition: all .6s ease;
