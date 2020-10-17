@@ -18,6 +18,14 @@ if ($existe >0) {
             alert('Los datos son incorrectos');
           </script>";
 }
+unset($filtro);
+unset($correo);
+unset($password);
+unset($_POST['correo']);
+unset($_POST['password']);
+
+
+
 mysqli_free_result($validacion);
 mysqli_close($conexion);
 ?>
