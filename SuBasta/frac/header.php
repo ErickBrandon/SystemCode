@@ -35,15 +35,16 @@
 			</div>		 
 			<nav>
 				<div class="saludo">
-					<span>¡Hola!</span><br><br>
+					<span>Gracias por usuar la plataforma</span><br><br>
 					<?php 
                         if(isset($usuario)){
                             echo $mostrar['nombre_u'];
                         }else{
                             echo "Registrate en la plataforma";
                         }
-                    ?>
+					?>
 				</div>
+				<hr>
 				<ul>
 					<?php
 						if(isset($usuario)){
@@ -51,13 +52,15 @@
 							echo "<li id='movil'><a href=''>Mis subastas</a></li>";
 							echo "<li id='movil'><a href='../funciones/cerrarSesion.php'>Cerrar sesión</a></li>";
 						}else{
-							echo "<li id='movil'><a href='../form/usuario_nuevo.php'>Crea tu cuenta</a></li>";
-							echo "<li id='movil'><a href='../form/login.php'>Ingresa</a></li>";
+							echo "<li id='movil'><a href='../form/usuario_nuevo.php'><span class='fas fa-user-plus icon-nav'></span>Crea tu cuenta</a></li>";
+							echo "<li id='movil'><a href='../form/login.php'><span class='fas fa-sign-in-alt icon-nav'></span>Ingresa</a></li>";
 						}?>
-						<li><a href="../index.php">Inicio</a></li>
-						<li><a href="../pag/subasta.php?sub=subastaTradicional">Tienda</a></li>
-						<li><a href="../pag/subasta.php?sub=subastaTradicional">Subasta tradicional</a></li>
-						<li><a href="../pag/subasta.php?sub=subastaInversa">Subasta inversa</a></li>
+						<li><a href="../index.php"><span class="fas fa-home icon-nav"></span>Inicio</a></li>
+						<br><br>
+						<hr><br>
+						<li><a href="../pag/subasta.php?sub=subastaTienda"><span class="fas fa-shopping-bag icon-nav"></span>Tienda</a></li>
+						<li><a href="../pag/subasta.php?sub=subastaTradicional"><span class="fas fa-gavel icon-nav"></span>Subasta tradicional</a></li>
+						<li><a href="../pag/subasta.php?sub=subastaInversa"><span class="fas fa-donate icon-nav"></span>Subasta inversa</a></li>
 				</ul>
 			</nav>
 	</div>

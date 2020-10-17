@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	$('.slider li').hide(); // Ocultanos todos los slides
 	$('.slider li:first').show(); // Mostramos el primer slide
-	$('.pagination li:first').css({'color': '#CD6E2E'}); // Damos estilos al primer item de la paginacion
+	$('.pagination li:first').css({'color': '#167cd0'}); // Damos estilos al primer item de la paginacion
 
 	// Ejecutamos todas las funciones
 	$('.pagination li').click(pagination);
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	setInterval(function(){
 		nextSlider();
-	}, 4000);
+	}, 3000);
 
 	// FUNCIONES =========================================================
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 		// Dandole estilos a la paginacion seleccionada
 		$('.pagination li').css({'color': '#fff'});
-		$(this).css({'color': '#ff7033'});
+		$(this).css({'color': '#167cd0'});
 
 		imgPos = paginationPos;
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		else {imgPos++;}
 
 		$('.pagination li').css({'color': '#fff'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#ff7033'});
+		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#167cd0'});
 
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
@@ -55,7 +55,7 @@ $(document).ready(function(){
 		else {imgPos--;}
 
 		$('.pagination li').css({'color': '#fff'});
-		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#ff7033'});
+		$('.pagination li:nth-child(' + imgPos +')').css({'color': '#167cd0'});
 
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado

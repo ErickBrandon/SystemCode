@@ -1,10 +1,20 @@
 
+#btn-banner{
+	background: #fff;
+	border-radius: 100%;
+	width: 40px;
+	height: 32px;
+	padding-top: 8px;
+	text-align: center;
+	color: #167cd0;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+}
 
 ul,ol{
 	list-style: none;
 }
-
-
 
 .slideshow{
 	width: 100%;
@@ -77,8 +87,7 @@ ul,ol{
 	display: flex;
 	align-items: center;
 
-	color: #fff;
-	font-size: 35px;
+	font-size: 25px;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -93,6 +102,11 @@ ul,ol{
 
 
 @media screen and (max-width: 600px){
+	#btn-banner{
+		width: 30px;
+	height: 22px;
+	padding-top: 8px;
+	}
 	.slider .caption p{
 		display: none;
 	}
@@ -102,7 +116,7 @@ ul,ol{
 	}
 
 	.left, .right{
-		font-size: 30px;
+		font-size:15px;
 	}
 
 	.slider li img{
