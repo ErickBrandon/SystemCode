@@ -20,10 +20,10 @@ include("../funciones/conexionMysql.php");
 $sub = $_GET["sub"];
         
     if ($sub == "Tradicional") {
-        $consultaTra = "SELECT * FROM producto WHERE TipoSubasta='$sub'";
+        $consultaTra = "SELECT * FROM producto WHERE venta='$sub'";
         $Res = mysqli_query($conexion, $consultaTra);
         while($mostrar=mysqli_fetch_array($Res)){
-            $idPro = $mostrar['IdProducto'];
+            $idPro = $mostrar['Id'];
         ?>
 <a href=""><div class="carta">
                 <div class="img">
@@ -37,8 +37,8 @@ $sub = $_GET["sub"];
             } 
             ?>
                 </div>
-                <h3><?php echo $mostrar['NombreP']?></h3>
-                <h4>$ <?php echo $mostrar['Precio']?></h4>
+                <h3><?php echo $mostrar['nombreP']?></h3>
+                <h4>$ <?php echo $mostrar['cantidad']?></h4>
 
 </div></a>
 <?php }
@@ -50,12 +50,12 @@ $sub = $_GET["sub"];
 <?php
             
     if ($sub == "Inversa") {
-        $consultaInv = "SELECT * FROM producto WHERE TipoSubasta='$sub'";
+        $consultaInv = "SELECT * FROM producto WHERE venta='$sub'";
         $ResInv = mysqli_query($conexion, $consultaInv);
         while($mostrarInv=mysqli_fetch_array($ResInv)){
-        $idPro = $mostrarInv['IdProducto'];
+        $idPro = $mostrarInv['Id'];
         ?>
-<a href=""><div class="carta">
+<a href="producto-inversa.php?IdProd=<?php echo $idPro ?>"><div class="carta">
                 <div class="img">
                     <?php 
             $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
@@ -67,8 +67,8 @@ $sub = $_GET["sub"];
             } 
             ?>
                 </div>
-                <h3><?php echo $mostrarInv['NombreP']?></h3>
-                <h4>$ <?php echo $mostrarInv['Precio']?></h4>
+                <h3><?php echo $mostrarInv['nombreP']?></h3>
+                <h4>$ <?php echo $mostrarInv['cantidad']?></h4>
 
 </div></a>
 <?php }
@@ -79,10 +79,10 @@ $sub = $_GET["sub"];
 <?php
             
     if ($sub == "Tienda") {
-        $consultaInv = "SELECT * FROM producto WHERE TipoSubasta='$sub'";
+        $consultaInv = "SELECT * FROM producto WHERE venta='$sub'";
         $ResInv = mysqli_query($conexion, $consultaInv);
         while($mostrarInv=mysqli_fetch_array($ResInv)){
-        $idPro = $mostrarInv['IdProducto'];
+        $idPro = $mostrarInv['Id'];
         ?>
 <a href=""><div class="carta">
                 <div class="img">
@@ -96,8 +96,8 @@ $sub = $_GET["sub"];
             } 
             ?>
                 </div>
-                <h3><?php echo $mostrarInv['NombreP']?></h3>
-                <h4>$ <?php echo $mostrarInv['Precio']?></h4>
+                <h3><?php echo $mostrarInv['nombreP']?></h3>
+                <h4>$ <?php echo $mostrarInv['cantidad']?></h4>
 
 </div></a>
 <?php }
