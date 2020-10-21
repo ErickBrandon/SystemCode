@@ -25,7 +25,7 @@ $sub = $_GET["sub"];
         while($mostrar=mysqli_fetch_array($Res)){
             $idPro = $mostrar['Id'];
         ?>
-<a href=""><div class="carta">
+<a href="producto-inversa.php?IdProd=<?php echo $idPro ?>"><div class="carta">
                 <div class="img">
                     <?php 
             $sqlFoto="SELECT Foto FROM fotos WHERE IdProducto='$idPro'";
