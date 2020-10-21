@@ -35,12 +35,12 @@
 			</div>		 
 			<nav>
 				<div class="saludo">
-					<span>Gracias por usuar la plataforma</span><br><br>
+					<span>Gracias por usar la plataforma</span><br><br>
 					<?php 
                         if(isset($usuario)){
                             echo $mostrar['nombre_u'];
                         }else{
-                            echo "Registrate en la plataforma";
+                            echo "Crea tu cuenta";
                         }
 					?>
 				</div>

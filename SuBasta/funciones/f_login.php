@@ -18,6 +18,7 @@ if ($existe >0) {
             alert('Los datos son incorrectos');
           </script>";
 }
+echo $correo;
 unset($filtro);
 unset($correo);
 unset($password);
