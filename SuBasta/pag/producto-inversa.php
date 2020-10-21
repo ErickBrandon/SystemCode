@@ -33,6 +33,17 @@
                 <li class="info-c">Modelo: <?php echo $mostrarTec['Modelo']?></li>
                 <li class="info-c">Condición: <?php echo $mostrar['condicion']?></li>
                 <li class="info-c">Tamaño: <?php echo $mostrarTec['Tamaño']?></li>
+                <!--Ropa y accesorios-->
+                <li class="info-c">Para:</li><!--Tambien para accesorios y belleza-->
+                <li class="info-c">Tipo:</li>
+                <li class="info-c">Tallas:</li>
+                <!--Tecnologia-->
+                <li class="info-c">Tamaño:</li>
+                <li class="info-c">modelo:</li>
+
+                <!--otro-->
+                <li class="info-c">Otri:ctegoria</li>
+                <li class="info-c">Tamaño:</li>
               </ul>
               <div class="tradicional">
                 <header>Nuevo precio<span class="fas fa-donate"></span></header>

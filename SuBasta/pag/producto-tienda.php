@@ -25,6 +25,18 @@
                 <li class="info-c">Modelo:</li>
                 <li class="info-c">Condición:</li>
                 <li class="info-c">Tamaño:</li>
+                <!--Ropa y accesorios-->
+                <li class="info-c">Para:</li><!--Tambien para accesorios y belleza-->
+                <li class="info-c">Tipo:</li>
+                <li class="info-c">Tallas:</li>
+                <!--Tecnologia-->
+                <li class="info-c">Tamaño:</li>
+                <li class="info-c">modelo:</li>
+
+                <!--otro-->
+                <li class="info-c">Otri:ctegoria</li>
+                <li class="info-c">Tamaño:</li>
+                
               </ul>
               <div class="tradicional">
                 <header>Tienda <span class="fas fa-shopping-bag"></span></header>

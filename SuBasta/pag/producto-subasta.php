@@ -30,12 +30,32 @@
                 <li class="info-c">Modelo: <?php echo $mostrar['Modelo']?></li>
                 <li class="info-c">Condición: <?php echo $mostrar['condicion']?></li>
                 <li class="info-c">Tamaño: <?php echo $mostrar['Tamaño']?></li>
+                <!--Ropa y accesorios-->
+                <li class="info-c">Para:</li><!--Tambien para accesorios y belleza-->
+                <li class="info-c">Tipo:</li>
+                <li class="info-c">Tallas:</li>
+                <!--Tecnologia-->
+                <li class="info-c">Tamaño:</li>
+                <li class="info-c">modelo:</li>
+
+                <!--otro-->
+                <li class="info-c">Otri:ctegoria</li>
+                <li class="info-c">Tamaño:</li>
               </ul>
               <div class="tradicional">
                 <header>Mejor oferta <span class="fas fa-gavel"></span></header>
                 <p class="mejor-precio">$ 10,100.00</p>
                 <form action="">
-                  <span>$</span><input type="text" ><button type="submit">Mejorar Oferta</button>
+                  <span>$</span>
+                  <select name="" id="">
+                    <option value="">+1</option>
+                    <option value="">+5</option>
+                    <option value="">+10</option>
+                    <option value="">+20</option>
+                    <option value="">+30</option>
+                    <option value="">+50</option>
+                  </select>
+                  <button type="submit">Mejorar Oferta</button>
                 </form>
               </div>
               <div class=info-pagos>
