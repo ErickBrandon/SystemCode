@@ -8,24 +8,24 @@
      ?>
     <div>
         <label for="">Calle y número</label>
-        <input id="lbl1" type="text" name="calle" value="<?php echo $mostrar['calle'] ?>" disabled="">
+        <input id="lbl1" required type="text" name="calle" value="<?php echo $mostrar['calle'] ?>" disabled="">
     </div>
     <div>
         <label for="">Colonia</label>
-        <input id="lbl2" type="text" name="colonia" value="<?php echo $mostrar['colonia'] ?>" disabled="">
+        <input id="lbl2" required type="text" name="colonia" value="<?php echo $mostrar['colonia'] ?>" disabled="">
     </div>
     
     <div class="cp">
         <label for="">Código Postal</label>
-        <input id="lbl3"  type="text" name="codigoPos" value="<?php echo $mostrar['codigoPos'] ?>" disabled="">
+        <input id="lbl3" required type="number" min="10000" max="99999"name="codigoPos" value="<?php echo $mostrar['codigoPos'] ?>" disabled="">
     </div>
     <div>
         <label for="">Ciudad</label>
-        <input id="lbl4" type="text" name="ciudad" value="<?php echo $mostrar['ciudad'] ?>" disabled="">
+        <input id="lbl4" required type="text" name="ciudad" value="<?php echo $mostrar['ciudad'] ?>" disabled="">
     </div>
     <div>
         <label for="">Estado</label>
-        <input id="lbl5" type="text" name="estado" value="<?php echo $mostrar['estado'] ?>" disabled="">
+        <input id="lbl5" required type="text" nam   e="estado" value="<?php echo $mostrar['estado'] ?>" disabled="">
     </div>
     <div>
         <button id="editar" onclick=activar2() type="button"><span class="fas fa-cog"></span> Editar</button>

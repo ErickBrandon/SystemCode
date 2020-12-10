@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include("conexionMysql.php");
 session_start();
@@ -18,7 +18,7 @@ $consulta="SELECT id_usuario FROM us WHERE correo='$correo'";
 
 		$id=$row['id_usuario'];
 
-	$query="UPDATE us SET nombre_u='$nombre', apellido_u='$rfc', telefono='$telefono' WHERE id_usuario='$id'";
+	$query="UPDATE us SET nombre_u='$nombre', apellido_u='$apellido', telefono='$telefono' WHERE id_usuario='$id'";
 }
 
 $resultado = mysqli_query($conexion, $query);
