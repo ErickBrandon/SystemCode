@@ -3,9 +3,10 @@
 <head>
     <?php include('../frac/generales.php');
     $IdProd = $_GET["IdProd"];
+    session_start();
+    $_SESSION['IdProd']=$IdProd;
     include("../funciones/conexionMysql.php");
     include("../funciones/consu_producto.php");
-    include("../funciones/refrescarP.php");
      ?>
     <link rel="stylesheet" href="../recur/css/producto.css">
 
@@ -53,18 +54,18 @@
               </ul>
               <div class="tradicional">
                 <header>Mejor oferta <span class="fas fa-gavel"></span></header>
-                <p id="recargaP" class="mejor-precio">$ 10,100.00</p>
-                <form action="">
+                <p id="recargaP" class="mejor-precio"></p>
+                <form action="producto-subasta.php?IdProd=<?php echo $IdProd ?>" method="POST">
                   <span>$</span>
-                  <select name="" id="">
-                    <option value="">+1</option>
-                    <option value="">+5</option>
-                    <option value="">+10</option>
-                    <option value="">+20</option>
-                    <option value="">+30</option>
-                    <option value="">+50</option>
+                  <select name="monto" id="">
+                    <option value="1">+1</option>
+                    <option value="5">+5</option>
+                    <option value="10">+10</option>
+                    <option value="20">+20</option>
+                    <option value="30">+30</option>
+                    <option value="50">+50</option>
                   </select>
-                  <button type="submit">Mejorar Oferta</button>
+                  <button name="puja" type="submit">Mejorar Oferta</button>
                 </form>
               </div>
               <div class=info-pagos>
@@ -81,7 +82,7 @@
   $(document).ready(function(){
       setInterval(
                   function(){
-                  $('#recargaP').load('refrescarP.php');
+                  $('#recargaP').load('../funciones/refrescarP.php');
         },2000
       );
   }

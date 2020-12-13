@@ -37,7 +37,22 @@
 
         }
     	
-    
+   
 }
+
+if(isset($_POST['puja'])) {
+        $usuario=$_SESSION['usuario'];
+        $dat_u="SELECT * FROM us WHERE correo='$usuario'";
+        $u=mysqli_query($conexion,$dat_u);
+        $mostrar=mysqli_fetch_array($u);
+        mysqli_free_result($u);
+        $IdUsu = $mostrar['id_usuario'];
+
+        $nuePre = $precio + $_POST['monto'];
+        $query="UPDATE producto SET nuePrecio='$nuePre', idComprador='$IdUsu' WHERE Id='$IdProd'";
+        $resultado = mysqli_query($conexion, $query);
+}            
+
+        
     mysqli_close($conexion);
  ?>
