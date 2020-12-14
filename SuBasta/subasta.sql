@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-10-2020 a las 04:22:15
+-- Tiempo de generación: 14-12-2020 a las 17:48:11
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -38,7 +38,8 @@ CREATE TABLE `belleza` (
 --
 
 INSERT INTO `belleza` (`Id`, `Genero`, `ClaveP`) VALUES
-(1, 'null', 21);
+(1, 'null', 21),
+(2, 'null', 38);
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,12 @@ INSERT INTO `claves` (`id`, `Clave`) VALUES
 (31, 30),
 (32, 31),
 (33, 32),
-(34, 33);
+(34, 33),
+(35, 34),
+(36, 35),
+(37, 36),
+(38, 37),
+(39, 38);
 
 -- --------------------------------------------------------
 
@@ -136,7 +142,11 @@ INSERT INTO `fotos` (`IdFoto`, `Foto`, `IdProducto`) VALUES
 (26, 'productos/1601517436_Galaxy-J4-830x728.jpg', 28),
 (27, 'productos/1601517726_Galaxy-J4-830x728.jpg', 29),
 (28, 'productos/1601517838_Galaxy-J4-830x728.jpg', 30),
-(29, 'productos/1601518035_Cthulhu-hplvcrtf.jpg', 31);
+(29, 'productos/1601518035_Cthulhu-hplvcrtf.jpg', 31),
+(30, 'productos/1602027974_combi.jpg', 1),
+(31, 'productos/1603239474_', 2),
+(32, 'productos/1603754791_', 3),
+(33, 'productos/1604266817_', 4);
 
 -- --------------------------------------------------------
 
@@ -175,8 +185,22 @@ CREATE TABLE `producto` (
   `marca` varchar(50) NOT NULL,
   `clave` int(11) NOT NULL,
   `comentario` varchar(280) NOT NULL,
-  `UsuarioId` int(11) NOT NULL
+  `categoria` varchar(50) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `nuePrecio` int(11) DEFAULT NULL,
+  `UsuarioId` int(11) NOT NULL,
+  `idComprador` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`Id`, `nombreP`, `condicion`, `venta`, `cantidad`, `marca`, `clave`, `comentario`, `categoria`, `precio`, `nuePrecio`, `UsuarioId`, `idComprador`) VALUES
+(1, 'Celular Galxy', 'Nuevo', 'inversa', 1, 'Samsung', 34, 'Es muy rapido', 'Tecnología', 100, NULL, 24, NULL),
+(2, 'laptop', 'Segunda mano', 'Tradicional', 4, 'Hp ', 36, 'En buen estado', 'Tecnología', 0, 76, 24, 24),
+(3, 'Samsung', 'Segunda mano', 'Tradicional', 2, 'Samsung', 37, '', 'Tecnología', 0, NULL, 24, NULL),
+(4, '', 'Segunda mano', 'Tienda', 0, '', 38, '', '', 0, NULL, 24, NULL);
 
 -- --------------------------------------------------------
 
@@ -224,7 +248,11 @@ CREATE TABLE `tecnologia` (
 
 INSERT INTO `tecnologia` (`Id`, `Tipo`, `Modelo`, `Tamaño`, `ClaveP`) VALUES
 (11, 'Tablet', 'ñdfkdfmñak', '', 22),
-(12, 'null', 'omega plus ssjgod', '15cm', 23);
+(12, 'null', 'omega plus ssjgod', '15cm', 23),
+(13, 'Móvil', 'Galaxy S5', '15cm', 34),
+(14, 'Móvil', 'Galaxy S5', '15cm', 35),
+(15, 'Accesorio', 'pavellon-500', '50 cm', 36),
+(16, 'Tablet', 'pavellon-500', '20 cm', 37);
 
 -- --------------------------------------------------------
 
@@ -238,39 +266,33 @@ CREATE TABLE `us` (
   `apellido_u` varchar(50) NOT NULL,
   `correo` varchar(50) NOT NULL,
   `contraseña` varchar(50) NOT NULL,
-  `fecha_n` date NOT NULL
+  `fecha_n` date DEFAULT NULL,
+  `calle` varchar(60) DEFAULT NULL,
+  `colonia` varchar(60) DEFAULT NULL,
+  `codigoPos` varchar(8) DEFAULT NULL,
+  `ciudad` varchar(50) DEFAULT NULL,
+  `estado` varchar(50) DEFAULT NULL,
+  `telefono` varchar(11) DEFAULT NULL,
+  `monedas` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `us`
 --
 
-INSERT INTO `us` (`id_usuario`, `nombre_u`, `apellido_u`, `correo`, `contraseña`, `fecha_n`) VALUES
-(1, 'Erick ', 'flore', 'erick.brandon.flores@gmail.com', '123', '0000-00-00'),
-(2, 'Erick ', 'flores', 'erick.brandon.flores@gmail.com', '741', '0000-00-00'),
-(3, '', '', '', '', '0000-00-00'),
-(4, '', '', '', '', '0000-00-00'),
-(5, '', '', '', '', '0000-00-00'),
-(6, '', '', '', '', '0000-00-00'),
-(7, '', '', '', '', '0000-00-00'),
-(8, '', '', '', '', '0000-00-00'),
-(9, '', '', '', '', '0000-00-00'),
-(10, '', '', '', '', '0000-00-00'),
-(11, '', '', '', '', '0000-00-00'),
-(12, '', '', '', '', '0000-00-00'),
-(13, '', '', '', '', '0000-00-00'),
-(14, '', '', '', '', '0000-00-00'),
-(15, '', '', '', '', '0000-00-00'),
-(16, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00'),
-(17, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'a', '0000-00-00'),
-(18, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00'),
-(19, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00'),
-(20, 'wewewe', 'ewewew', 'wewewew', '7', '0000-00-00'),
-(21, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00'),
-(22, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00'),
-(23, 'Erick Brandon', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00'),
-(24, 'CRISTHIAN', 'Carreto Cebada', 'cristhiancarretoc@gmail.com', 'perreoenllamas', '1999-05-27'),
-(25, 'Cristhian', 'Carreto Cebada', 'cristhiancarretoc@gmail.com', '123456789', '0000-00-00');
+INSERT INTO `us` (`id_usuario`, `nombre_u`, `apellido_u`, `correo`, `contraseña`, `fecha_n`, `calle`, `colonia`, `codigoPos`, `ciudad`, `estado`, `telefono`, `monedas`) VALUES
+(1, 'Erick ', 'flore', 'erick.brandon.flores@gmail.com', '123', '0000-00-00', '', '', '', '', '', '', 0),
+(2, 'Erick ', 'flores', 'erick.brandon.flores@gmail.com', '741', '0000-00-00', '', '', '', '', '', '', 0),
+(16, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00', '', '', '', '', '', '', 0),
+(17, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'a', '0000-00-00', '', '', '', '', '', '', 0),
+(18, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00', '', '', '', '', '', '', 0),
+(19, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00', '', '', '', '', '', '', 0),
+(20, 'wewewe', 'ewewew', 'wewewew', '7', '0000-00-00', '', '', '', '', '', '', 0),
+(21, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', 'q', '0000-00-00', '', '', '', '', '', '', 0),
+(22, 'erick', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00', '', '', '', '', '', '', 0),
+(23, 'Erick Brandon', 'Flores', 'erick.brandon.flores@gmail.com', '7', '0000-00-00', '', '', '', '', '', '', 0),
+(24, 'Cristhian', 'Carreto', 'cristhiancarretoc@gmail.com', '123456789', '1999-05-27', '2 Sur #126', 'San Miguel Hi', '75205', 'Pue', 'Pue', '2231253148', 0),
+(26, 'Leonardo', 'Meneses', 'leo.moe@hotmail.com', 'opera201', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Índices para tablas volcadas
@@ -333,19 +355,19 @@ ALTER TABLE `us`
 -- AUTO_INCREMENT de la tabla `belleza`
 --
 ALTER TABLE `belleza`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `claves`
 --
 ALTER TABLE `claves`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de la tabla `fotos`
 --
 ALTER TABLE `fotos`
-  MODIFY `IdFoto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `IdFoto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `otro`
@@ -357,7 +379,7 @@ ALTER TABLE `otro`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `ropa`
@@ -369,13 +391,13 @@ ALTER TABLE `ropa`
 -- AUTO_INCREMENT de la tabla `tecnologia`
 --
 ALTER TABLE `tecnologia`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `us`
 --
 ALTER TABLE `us`
-  MODIFY `id_usuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_usuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- Restricciones para tablas volcadas
